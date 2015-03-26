@@ -11,16 +11,16 @@ If you prefer that your solution will not be publicly visible [request private r
 1. [**Push**][ref-push]/sync the changes up to GitHub.
 1. [Create a **pull request**][pull-request] on the original repository to turn in the assignment.
 
-## Homework1 UML
+## Homework1 UML/OCL
 Modeling an online store (Amazon like), through:
 
 1. One use-case diagram
 1. One detailed written use case (Readme or wiki)
 1. Four diagrams: Sequence, class, Activity, Component|Deployment
-1. OCL TBD
+1. OCL: Car example (see lecture 3 slides)
 
 - Format: XMI files in a github repo + Readme
-- **Submission dates**: Part 1. 26/3 17:15, Part 2+3. a week after 
+- **Submission dates**: Part 1. 26/3 17:15, Part 2+3. a week after, part 4: next lecture 
 
 ## Final Project (Preliminary)
 ### Stage 1
