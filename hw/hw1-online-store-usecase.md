@@ -1,4 +1,4 @@
-#Usecase Name: <Name>
+#Usecase Name: Purchase
 - Usecase ID:
 - Date:
 
