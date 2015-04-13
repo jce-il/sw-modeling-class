@@ -5,7 +5,7 @@ If you prefer that your solution will not be publicly visible [request private r
 
 
 ##Submissions Instructions
-1. To start, [**fork** the course repository][forking].
+1. To start, [**fork** the course repository][forking] (or [pull][ref-pull] for later updates).
 1. [**Clone**][ref-clone] the repository to your computer.
 1. Modify/add files (in the hw directory) and [**commit**][ref-commit] changes to complete your solution.
 1. [**Push**][ref-push]/sync the changes up to GitHub.
@@ -16,7 +16,7 @@ Modeling an online store (Amazon like), through:
 
 1. One use-case diagram
 1. One detailed written use case (Readme or wiki)
-1. Four diagrams: Sequence, class, Activity, Component|Deployment
+1. Four diagrams: Sequence, Class, Activity, Component|Deployment
 1. OCL: Car example (see lecture 3 slides)
 
 - Format: XMI files in a github repo + Readme
@@ -26,6 +26,7 @@ Modeling an online store (Amazon like), through:
 ### Stage 1
 - Select a known open source project (git is already captured for class demo)
   - Here are some sources for ideas: [leading github projects](https://github.com/showcases), Book: [The Architecture of Open Source Applications](http://www.aosabook.org/en/index.html), [Hasadna](http://www.hasadna.org.il/projects/) (The Public Knowledge Workshop),...
+  - Cloud related ideas and papers from the original course: https://courses.engr.illinois.edu/cs525/sp2015/sched.htm 
 - Review resources (repos, papers, posts)
 - Open a repo for this project and link from course wiki (by PR the README)
 
@@ -50,4 +51,5 @@ Work on an improvement to this class according to the given documents (suggest o
 [ref-clone]: http://gitref.org/creating/#clone
 [ref-commit]: http://gitref.org/basic/#commit
 [ref-push]: http://gitref.org/remotes/#push
+[ref-pull]: http://gitref.org/remotes/#pull
 [pull-request]: https://help.github.com/articles/creating-a-pull-request
