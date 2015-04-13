@@ -1,5 +1,225 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_O0Sk8NBrEeS2zrQA7BHXQA" name="model">
-  <packagedElement xmi:type="uml:Actor" xmi:id="_SIh84NBrEeS2zrQA7BHXQA" name="Buyer"/>
-  <packagedElement xmi:type="uml:UseCase" xmi:id="_VXWpUNBrEeS2zrQA7BHXQA" name="Putchase"/>
+<uml:Model xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:uml="http://www.eclipse.org/uml2/4.0.0/UML" xmi:id="_NdXNkNGEEeSyKtHqJeGVMw" name="model">
+  <eAnnotations xmi:id="_NdXNkdGEEeSyKtHqJeGVMw" source="genmymodel">
+    <details xmi:id="_NdXNktGEEeSyKtHqJeGVMw" key="uuid" value="_LTbmQNF8EeSyKtHqJeGVMw"/>
+  </eAnnotations>
+  <packageImport xmi:id="_NdXNk9GEEeSyKtHqJeGVMw">
+    <eAnnotations xmi:id="_NdXNlNGEEeSyKtHqJeGVMw" source="genmymodel">
+      <details xmi:id="_NdXNldGEEeSyKtHqJeGVMw" key="uuid" value="_LTfQoNF8EeSyKtHqJeGVMw"/>
+    </eAnnotations>
+    <importedPackage href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#/"/>
+  </packageImport>
+  <packageImport xmi:id="_NdXNltGEEeSyKtHqJeGVMw">
+    <eAnnotations xmi:id="_NdXNl9GEEeSyKtHqJeGVMw" source="genmymodel">
+      <details xmi:id="_NdXNmNGEEeSyKtHqJeGVMw" key="uuid" value="_LTq20NF8EeSyKtHqJeGVMw"/>
+    </eAnnotations>
+    <importedPackage href="pathmap://GENMYMODEL_LIBRARIES/GenMyModelPrimitiveTypes.library.uml#/"/>
+  </packageImport>
+  <packagedElement xsi:type="uml:Package" xmi:id="_NdXNmdGEEeSyKtHqJeGVMw" name="mypackage">
+    <eAnnotations xmi:id="_NdXNmtGEEeSyKtHqJeGVMw" source="genmymodel">
+      <details xmi:id="_NdXNm9GEEeSyKtHqJeGVMw" key="uuid" value="_ScTPoLOqEDKW0fV0TyfBVw"/>
+    </eAnnotations>
+  </packagedElement>
+  <packagedElement xsi:type="uml:Actor" xmi:id="_NdXNnNGEEeSyKtHqJeGVMw" name="Costomer">
+    <eAnnotations xmi:id="_NdXNndGEEeSyKtHqJeGVMw" source="genmymodel">
+      <details xmi:id="_NdXNntGEEeSyKtHqJeGVMw" key="uuid" value="_Fn2okLOxEDKW0fV0TyfBVw"/>
+    </eAnnotations>
+  </packagedElement>
+  <packagedElement xsi:type="uml:Component" xmi:id="_NdXNn9GEEeSyKtHqJeGVMw" name="Online strore">
+    <eAnnotations xmi:id="_NdXNoNGEEeSyKtHqJeGVMw" source="genmymodel">
+      <details xmi:id="_NdXNodGEEeSyKtHqJeGVMw" key="uuid" value="_LXJtsLOxEDKW0fV0TyfBVw"/>
+    </eAnnotations>
+    <ownedUseCase xmi:id="_NdXNotGEEeSyKtHqJeGVMw" name="Check out">
+      <eAnnotations xmi:id="_NdXNo9GEEeSyKtHqJeGVMw" source="genmymodel">
+        <details xmi:id="_NdXNpNGEEeSyKtHqJeGVMw" key="uuid" value="_HuCR8LOxEDKW0fV0TyfBVw"/>
+      </eAnnotations>
+    </ownedUseCase>
+    <ownedUseCase xmi:id="_NdXNpdGEEeSyKtHqJeGVMw" name="Browse catalog">
+      <eAnnotations xmi:id="_NdXNptGEEeSyKtHqJeGVMw" source="genmymodel">
+        <details xmi:id="_NdXNp9GEEeSyKtHqJeGVMw" key="uuid" value="_Rmb6cLOxEDKW0fV0TyfBVw"/>
+      </eAnnotations>
+    </ownedUseCase>
+    <ownedUseCase xmi:id="_NdXNqNGEEeSyKtHqJeGVMw" name="Cancel order">
+      <eAnnotations xmi:id="_NdXNqdGEEeSyKtHqJeGVMw" source="genmymodel">
+        <details xmi:id="_NdXNqtGEEeSyKtHqJeGVMw" key="uuid" value="_T-q9ILOxEDKW0fV0TyfBVw"/>
+      </eAnnotations>
+    </ownedUseCase>
+    <ownedUseCase xmi:id="_NdXNq9GEEeSyKtHqJeGVMw" name="track shipment">
+      <eAnnotations xmi:id="_NdXNrNGEEeSyKtHqJeGVMw" source="genmymodel">
+        <details xmi:id="_NdXNrdGEEeSyKtHqJeGVMw" key="uuid" value="_WyUJcLOxEDKW0fV0TyfBVw"/>
+      </eAnnotations>
+    </ownedUseCase>
+    <ownedUseCase xmi:id="_NdXNrtGEEeSyKtHqJeGVMw" name="Reorder">
+      <eAnnotations xmi:id="_NdXNr9GEEeSyKtHqJeGVMw" source="genmymodel">
+        <details xmi:id="_NdXNsNGEEeSyKtHqJeGVMw" key="uuid" value="_Yr0owLOxEDKW0fV0TyfBVw"/>
+      </eAnnotations>
+    </ownedUseCase>
+    <ownedUseCase xmi:id="_NdXNsdGEEeSyKtHqJeGVMw" name="Update Inventory">
+      <eAnnotations xmi:id="_NdXNstGEEeSyKtHqJeGVMw" source="genmymodel">
+        <details xmi:id="_NdXNs9GEEeSyKtHqJeGVMw" key="uuid" value="_anRBwLOxEDKW0fV0TyfBVw"/>
+      </eAnnotations>
+    </ownedUseCase>
+    <packagedElement xsi:type="uml:Association" xmi:id="_NdXNtNGEEeSyKtHqJeGVMw" name="Check out_Credit card approver" memberEnd="_NdXNt9GEEeSyKtHqJeGVMw _NdXNvNGEEeSyKtHqJeGVMw" navigableOwnedEnd="_NdXNt9GEEeSyKtHqJeGVMw _NdXNvNGEEeSyKtHqJeGVMw">
+      <eAnnotations xmi:id="_NdXNtdGEEeSyKtHqJeGVMw" source="genmymodel">
+        <details xmi:id="_NdXNttGEEeSyKtHqJeGVMw" key="uuid" value="_t_BgoLOxEDKW0fV0TyfBVw"/>
+      </eAnnotations>
+      <ownedEnd xmi:id="_NdXNt9GEEeSyKtHqJeGVMw" name="credit card approver" type="_NdXNztGEEeSyKtHqJeGVMw" association="_NdXNtNGEEeSyKtHqJeGVMw">
+        <eAnnotations xmi:id="_NdXNuNGEEeSyKtHqJeGVMw" source="genmymodel">
+          <details xmi:id="_NdXNudGEEeSyKtHqJeGVMw" key="uuid" value="_t-8oILOxEDKW0fV0TyfBVw"/>
+        </eAnnotations>
+        <lowerValue xsi:type="uml:LiteralInteger" xmi:id="_NdXNutGEEeSyKtHqJeGVMw"/>
+        <upperValue xsi:type="uml:LiteralUnlimitedNatural" xmi:id="_NdXNu9GEEeSyKtHqJeGVMw" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_NdXNvNGEEeSyKtHqJeGVMw" name="check out" type="_NdXNotGEEeSyKtHqJeGVMw" association="_NdXNtNGEEeSyKtHqJeGVMw">
+        <eAnnotations xmi:id="_NdXNvdGEEeSyKtHqJeGVMw" source="genmymodel">
+          <details xmi:id="_NdXNvtGEEeSyKtHqJeGVMw" key="uuid" value="_t_ASgLOxEDKW0fV0TyfBVw"/>
+        </eAnnotations>
+        <lowerValue xsi:type="uml:LiteralInteger" xmi:id="_NdXNv9GEEeSyKtHqJeGVMw"/>
+        <upperValue xsi:type="uml:LiteralUnlimitedNatural" xmi:id="_NdXNwNGEEeSyKtHqJeGVMw" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xsi:type="uml:Association" xmi:id="_NdXNwdGEEeSyKtHqJeGVMw" name="Check out_Inventory management system" memberEnd="_NdXNxNGEEeSyKtHqJeGVMw _NdXNydGEEeSyKtHqJeGVMw" navigableOwnedEnd="_NdXNxNGEEeSyKtHqJeGVMw _NdXNydGEEeSyKtHqJeGVMw">
+      <eAnnotations xmi:id="_NdXNwtGEEeSyKtHqJeGVMw" source="genmymodel">
+        <details xmi:id="_NdXNw9GEEeSyKtHqJeGVMw" key="uuid" value="_unX6ELOxEDKW0fV0TyfBVw"/>
+      </eAnnotations>
+      <ownedEnd xmi:id="_NdXNxNGEEeSyKtHqJeGVMw" name="inventory management system" type="_NdXN0dGEEeSyKtHqJeGVMw" association="_NdXNwdGEEeSyKtHqJeGVMw">
+        <eAnnotations xmi:id="_NdXNxdGEEeSyKtHqJeGVMw" source="genmymodel">
+          <details xmi:id="_NdXNxtGEEeSyKtHqJeGVMw" key="uuid" value="_unUPsLOxEDKW0fV0TyfBVw"/>
+        </eAnnotations>
+        <lowerValue xsi:type="uml:LiteralInteger" xmi:id="_NdXNx9GEEeSyKtHqJeGVMw"/>
+        <upperValue xsi:type="uml:LiteralUnlimitedNatural" xmi:id="_NdXNyNGEEeSyKtHqJeGVMw" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_NdXNydGEEeSyKtHqJeGVMw" name="check out" type="_NdXNotGEEeSyKtHqJeGVMw" association="_NdXNwdGEEeSyKtHqJeGVMw">
+        <eAnnotations xmi:id="_NdXNytGEEeSyKtHqJeGVMw" source="genmymodel">
+          <details xmi:id="_NdXNy9GEEeSyKtHqJeGVMw" key="uuid" value="_unXTALOxEDKW0fV0TyfBVw"/>
+        </eAnnotations>
+        <lowerValue xsi:type="uml:LiteralInteger" xmi:id="_NdXNzNGEEeSyKtHqJeGVMw"/>
+        <upperValue xsi:type="uml:LiteralUnlimitedNatural" xmi:id="_NdXNzdGEEeSyKtHqJeGVMw" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xsi:type="uml:Actor" xmi:id="_NdXNztGEEeSyKtHqJeGVMw" name="Credit card approver">
+    <eAnnotations xmi:id="_NdXNz9GEEeSyKtHqJeGVMw" source="genmymodel">
+      <details xmi:id="_NdXN0NGEEeSyKtHqJeGVMw" key="uuid" value="_dWwG0LOxEDKW0fV0TyfBVw"/>
+    </eAnnotations>
+  </packagedElement>
+  <packagedElement xsi:type="uml:Actor" xmi:id="_NdXN0dGEEeSyKtHqJeGVMw" name="Inventory management system">
+    <eAnnotations xmi:id="_NdXN0tGEEeSyKtHqJeGVMw" source="genmymodel">
+      <details xmi:id="_NdXN09GEEeSyKtHqJeGVMw" key="uuid" value="_e-BmoLOxEDKW0fV0TyfBVw"/>
+    </eAnnotations>
+  </packagedElement>
+  <packagedElement xsi:type="uml:Association" xmi:id="_NdXN1NGEEeSyKtHqJeGVMw" name="Costomer_Check out" memberEnd="_NdXN19GEEeSyKtHqJeGVMw _NdXN3NGEEeSyKtHqJeGVMw" navigableOwnedEnd="_NdXN19GEEeSyKtHqJeGVMw _NdXN3NGEEeSyKtHqJeGVMw">
+    <eAnnotations xmi:id="_NdXN1dGEEeSyKtHqJeGVMw" source="genmymodel">
+      <details xmi:id="_NdXN1tGEEeSyKtHqJeGVMw" key="uuid" value="_lhWJsLOxEDKW0fV0TyfBVw"/>
+    </eAnnotations>
+    <ownedEnd xmi:id="_NdXN19GEEeSyKtHqJeGVMw" name="check out" type="_NdXNotGEEeSyKtHqJeGVMw" association="_NdXN1NGEEeSyKtHqJeGVMw">
+      <eAnnotations xmi:id="_NdXN2NGEEeSyKtHqJeGVMw" source="genmymodel">
+        <details xmi:id="_NdXN2dGEEeSyKtHqJeGVMw" key="uuid" value="_lhTtcLOxEDKW0fV0TyfBVw"/>
+      </eAnnotations>
+      <lowerValue xsi:type="uml:LiteralInteger" xmi:id="_NdXN2tGEEeSyKtHqJeGVMw"/>
+      <upperValue xsi:type="uml:LiteralUnlimitedNatural" xmi:id="_NdXN29GEEeSyKtHqJeGVMw" value="1"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_NdXN3NGEEeSyKtHqJeGVMw" name="costomer" type="_NdXNnNGEEeSyKtHqJeGVMw" association="_NdXN1NGEEeSyKtHqJeGVMw">
+      <eAnnotations xmi:id="_NdXN3dGEEeSyKtHqJeGVMw" source="genmymodel">
+        <details xmi:id="_NdXN3tGEEeSyKtHqJeGVMw" key="uuid" value="_lhVioLOxEDKW0fV0TyfBVw"/>
+      </eAnnotations>
+      <lowerValue xsi:type="uml:LiteralInteger" xmi:id="_NdXN39GEEeSyKtHqJeGVMw"/>
+      <upperValue xsi:type="uml:LiteralUnlimitedNatural" xmi:id="_NdXN4NGEEeSyKtHqJeGVMw" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xsi:type="uml:Association" xmi:id="_NdXN4dGEEeSyKtHqJeGVMw" name="Costomer_Browse catalog" memberEnd="_NdXN5NGEEeSyKtHqJeGVMw _NdXN6dGEEeSyKtHqJeGVMw" navigableOwnedEnd="_NdXN5NGEEeSyKtHqJeGVMw _NdXN6dGEEeSyKtHqJeGVMw">
+    <eAnnotations xmi:id="_NdXN4tGEEeSyKtHqJeGVMw" source="genmymodel">
+      <details xmi:id="_NdXN49GEEeSyKtHqJeGVMw" key="uuid" value="_mmYfILOxEDKW0fV0TyfBVw"/>
+    </eAnnotations>
+    <ownedEnd xmi:id="_NdXN5NGEEeSyKtHqJeGVMw" name="browse catalog" type="_NdXNpdGEEeSyKtHqJeGVMw" association="_NdXN4dGEEeSyKtHqJeGVMw">
+      <eAnnotations xmi:id="_NdXN5dGEEeSyKtHqJeGVMw" source="genmymodel">
+        <details xmi:id="_NdXN5tGEEeSyKtHqJeGVMw" key="uuid" value="_mmTmoLOxEDKW0fV0TyfBVw"/>
+      </eAnnotations>
+      <lowerValue xsi:type="uml:LiteralInteger" xmi:id="_NdXN59GEEeSyKtHqJeGVMw"/>
+      <upperValue xsi:type="uml:LiteralUnlimitedNatural" xmi:id="_NdXN6NGEEeSyKtHqJeGVMw" value="1"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_NdXN6dGEEeSyKtHqJeGVMw" name="costomer" type="_NdXNnNGEEeSyKtHqJeGVMw" association="_NdXN4dGEEeSyKtHqJeGVMw">
+      <eAnnotations xmi:id="_NdXN6tGEEeSyKtHqJeGVMw" source="genmymodel">
+        <details xmi:id="_NdXN69GEEeSyKtHqJeGVMw" key="uuid" value="_mmX4ELOxEDKW0fV0TyfBVw"/>
+      </eAnnotations>
+      <lowerValue xsi:type="uml:LiteralInteger" xmi:id="_NdXN7NGEEeSyKtHqJeGVMw"/>
+      <upperValue xsi:type="uml:LiteralUnlimitedNatural" xmi:id="_NdXN7dGEEeSyKtHqJeGVMw" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xsi:type="uml:Association" xmi:id="_NdXN7tGEEeSyKtHqJeGVMw" name="Costomer_Cancel order" memberEnd="_NdXN8dGEEeSyKtHqJeGVMw _NdXN9tGEEeSyKtHqJeGVMw" navigableOwnedEnd="_NdXN8dGEEeSyKtHqJeGVMw _NdXN9tGEEeSyKtHqJeGVMw">
+    <eAnnotations xmi:id="_NdXN79GEEeSyKtHqJeGVMw" source="genmymodel">
+      <details xmi:id="_NdXN8NGEEeSyKtHqJeGVMw" key="uuid" value="_nXvDkLOxEDKW0fV0TyfBVw"/>
+    </eAnnotations>
+    <ownedEnd xmi:id="_NdXN8dGEEeSyKtHqJeGVMw" name="cancel order" type="_NdXNqNGEEeSyKtHqJeGVMw" association="_NdXN7tGEEeSyKtHqJeGVMw">
+      <eAnnotations xmi:id="_NdXN8tGEEeSyKtHqJeGVMw" source="genmymodel">
+        <details xmi:id="_NdXN89GEEeSyKtHqJeGVMw" key="uuid" value="_nXsnULOxEDKW0fV0TyfBVw"/>
+      </eAnnotations>
+      <lowerValue xsi:type="uml:LiteralInteger" xmi:id="_NdXN9NGEEeSyKtHqJeGVMw"/>
+      <upperValue xsi:type="uml:LiteralUnlimitedNatural" xmi:id="_NdXN9dGEEeSyKtHqJeGVMw" value="1"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_NdXN9tGEEeSyKtHqJeGVMw" name="costomer" type="_NdXNnNGEEeSyKtHqJeGVMw" association="_NdXN7tGEEeSyKtHqJeGVMw">
+      <eAnnotations xmi:id="_NdXN99GEEeSyKtHqJeGVMw" source="genmymodel">
+        <details xmi:id="_NdXN-NGEEeSyKtHqJeGVMw" key="uuid" value="_nXucgLOxEDKW0fV0TyfBVw"/>
+      </eAnnotations>
+      <lowerValue xsi:type="uml:LiteralInteger" xmi:id="_NdXN-dGEEeSyKtHqJeGVMw"/>
+      <upperValue xsi:type="uml:LiteralUnlimitedNatural" xmi:id="_NdXN-tGEEeSyKtHqJeGVMw" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xsi:type="uml:Association" xmi:id="_NdXN-9GEEeSyKtHqJeGVMw" name="Costomer_track shipment" memberEnd="_NdXN_tGEEeSyKtHqJeGVMw _NdXOA9GEEeSyKtHqJeGVMw" navigableOwnedEnd="_NdXN_tGEEeSyKtHqJeGVMw _NdXOA9GEEeSyKtHqJeGVMw">
+    <eAnnotations xmi:id="_NdXN_NGEEeSyKtHqJeGVMw" source="genmymodel">
+      <details xmi:id="_NdXN_dGEEeSyKtHqJeGVMw" key="uuid" value="_sR9h4LOxEDKW0fV0TyfBVw"/>
+    </eAnnotations>
+    <ownedEnd xmi:id="_NdXN_tGEEeSyKtHqJeGVMw" name="track shipment" type="_NdXNq9GEEeSyKtHqJeGVMw" association="_NdXN-9GEEeSyKtHqJeGVMw">
+      <eAnnotations xmi:id="_NdXN_9GEEeSyKtHqJeGVMw" source="genmymodel">
+        <details xmi:id="_NdXOANGEEeSyKtHqJeGVMw" key="uuid" value="_sR5QcLOxEDKW0fV0TyfBVw"/>
+      </eAnnotations>
+      <lowerValue xsi:type="uml:LiteralInteger" xmi:id="_NdXOAdGEEeSyKtHqJeGVMw"/>
+      <upperValue xsi:type="uml:LiteralUnlimitedNatural" xmi:id="_NdXOAtGEEeSyKtHqJeGVMw" value="1"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_NdXOA9GEEeSyKtHqJeGVMw" name="costomer" type="_NdXNnNGEEeSyKtHqJeGVMw" association="_NdXN-9GEEeSyKtHqJeGVMw">
+      <eAnnotations xmi:id="_NdXOBNGEEeSyKtHqJeGVMw" source="genmymodel">
+        <details xmi:id="_NdXOBdGEEeSyKtHqJeGVMw" key="uuid" value="_sR860LOxEDKW0fV0TyfBVw"/>
+      </eAnnotations>
+      <lowerValue xsi:type="uml:LiteralInteger" xmi:id="_NdXOBtGEEeSyKtHqJeGVMw"/>
+      <upperValue xsi:type="uml:LiteralUnlimitedNatural" xmi:id="_NdXOB9GEEeSyKtHqJeGVMw" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xsi:type="uml:Association" xmi:id="_NdXOCNGEEeSyKtHqJeGVMw" name="Costomer_Reorder" memberEnd="_NdXOC9GEEeSyKtHqJeGVMw _NdXOENGEEeSyKtHqJeGVMw" navigableOwnedEnd="_NdXOC9GEEeSyKtHqJeGVMw _NdXOENGEEeSyKtHqJeGVMw">
+    <eAnnotations xmi:id="_NdXOCdGEEeSyKtHqJeGVMw" source="genmymodel">
+      <details xmi:id="_NdXOCtGEEeSyKtHqJeGVMw" key="uuid" value="_tLWoALOxEDKW0fV0TyfBVw"/>
+    </eAnnotations>
+    <ownedEnd xmi:id="_NdXOC9GEEeSyKtHqJeGVMw" name="reorder" type="_NdXNrtGEEeSyKtHqJeGVMw" association="_NdXOCNGEEeSyKtHqJeGVMw">
+      <eAnnotations xmi:id="_NdXODNGEEeSyKtHqJeGVMw" source="genmymodel">
+        <details xmi:id="_NdXODdGEEeSyKtHqJeGVMw" key="uuid" value="_tLSWkLOxEDKW0fV0TyfBVw"/>
+      </eAnnotations>
+      <lowerValue xsi:type="uml:LiteralInteger" xmi:id="_NdXODtGEEeSyKtHqJeGVMw"/>
+      <upperValue xsi:type="uml:LiteralUnlimitedNatural" xmi:id="_NdXOD9GEEeSyKtHqJeGVMw" value="1"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_NdXOENGEEeSyKtHqJeGVMw" name="costomer" type="_NdXNnNGEEeSyKtHqJeGVMw" association="_NdXOCNGEEeSyKtHqJeGVMw">
+      <eAnnotations xmi:id="_NdXOEdGEEeSyKtHqJeGVMw" source="genmymodel">
+        <details xmi:id="_NdXOEtGEEeSyKtHqJeGVMw" key="uuid" value="_tLWA8LOxEDKW0fV0TyfBVw"/>
+      </eAnnotations>
+      <lowerValue xsi:type="uml:LiteralInteger" xmi:id="_NdXOE9GEEeSyKtHqJeGVMw"/>
+      <upperValue xsi:type="uml:LiteralUnlimitedNatural" xmi:id="_NdXOFNGEEeSyKtHqJeGVMw" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xsi:type="uml:Association" xmi:id="_NdXOFdGEEeSyKtHqJeGVMw" name="Inventory management system_Update Inventory" memberEnd="_NdXOGNGEEeSyKtHqJeGVMw _NdXOHdGEEeSyKtHqJeGVMw" navigableOwnedEnd="_NdXOGNGEEeSyKtHqJeGVMw _NdXOHdGEEeSyKtHqJeGVMw">
+    <eAnnotations xmi:id="_NdXOFtGEEeSyKtHqJeGVMw" source="genmymodel">
+      <details xmi:id="_NdXOF9GEEeSyKtHqJeGVMw" key="uuid" value="_vhYEMLOxEDKW0fV0TyfBVw"/>
+    </eAnnotations>
+    <ownedEnd xmi:id="_NdXOGNGEEeSyKtHqJeGVMw" name="update Inventory" type="_NdXNsdGEEeSyKtHqJeGVMw" association="_NdXOFdGEEeSyKtHqJeGVMw">
+      <eAnnotations xmi:id="_NdXOGdGEEeSyKtHqJeGVMw" source="genmymodel">
+        <details xmi:id="_NdXOGtGEEeSyKtHqJeGVMw" key="uuid" value="_vhTLsLOxEDKW0fV0TyfBVw"/>
+      </eAnnotations>
+      <lowerValue xsi:type="uml:LiteralInteger" xmi:id="_NdXOG9GEEeSyKtHqJeGVMw"/>
+      <upperValue xsi:type="uml:LiteralUnlimitedNatural" xmi:id="_NdXOHNGEEeSyKtHqJeGVMw" value="1"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_NdXOHdGEEeSyKtHqJeGVMw" name="inventory management system" type="_NdXN0dGEEeSyKtHqJeGVMw" association="_NdXOFdGEEeSyKtHqJeGVMw">
+      <eAnnotations xmi:id="_NdXOHtGEEeSyKtHqJeGVMw" source="genmymodel">
+        <details xmi:id="_NdXOH9GEEeSyKtHqJeGVMw" key="uuid" value="_vhXdILOxEDKW0fV0TyfBVw"/>
+      </eAnnotations>
+      <lowerValue xsi:type="uml:LiteralInteger" xmi:id="_NdXOINGEEeSyKtHqJeGVMw"/>
+      <upperValue xsi:type="uml:LiteralUnlimitedNatural" xmi:id="_NdXOIdGEEeSyKtHqJeGVMw" value="1"/>
+    </ownedEnd>
+  </packagedElement>
 </uml:Model>
