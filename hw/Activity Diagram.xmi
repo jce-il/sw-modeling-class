@@ -1,0 +1,498 @@
+<?xml version = '1.0' encoding = 'UTF-8' ?>
+<XMI xmi.version = '1.2' xmlns:UML = 'org.omg.xmi.namespace.UML' timestamp = 'Tue Mar 24 01:02:44 IST 2015'>
+  <XMI.header>    <XMI.documentation>
+      <XMI.exporter>ArgoUML (using Netbeans XMI Writer version 1.0)</XMI.exporter>
+      <XMI.exporterVersion>0.34(6) revised on $Date: 2010-01-11 22:20:14 +0100 (Mon, 11 Jan 2010) $ </XMI.exporterVersion>
+    </XMI.documentation>
+    <XMI.metamodel xmi.name="UML" xmi.version="1.4"/></XMI.header>
+  <XMI.content>
+    <UML:Model xmi.id = '10-0-0-5-3c70e2ee:14c48bc48ee:-8000:0000000000000865'
+      name = 'untitledModel' isSpecification = 'false' isRoot = 'false' isLeaf = 'false'
+      isAbstract = 'false'>
+      <UML:Namespace.ownedElement>
+        <UML:ActivityGraph xmi.id = '10-0-0-5-3c70e2ee:14c48bc48ee:-8000:0000000000000866'
+          name = '' isSpecification = 'false'>
+          <UML:StateMachine.context>
+            <UML:Model xmi.idref = '10-0-0-5-3c70e2ee:14c48bc48ee:-8000:0000000000000865'/>
+          </UML:StateMachine.context>
+          <UML:StateMachine.top>
+            <UML:CompositeState xmi.id = '10-0-0-5-3c70e2ee:14c48bc48ee:-8000:0000000000000867'
+              name = 'top' isSpecification = 'false' isConcurrent = 'false'>
+              <UML:CompositeState.subvertex>
+                <UML:Pseudostate xmi.id = '10-0-0-5-3c70e2ee:14c48bc48ee:-8000:0000000000000868'
+                  isSpecification = 'false' kind = 'initial'>
+                  <UML:StateVertex.outgoing>
+                    <UML:Transition xmi.idref = '10-0-0-5-3c70e2ee:14c48bc48ee:-8000:000000000000086A'/>
+                  </UML:StateVertex.outgoing>
+                </UML:Pseudostate>
+                <UML:ActionState xmi.id = '10-0-0-5-3c70e2ee:14c48bc48ee:-8000:0000000000000869'
+                  isSpecification = 'false' isDynamic = 'false'>
+                  <UML:StateVertex.outgoing>
+                    <UML:Transition xmi.idref = '10-0-0-5-3c70e2ee:14c48bc48ee:-8000:000000000000086E'/>
+                  </UML:StateVertex.outgoing>
+                  <UML:StateVertex.incoming>
+                    <UML:Transition xmi.idref = '10-0-0-5-3c70e2ee:14c48bc48ee:-8000:000000000000086A'/>
+                    <UML:Transition xmi.idref = '10-0-0-5-3c70e2ee:14c48bc48ee:-8000:000000000000086F'/>
+                    <UML:Transition xmi.idref = '10-0-0-5-3c70e2ee:14c48bc48ee:-8000:000000000000088C'/>
+                  </UML:StateVertex.incoming>
+                  <UML:State.entry>
+                    <UML:UninterpretedAction xmi.id = '10-0-0-5-3c70e2ee:14c48bc48ee:-8000:000000000000086B'
+                      isSpecification = 'false' isAsynchronous = 'false'>
+                      <UML:Action.script>
+                        <UML:ActionExpression xmi.id = '10-0-0-5-3c70e2ee:14c48bc48ee:-8000:00000000000008AD'
+                          language = '' body = 'Buyer search &#10;for items'/>
+                      </UML:Action.script>
+                    </UML:UninterpretedAction>
+                  </UML:State.entry>
+                </UML:ActionState>
+                <UML:Pseudostate xmi.id = '10-0-0-5-3c70e2ee:14c48bc48ee:-8000:000000000000086D'
+                  isSpecification = 'false' kind = 'junction'>
+                  <UML:StateVertex.outgoing>
+                    <UML:Transition xmi.idref = '10-0-0-5-3c70e2ee:14c48bc48ee:-8000:000000000000086F'/>
+                    <UML:Transition xmi.idref = '10-0-0-5-3c70e2ee:14c48bc48ee:-8000:0000000000000874'/>
+                  </UML:StateVertex.outgoing>
+                  <UML:StateVertex.incoming>
+                    <UML:Transition xmi.idref = '10-0-0-5-3c70e2ee:14c48bc48ee:-8000:000000000000086E'/>
+                  </UML:StateVertex.incoming>
+                </UML:Pseudostate>
+                <UML:ActionState xmi.id = '10-0-0-5-3c70e2ee:14c48bc48ee:-8000:0000000000000871'
+                  isSpecification = 'false' isDynamic = 'false'>
+                  <UML:StateVertex.outgoing>
+                    <UML:Transition xmi.idref = '10-0-0-5-3c70e2ee:14c48bc48ee:-8000:0000000000000888'/>
+                  </UML:StateVertex.outgoing>
+                  <UML:StateVertex.incoming>
+                    <UML:Transition xmi.idref = '10-0-0-5-3c70e2ee:14c48bc48ee:-8000:0000000000000880'/>
+                  </UML:StateVertex.incoming>
+                  <UML:State.entry>
+                    <UML:UninterpretedAction xmi.id = '10-0-0-5-3c70e2ee:14c48bc48ee:-8000:0000000000000872'
+                      isSpecification = 'false' isAsynchronous = 'false'>
+                      <UML:Action.script>
+                        <UML:ActionExpression xmi.id = '10-0-0-5-3c70e2ee:14c48bc48ee:-8000:0000000000000873'
+                          language = '' body = 'Show item details'/>
+                      </UML:Action.script>
+                    </UML:UninterpretedAction>
+                  </UML:State.entry>
+                </UML:ActionState>
+                <UML:Pseudostate xmi.id = '10-0-0-5-3c70e2ee:14c48bc48ee:-8000:0000000000000876'
+                  isSpecification = 'false' kind = 'junction'>
+                  <UML:StateVertex.outgoing>
+                    <UML:Transition xmi.idref = '10-0-0-5-3c70e2ee:14c48bc48ee:-8000:000000000000088E'/>
+                    <UML:Transition xmi.idref = '10-0-0-5-3c70e2ee:14c48bc48ee:-8000:0000000000000894'/>
+                  </UML:StateVertex.outgoing>
+                  <UML:StateVertex.incoming>
+                    <UML:Transition xmi.idref = '10-0-0-5-3c70e2ee:14c48bc48ee:-8000:0000000000000888'/>
+                  </UML:StateVertex.incoming>
+                </UML:Pseudostate>
+                <UML:ActionState xmi.id = '10-0-0-5-3c70e2ee:14c48bc48ee:-8000:0000000000000879'
+                  isSpecification = 'false' isDynamic = 'false'>
+                  <UML:StateVertex.outgoing>
+                    <UML:Transition xmi.idref = '10-0-0-5-3c70e2ee:14c48bc48ee:-8000:000000000000087E'/>
+                  </UML:StateVertex.outgoing>
+                  <UML:StateVertex.incoming>
+                    <UML:Transition xmi.idref = '10-0-0-5-3c70e2ee:14c48bc48ee:-8000:0000000000000874'/>
+                    <UML:Transition xmi.idref = '10-0-0-5-3c70e2ee:14c48bc48ee:-8000:0000000000000882'/>
+                    <UML:Transition xmi.idref = '10-0-0-5-3c70e2ee:14c48bc48ee:-8000:000000000000088D'/>
+                  </UML:StateVertex.incoming>
+                  <UML:State.entry>
+                    <UML:UninterpretedAction xmi.id = '10-0-0-5-3c70e2ee:14c48bc48ee:-8000:000000000000087A'
+                      isSpecification = 'false' isAsynchronous = 'false'>
+                      <UML:Action.script>
+                        <UML:ActionExpression xmi.id = '10-0-0-5-3c70e2ee:14c48bc48ee:-8000:000000000000087C'
+                          language = '' body = 'show results'/>
+                      </UML:Action.script>
+                    </UML:UninterpretedAction>
+                  </UML:State.entry>
+                </UML:ActionState>
+                <UML:Pseudostate xmi.id = '10-0-0-5-3c70e2ee:14c48bc48ee:-8000:000000000000087D'
+                  isSpecification = 'false' kind = 'junction'>
+                  <UML:StateVertex.outgoing>
+                    <UML:Transition xmi.idref = '10-0-0-5-3c70e2ee:14c48bc48ee:-8000:0000000000000880'/>
+                    <UML:Transition xmi.idref = '10-0-0-5-3c70e2ee:14c48bc48ee:-8000:0000000000000882'/>
+                  </UML:StateVertex.outgoing>
+                  <UML:StateVertex.incoming>
+                    <UML:Transition xmi.idref = '10-0-0-5-3c70e2ee:14c48bc48ee:-8000:000000000000087E'/>
+                  </UML:StateVertex.incoming>
+                </UML:Pseudostate>
+                <UML:Pseudostate xmi.id = '10-0-0-5-3c70e2ee:14c48bc48ee:-8000:000000000000088B'
+                  isSpecification = 'false' kind = 'junction'>
+                  <UML:StateVertex.outgoing>
+                    <UML:Transition xmi.idref = '10-0-0-5-3c70e2ee:14c48bc48ee:-8000:000000000000088C'/>
+                    <UML:Transition xmi.idref = '10-0-0-5-3c70e2ee:14c48bc48ee:-8000:000000000000088D'/>
+                  </UML:StateVertex.outgoing>
+                  <UML:StateVertex.incoming>
+                    <UML:Transition xmi.idref = '10-0-0-5-3c70e2ee:14c48bc48ee:-8000:000000000000088E'/>
+                  </UML:StateVertex.incoming>
+                </UML:Pseudostate>
+                <UML:Pseudostate xmi.id = '10-0-0-5-3c70e2ee:14c48bc48ee:-8000:0000000000000899'
+                  isSpecification = 'false' kind = 'junction'>
+                  <UML:StateVertex.outgoing>
+                    <UML:Transition xmi.idref = '10-0-0-5-3c70e2ee:14c48bc48ee:-8000:000000000000089B'/>
+                    <UML:Transition xmi.idref = '10-0-0-5-3c70e2ee:14c48bc48ee:-8000:00000000000008A1'/>
+                  </UML:StateVertex.outgoing>
+                  <UML:StateVertex.incoming>
+                    <UML:Transition xmi.idref = '10-0-0-5-3c70e2ee:14c48bc48ee:-8000:0000000000000894'/>
+                  </UML:StateVertex.incoming>
+                </UML:Pseudostate>
+                <UML:ActionState xmi.id = '10-0-0-5-3c70e2ee:14c48bc48ee:-8000:000000000000089A'
+                  isSpecification = 'false' isDynamic = 'false'>
+                  <UML:StateVertex.outgoing>
+                    <UML:Transition xmi.idref = '10-0-0-5-3c70e2ee:14c48bc48ee:-8000:00000000000008A7'/>
+                  </UML:StateVertex.outgoing>
+                  <UML:StateVertex.incoming>
+                    <UML:Transition xmi.idref = '10-0-0-5-3c70e2ee:14c48bc48ee:-8000:000000000000089B'/>
+                  </UML:StateVertex.incoming>
+                  <UML:State.entry>
+                    <UML:UninterpretedAction xmi.id = '10-0-0-5-3c70e2ee:14c48bc48ee:-8000:000000000000089D'
+                      isSpecification = 'false' isAsynchronous = 'false'>
+                      <UML:Action.script>
+                        <UML:ActionExpression xmi.id = '10-0-0-5-3c70e2ee:14c48bc48ee:-8000:000000000000089E'
+                          language = '' body = 'Purchase item&#10;(fill billing info)'/>
+                      </UML:Action.script>
+                    </UML:UninterpretedAction>
+                  </UML:State.entry>
+                </UML:ActionState>
+                <UML:ActionState xmi.id = '10-0-0-5-3c70e2ee:14c48bc48ee:-8000:00000000000008A0'
+                  isSpecification = 'false' isDynamic = 'false'>
+                  <UML:StateVertex.incoming>
+                    <UML:Transition xmi.idref = '10-0-0-5-3c70e2ee:14c48bc48ee:-8000:00000000000008A1'/>
+                  </UML:StateVertex.incoming>
+                  <UML:State.entry>
+                    <UML:UninterpretedAction xmi.id = '10-0-0-5-3c70e2ee:14c48bc48ee:-8000:00000000000008A4'
+                      isSpecification = 'false' isAsynchronous = 'false'>
+                      <UML:Action.script>
+                        <UML:ActionExpression xmi.id = '10-0-0-5-3c70e2ee:14c48bc48ee:-8000:00000000000008A5'
+                          language = '' body = 'Register &amp; login'/>
+                      </UML:Action.script>
+                    </UML:UninterpretedAction>
+                  </UML:State.entry>
+                </UML:ActionState>
+                <UML:ActionState xmi.id = '10-0-0-5-3c70e2ee:14c48bc48ee:-8000:00000000000008A6'
+                  isSpecification = 'false' isDynamic = 'false'>
+                  <UML:StateVertex.outgoing>
+                    <UML:Transition xmi.idref = '10-0-0-5-3c70e2ee:14c48bc48ee:-8000:00000000000008B4'/>
+                  </UML:StateVertex.outgoing>
+                  <UML:StateVertex.incoming>
+                    <UML:Transition xmi.idref = '10-0-0-5-3c70e2ee:14c48bc48ee:-8000:00000000000008A7'/>
+                  </UML:StateVertex.incoming>
+                  <UML:State.entry>
+                    <UML:UninterpretedAction xmi.id = '10-0-0-5-3c70e2ee:14c48bc48ee:-8000:00000000000008A8'
+                      isSpecification = 'false' isAsynchronous = 'false'>
+                      <UML:Action.script>
+                        <UML:ActionExpression xmi.id = '10-0-0-5-3c70e2ee:14c48bc48ee:-8000:00000000000008B7'
+                          language = '' body = 'Seller send&#10;confirmation mail'/>
+                      </UML:Action.script>
+                    </UML:UninterpretedAction>
+                  </UML:State.entry>
+                </UML:ActionState>
+                <UML:ActionState xmi.id = '10-0-0-5-3c70e2ee:14c48bc48ee:-8000:00000000000008B0'
+                  isSpecification = 'false' isDynamic = 'false'>
+                  <UML:StateVertex.outgoing>
+                    <UML:Transition xmi.idref = '10-0-0-5-3c70e2ee:14c48bc48ee:-8000:00000000000008BA'/>
+                  </UML:StateVertex.outgoing>
+                </UML:ActionState>
+                <UML:ActionState xmi.id = '10-0-0-5-3c70e2ee:14c48bc48ee:-8000:00000000000008B3'
+                  isSpecification = 'false' isDynamic = 'false'>
+                  <UML:StateVertex.incoming>
+                    <UML:Transition xmi.idref = '10-0-0-5-3c70e2ee:14c48bc48ee:-8000:00000000000008B4'/>
+                  </UML:StateVertex.incoming>
+                  <UML:State.entry>
+                    <UML:UninterpretedAction xmi.id = '10-0-0-5-3c70e2ee:14c48bc48ee:-8000:00000000000008B5'
+                      isSpecification = 'false' isAsynchronous = 'false'>
+                      <UML:Action.script>
+                        <UML:ActionExpression xmi.id = '10-0-0-5-3c70e2ee:14c48bc48ee:-8000:00000000000008B8'
+                          language = '' body = 'Seller send&#10;item'/>
+                      </UML:Action.script>
+                    </UML:UninterpretedAction>
+                  </UML:State.entry>
+                </UML:ActionState>
+                <UML:ActionState xmi.id = '10-0-0-5-3c70e2ee:14c48bc48ee:-8000:00000000000008B9'
+                  isSpecification = 'false' isDynamic = 'false'>
+                  <UML:StateVertex.outgoing>
+                    <UML:Transition xmi.idref = '10-0-0-5-3c70e2ee:14c48bc48ee:-8000:00000000000008BF'/>
+                  </UML:StateVertex.outgoing>
+                  <UML:StateVertex.incoming>
+                    <UML:Transition xmi.idref = '10-0-0-5-3c70e2ee:14c48bc48ee:-8000:00000000000008BA'/>
+                  </UML:StateVertex.incoming>
+                  <UML:State.entry>
+                    <UML:UninterpretedAction xmi.id = '10-0-0-5-3c70e2ee:14c48bc48ee:-8000:00000000000008BC'
+                      isSpecification = 'false' isAsynchronous = 'false'>
+                      <UML:Action.script>
+                        <UML:ActionExpression xmi.id = '10-0-0-5-3c70e2ee:14c48bc48ee:-8000:00000000000008BD'
+                          language = '' body = 'Buyer send&#10;item recived mail'/>
+                      </UML:Action.script>
+                    </UML:UninterpretedAction>
+                  </UML:State.entry>
+                </UML:ActionState>
+                <UML:FinalState xmi.id = '10-0-0-5-3c70e2ee:14c48bc48ee:-8000:00000000000008BE'
+                  isSpecification = 'false'>
+                  <UML:StateVertex.incoming>
+                    <UML:Transition xmi.idref = '10-0-0-5-3c70e2ee:14c48bc48ee:-8000:00000000000008C1'/>
+                  </UML:StateVertex.incoming>
+                </UML:FinalState>
+                <UML:ActionState xmi.id = '10-0-0-5-3c70e2ee:14c48bc48ee:-8000:00000000000008C0'
+                  isSpecification = 'false' isDynamic = 'false'>
+                  <UML:StateVertex.outgoing>
+                    <UML:Transition xmi.idref = '10-0-0-5-3c70e2ee:14c48bc48ee:-8000:00000000000008C1'/>
+                  </UML:StateVertex.outgoing>
+                  <UML:StateVertex.incoming>
+                    <UML:Transition xmi.idref = '10-0-0-5-3c70e2ee:14c48bc48ee:-8000:00000000000008BF'/>
+                  </UML:StateVertex.incoming>
+                  <UML:State.entry>
+                    <UML:UninterpretedAction xmi.id = '10-0-0-5-3c70e2ee:14c48bc48ee:-8000:00000000000008C2'
+                      isSpecification = 'false' isAsynchronous = 'false'>
+                      <UML:Action.script>
+                        <UML:ActionExpression xmi.id = '10-0-0-5-3c70e2ee:14c48bc48ee:-8000:00000000000008C3'
+                          language = '' body = 'Seller send&#10;thank you mail'/>
+                      </UML:Action.script>
+                    </UML:UninterpretedAction>
+                  </UML:State.entry>
+                </UML:ActionState>
+              </UML:CompositeState.subvertex>
+            </UML:CompositeState>
+          </UML:StateMachine.top>
+          <UML:StateMachine.transitions>
+            <UML:Transition xmi.id = '10-0-0-5-3c70e2ee:14c48bc48ee:-8000:000000000000086A'
+              isSpecification = 'false'>
+              <UML:Transition.source>
+                <UML:Pseudostate xmi.idref = '10-0-0-5-3c70e2ee:14c48bc48ee:-8000:0000000000000868'/>
+              </UML:Transition.source>
+              <UML:Transition.target>
+                <UML:ActionState xmi.idref = '10-0-0-5-3c70e2ee:14c48bc48ee:-8000:0000000000000869'/>
+              </UML:Transition.target>
+            </UML:Transition>
+            <UML:Transition xmi.id = '10-0-0-5-3c70e2ee:14c48bc48ee:-8000:000000000000086E'
+              isSpecification = 'false'>
+              <UML:Transition.source>
+                <UML:ActionState xmi.idref = '10-0-0-5-3c70e2ee:14c48bc48ee:-8000:0000000000000869'/>
+              </UML:Transition.source>
+              <UML:Transition.target>
+                <UML:Pseudostate xmi.idref = '10-0-0-5-3c70e2ee:14c48bc48ee:-8000:000000000000086D'/>
+              </UML:Transition.target>
+            </UML:Transition>
+            <UML:Transition xmi.id = '10-0-0-5-3c70e2ee:14c48bc48ee:-8000:000000000000086F'
+              isSpecification = 'false'>
+              <UML:Transition.trigger>
+                <UML:SignalEvent xmi.idref = '10-0-0-5-3c70e2ee:14c48bc48ee:-8000:0000000000000870'/>
+              </UML:Transition.trigger>
+              <UML:Transition.source>
+                <UML:Pseudostate xmi.idref = '10-0-0-5-3c70e2ee:14c48bc48ee:-8000:000000000000086D'/>
+              </UML:Transition.source>
+              <UML:Transition.target>
+                <UML:ActionState xmi.idref = '10-0-0-5-3c70e2ee:14c48bc48ee:-8000:0000000000000869'/>
+              </UML:Transition.target>
+            </UML:Transition>
+            <UML:Transition xmi.id = '10-0-0-5-3c70e2ee:14c48bc48ee:-8000:0000000000000874'
+              isSpecification = 'false'>
+              <UML:Transition.trigger>
+                <UML:SignalEvent xmi.idref = '10-0-0-5-3c70e2ee:14c48bc48ee:-8000:0000000000000875'/>
+              </UML:Transition.trigger>
+              <UML:Transition.source>
+                <UML:Pseudostate xmi.idref = '10-0-0-5-3c70e2ee:14c48bc48ee:-8000:000000000000086D'/>
+              </UML:Transition.source>
+              <UML:Transition.target>
+                <UML:ActionState xmi.idref = '10-0-0-5-3c70e2ee:14c48bc48ee:-8000:0000000000000879'/>
+              </UML:Transition.target>
+            </UML:Transition>
+            <UML:Transition xmi.id = '10-0-0-5-3c70e2ee:14c48bc48ee:-8000:000000000000087E'
+              isSpecification = 'false'>
+              <UML:Transition.trigger>
+                <UML:SignalEvent xmi.idref = '10-0-0-5-3c70e2ee:14c48bc48ee:-8000:0000000000000881'/>
+              </UML:Transition.trigger>
+              <UML:Transition.source>
+                <UML:ActionState xmi.idref = '10-0-0-5-3c70e2ee:14c48bc48ee:-8000:0000000000000879'/>
+              </UML:Transition.source>
+              <UML:Transition.target>
+                <UML:Pseudostate xmi.idref = '10-0-0-5-3c70e2ee:14c48bc48ee:-8000:000000000000087D'/>
+              </UML:Transition.target>
+            </UML:Transition>
+            <UML:Transition xmi.id = '10-0-0-5-3c70e2ee:14c48bc48ee:-8000:0000000000000880'
+              isSpecification = 'false'>
+              <UML:Transition.trigger>
+                <UML:SignalEvent xmi.idref = '10-0-0-5-3c70e2ee:14c48bc48ee:-8000:000000000000087F'/>
+              </UML:Transition.trigger>
+              <UML:Transition.source>
+                <UML:Pseudostate xmi.idref = '10-0-0-5-3c70e2ee:14c48bc48ee:-8000:000000000000087D'/>
+              </UML:Transition.source>
+              <UML:Transition.target>
+                <UML:ActionState xmi.idref = '10-0-0-5-3c70e2ee:14c48bc48ee:-8000:0000000000000871'/>
+              </UML:Transition.target>
+            </UML:Transition>
+            <UML:Transition xmi.id = '10-0-0-5-3c70e2ee:14c48bc48ee:-8000:0000000000000882'
+              isSpecification = 'false'>
+              <UML:Transition.guard>
+                <UML:Guard xmi.id = '10-0-0-5-3c70e2ee:14c48bc48ee:-8000:0000000000000889'
+                  name = 'anon' isSpecification = 'false'>
+                  <UML:Guard.expression>
+                    <UML:BooleanExpression xmi.id = '10-0-0-5-3c70e2ee:14c48bc48ee:-8000:000000000000088A'
+                      language = '' body = 'else'/>
+                  </UML:Guard.expression>
+                </UML:Guard>
+              </UML:Transition.guard>
+              <UML:Transition.source>
+                <UML:Pseudostate xmi.idref = '10-0-0-5-3c70e2ee:14c48bc48ee:-8000:000000000000087D'/>
+              </UML:Transition.source>
+              <UML:Transition.target>
+                <UML:ActionState xmi.idref = '10-0-0-5-3c70e2ee:14c48bc48ee:-8000:0000000000000879'/>
+              </UML:Transition.target>
+            </UML:Transition>
+            <UML:Transition xmi.id = '10-0-0-5-3c70e2ee:14c48bc48ee:-8000:0000000000000888'
+              isSpecification = 'false'>
+              <UML:Transition.source>
+                <UML:ActionState xmi.idref = '10-0-0-5-3c70e2ee:14c48bc48ee:-8000:0000000000000871'/>
+              </UML:Transition.source>
+              <UML:Transition.target>
+                <UML:Pseudostate xmi.idref = '10-0-0-5-3c70e2ee:14c48bc48ee:-8000:0000000000000876'/>
+              </UML:Transition.target>
+            </UML:Transition>
+            <UML:Transition xmi.id = '10-0-0-5-3c70e2ee:14c48bc48ee:-8000:000000000000088C'
+              isSpecification = 'false'>
+              <UML:Transition.trigger>
+                <UML:SignalEvent xmi.idref = '10-0-0-5-3c70e2ee:14c48bc48ee:-8000:0000000000000890'/>
+              </UML:Transition.trigger>
+              <UML:Transition.source>
+                <UML:Pseudostate xmi.idref = '10-0-0-5-3c70e2ee:14c48bc48ee:-8000:000000000000088B'/>
+              </UML:Transition.source>
+              <UML:Transition.target>
+                <UML:ActionState xmi.idref = '10-0-0-5-3c70e2ee:14c48bc48ee:-8000:0000000000000869'/>
+              </UML:Transition.target>
+            </UML:Transition>
+            <UML:Transition xmi.id = '10-0-0-5-3c70e2ee:14c48bc48ee:-8000:000000000000088D'
+              isSpecification = 'false'>
+              <UML:Transition.trigger>
+                <UML:SignalEvent xmi.idref = '10-0-0-5-3c70e2ee:14c48bc48ee:-8000:000000000000088F'/>
+              </UML:Transition.trigger>
+              <UML:Transition.source>
+                <UML:Pseudostate xmi.idref = '10-0-0-5-3c70e2ee:14c48bc48ee:-8000:000000000000088B'/>
+              </UML:Transition.source>
+              <UML:Transition.target>
+                <UML:ActionState xmi.idref = '10-0-0-5-3c70e2ee:14c48bc48ee:-8000:0000000000000879'/>
+              </UML:Transition.target>
+            </UML:Transition>
+            <UML:Transition xmi.id = '10-0-0-5-3c70e2ee:14c48bc48ee:-8000:000000000000088E'
+              isSpecification = 'false'>
+              <UML:Transition.trigger>
+                <UML:SignalEvent xmi.idref = '10-0-0-5-3c70e2ee:14c48bc48ee:-8000:0000000000000878'/>
+              </UML:Transition.trigger>
+              <UML:Transition.source>
+                <UML:Pseudostate xmi.idref = '10-0-0-5-3c70e2ee:14c48bc48ee:-8000:0000000000000876'/>
+              </UML:Transition.source>
+              <UML:Transition.target>
+                <UML:Pseudostate xmi.idref = '10-0-0-5-3c70e2ee:14c48bc48ee:-8000:000000000000088B'/>
+              </UML:Transition.target>
+            </UML:Transition>
+            <UML:Transition xmi.id = '10-0-0-5-3c70e2ee:14c48bc48ee:-8000:0000000000000894'
+              isSpecification = 'false'>
+              <UML:Transition.trigger>
+                <UML:SignalEvent xmi.idref = '10-0-0-5-3c70e2ee:14c48bc48ee:-8000:0000000000000895'/>
+              </UML:Transition.trigger>
+              <UML:Transition.source>
+                <UML:Pseudostate xmi.idref = '10-0-0-5-3c70e2ee:14c48bc48ee:-8000:0000000000000876'/>
+              </UML:Transition.source>
+              <UML:Transition.target>
+                <UML:Pseudostate xmi.idref = '10-0-0-5-3c70e2ee:14c48bc48ee:-8000:0000000000000899'/>
+              </UML:Transition.target>
+            </UML:Transition>
+            <UML:Transition xmi.id = '10-0-0-5-3c70e2ee:14c48bc48ee:-8000:000000000000089B'
+              isSpecification = 'false'>
+              <UML:Transition.trigger>
+                <UML:SignalEvent xmi.idref = '10-0-0-5-3c70e2ee:14c48bc48ee:-8000:000000000000089F'/>
+              </UML:Transition.trigger>
+              <UML:Transition.source>
+                <UML:Pseudostate xmi.idref = '10-0-0-5-3c70e2ee:14c48bc48ee:-8000:0000000000000899'/>
+              </UML:Transition.source>
+              <UML:Transition.target>
+                <UML:ActionState xmi.idref = '10-0-0-5-3c70e2ee:14c48bc48ee:-8000:000000000000089A'/>
+              </UML:Transition.target>
+            </UML:Transition>
+            <UML:Transition xmi.id = '10-0-0-5-3c70e2ee:14c48bc48ee:-8000:00000000000008A1'
+              isSpecification = 'false'>
+              <UML:Transition.guard>
+                <UML:Guard xmi.id = '10-0-0-5-3c70e2ee:14c48bc48ee:-8000:00000000000008A2'
+                  name = 'anon' isSpecification = 'false'>
+                  <UML:Guard.expression>
+                    <UML:BooleanExpression xmi.id = '10-0-0-5-3c70e2ee:14c48bc48ee:-8000:00000000000008A3'
+                      language = '' body = 'else'/>
+                  </UML:Guard.expression>
+                </UML:Guard>
+              </UML:Transition.guard>
+              <UML:Transition.source>
+                <UML:Pseudostate xmi.idref = '10-0-0-5-3c70e2ee:14c48bc48ee:-8000:0000000000000899'/>
+              </UML:Transition.source>
+              <UML:Transition.target>
+                <UML:ActionState xmi.idref = '10-0-0-5-3c70e2ee:14c48bc48ee:-8000:00000000000008A0'/>
+              </UML:Transition.target>
+            </UML:Transition>
+            <UML:Transition xmi.id = '10-0-0-5-3c70e2ee:14c48bc48ee:-8000:00000000000008A7'
+              isSpecification = 'false'>
+              <UML:Transition.source>
+                <UML:ActionState xmi.idref = '10-0-0-5-3c70e2ee:14c48bc48ee:-8000:000000000000089A'/>
+              </UML:Transition.source>
+              <UML:Transition.target>
+                <UML:ActionState xmi.idref = '10-0-0-5-3c70e2ee:14c48bc48ee:-8000:00000000000008A6'/>
+              </UML:Transition.target>
+            </UML:Transition>
+            <UML:Transition xmi.id = '10-0-0-5-3c70e2ee:14c48bc48ee:-8000:00000000000008B4'
+              isSpecification = 'false'>
+              <UML:Transition.source>
+                <UML:ActionState xmi.idref = '10-0-0-5-3c70e2ee:14c48bc48ee:-8000:00000000000008A6'/>
+              </UML:Transition.source>
+              <UML:Transition.target>
+                <UML:ActionState xmi.idref = '10-0-0-5-3c70e2ee:14c48bc48ee:-8000:00000000000008B3'/>
+              </UML:Transition.target>
+            </UML:Transition>
+            <UML:Transition xmi.id = '10-0-0-5-3c70e2ee:14c48bc48ee:-8000:00000000000008BA'
+              isSpecification = 'false'>
+              <UML:Transition.trigger>
+                <UML:SignalEvent xmi.idref = '10-0-0-5-3c70e2ee:14c48bc48ee:-8000:00000000000008BB'/>
+              </UML:Transition.trigger>
+              <UML:Transition.source>
+                <UML:ActionState xmi.idref = '10-0-0-5-3c70e2ee:14c48bc48ee:-8000:00000000000008B0'/>
+              </UML:Transition.source>
+              <UML:Transition.target>
+                <UML:ActionState xmi.idref = '10-0-0-5-3c70e2ee:14c48bc48ee:-8000:00000000000008B9'/>
+              </UML:Transition.target>
+            </UML:Transition>
+            <UML:Transition xmi.id = '10-0-0-5-3c70e2ee:14c48bc48ee:-8000:00000000000008BF'
+              isSpecification = 'false'>
+              <UML:Transition.source>
+                <UML:ActionState xmi.idref = '10-0-0-5-3c70e2ee:14c48bc48ee:-8000:00000000000008B9'/>
+              </UML:Transition.source>
+              <UML:Transition.target>
+                <UML:ActionState xmi.idref = '10-0-0-5-3c70e2ee:14c48bc48ee:-8000:00000000000008C0'/>
+              </UML:Transition.target>
+            </UML:Transition>
+            <UML:Transition xmi.id = '10-0-0-5-3c70e2ee:14c48bc48ee:-8000:00000000000008C1'
+              isSpecification = 'false'>
+              <UML:Transition.source>
+                <UML:ActionState xmi.idref = '10-0-0-5-3c70e2ee:14c48bc48ee:-8000:00000000000008C0'/>
+              </UML:Transition.source>
+              <UML:Transition.target>
+                <UML:FinalState xmi.idref = '10-0-0-5-3c70e2ee:14c48bc48ee:-8000:00000000000008BE'/>
+              </UML:Transition.target>
+            </UML:Transition>
+          </UML:StateMachine.transitions>
+        </UML:ActivityGraph>
+        <UML:SignalEvent xmi.id = '10-0-0-5-3c70e2ee:14c48bc48ee:-8000:0000000000000870'
+          name = 'item not found' isSpecification = 'false'/>
+        <UML:SignalEvent xmi.id = '10-0-0-5-3c70e2ee:14c48bc48ee:-8000:0000000000000875'
+          name = 'item found' isSpecification = 'false'/>
+        <UML:SignalEvent xmi.id = '10-0-0-5-3c70e2ee:14c48bc48ee:-8000:0000000000000878'
+          name = 'don&apos;t want to buy' isSpecification = 'false'/>
+        <UML:SignalEvent xmi.id = '10-0-0-5-3c70e2ee:14c48bc48ee:-8000:000000000000087F'
+          name = 'item selected' isSpecification = 'false'/>
+        <UML:SignalEvent xmi.id = '10-0-0-5-3c70e2ee:14c48bc48ee:-8000:0000000000000881'
+          name = '' isSpecification = 'false'/>
+        <UML:SignalEvent xmi.id = '10-0-0-5-3c70e2ee:14c48bc48ee:-8000:000000000000088F'
+          name = 'back to results' isSpecification = 'false'/>
+        <UML:SignalEvent xmi.id = '10-0-0-5-3c70e2ee:14c48bc48ee:-8000:0000000000000890'
+          name = 'new search' isSpecification = 'false'/>
+        <UML:SignalEvent xmi.id = '10-0-0-5-3c70e2ee:14c48bc48ee:-8000:0000000000000895'
+          name = 'want to buy' isSpecification = 'false'/>
+        <UML:SignalEvent xmi.id = '10-0-0-5-3c70e2ee:14c48bc48ee:-8000:000000000000089F'
+          name = 'is user logged in' isSpecification = 'false'/>
+        <UML:SignalEvent xmi.id = '10-0-0-5-3c70e2ee:14c48bc48ee:-8000:00000000000008BB'
+          name = 'when buyer get item' isSpecification = 'false'/>
+      </UML:Namespace.ownedElement>
+    </UML:Model>
+  </XMI.content>
+</XMI>
