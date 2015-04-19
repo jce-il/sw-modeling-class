@@ -26,23 +26,26 @@ Modeling an online store (Amazon like), through:
 ### Stage 1
 - Select a known open source project (git is already captured for class demo)
   - Here are some sources for ideas: [leading github projects](https://github.com/showcases), Book: [The Architecture of Open Source Applications](http://www.aosabook.org/en/index.html), [Hasadna](http://www.hasadna.org.il/projects/) (The Public Knowledge Workshop),...
-  - Cloud related ideas and papers from the original course: https://courses.engr.illinois.edu/cs525/sp2015/sched.htm 
+  - Cloud related ideas and papers from the source course we use: https://courses.engr.illinois.edu/cs525/sp2015/sched.htm 
 - Review resources (repos, papers, posts)
-- Open a repo for this project and link from course wiki (by PR the README)
+- Open a repo for this project and link from the project list on the course wiki (by PR the README)
+- (the lecturer will discuss the suggestion with you)
 
 ### Stage 2
 - Describe the main requirements/features of the product
-- Describe the given documentation
-- Describe major or important designs with UML diagrams and or other modeling means
+- Describe the given documentation and/or source code
+- Describe the major or important designs with UML diagrams and or other modeling means
 - Describe a few challenges for this project (e.g., a missing feature, known bugs)
-- Register to talk about it at class
+- Register to talk about it at class (again by setting a date on the project list)
 
 ### Stage 3
-- Select Part A of other group
-- Review their work
-Work on an improvement to this class according to the given documents (suggest other models)
-- Summarise the ways modeling contributed to your work
-- Summarise the whole project
+- Summarise the project, in particular a section about how modeling contributed to your work (or how it got in the way..)
+
+### Project List
+
+| # | Nicknames | [Subject](link to page) | Presentation Date |
+|---|-----------|-------------------------|-------------------|
+| 1 |  |  |  |
 
 <!-- Links -->
 [private-repos]: /guide/private_repos
