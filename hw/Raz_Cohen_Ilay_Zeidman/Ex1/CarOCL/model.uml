@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_K2P8ANPiEeSUGckh_6Mw9g" name="Model">
+  <packageImport xmi:type="uml:PackageImport" xmi:id="_K2P8AdPiEeSUGckh_6Mw9g">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Class" xmi:id="_fgXaoNPiEeSUGckh_6Mw9g" name="Car">
+    <ownedRule xmi:type="uml:Constraint" xmi:id="_zwQ7sN_FEeSVXZYLUQ-Lfw" name="ConstraintCarDriverAge">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_LylsQN_GEeSVXZYLUQ-Lfw">
+        <language>OCL</language>
+        <body>self.carOwner.age >= 18</body>
+      </specification>
+    </ownedRule>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_UUil8NPjEeSUGckh_6Mw9g" name="brand">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EInt"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_U-SJIN-tEeSVXZYLUQ-Lfw" name="wheel" type="_wgYXwN-jEeSVXZYLUQ-Lfw" aggregation="composite" association="_U-SwMN-tEeSVXZYLUQ-Lfw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_U-SJId-tEeSVXZYLUQ-Lfw" value="2"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_U-SJIt-tEeSVXZYLUQ-Lfw" value="*"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_D6TY0N-vEeSVXZYLUQ-Lfw" name="engine" type="_V8l2YN-rEeSVXZYLUQ-Lfw" aggregation="composite" association="_D6ZfcN-vEeSVXZYLUQ-Lfw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_D6TY0d-vEeSVXZYLUQ-Lfw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_D6TY0t-vEeSVXZYLUQ-Lfw" value="*"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_hkg-8N-vEeSVXZYLUQ-Lfw" name="chassis" type="_jOZVkN-pEeSVXZYLUQ-Lfw" aggregation="composite" association="_hkg-89-vEeSVXZYLUQ-Lfw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_hkg-8d-vEeSVXZYLUQ-Lfw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_hkg-8t-vEeSVXZYLUQ-Lfw" value="1"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_jOZVkN-pEeSVXZYLUQ-Lfw" name="Chassis"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_V8l2YN-rEeSVXZYLUQ-Lfw" name="Engine">
+    <ownedRule xmi:type="uml:Constraint" xmi:id="_HRjv4N-sEeSVXZYLUQ-Lfw" name="ConstraintEngineVolume">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_L7Gt4N-sEeSVXZYLUQ-Lfw">
+        <language>OCL</language>
+        <body>self.volume > 0</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:type="uml:Constraint" xmi:id="_VBXRUN-4EeSVXZYLUQ-Lfw" name="ConstraintFuelTank">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_w2RisN-4EeSVXZYLUQ-Lfw">
+        <language>OCL</language>
+        <body>self.engineType=EngineType::OilBasedEngine implies fuelTank  &lt;> null</body>
+      </specification>
+    </ownedRule>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_V8l2Yd-rEeSVXZYLUQ-Lfw" name="volume">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EInt"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_91tm4N-zEeSVXZYLUQ-Lfw" name="coolingSystem" type="_4s520N-vEeSVXZYLUQ-Lfw" aggregation="shared" association="_91tm49-zEeSVXZYLUQ-Lfw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_91tm4d-zEeSVXZYLUQ-Lfw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_91tm4t-zEeSVXZYLUQ-Lfw" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_ixevEN-0EeSVXZYLUQ-Lfw" name="fuelTank" type="_F2BsYN-0EeSVXZYLUQ-Lfw" aggregation="shared" association="_ixevE9-0EeSVXZYLUQ-Lfw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ixevEd-0EeSVXZYLUQ-Lfw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ixevEt-0EeSVXZYLUQ-Lfw" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_Ag1T4N-1EeSVXZYLUQ-Lfw" name="exhaustSystem" type="_2oumUN-0EeSVXZYLUQ-Lfw" aggregation="shared" association="_Ag2iAN-1EeSVXZYLUQ-Lfw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Ag1T4d-1EeSVXZYLUQ-Lfw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Ag1T4t-1EeSVXZYLUQ-Lfw" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_wTU0YN-9EeSVXZYLUQ-Lfw" name="engineType" type="_oTp20N-3EeSVXZYLUQ-Lfw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_wgYXwN-jEeSVXZYLUQ-Lfw" name="Wheel"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_U-SwMN-tEeSVXZYLUQ-Lfw" memberEnd="_U-SwMd-tEeSVXZYLUQ-Lfw _U-SJIN-tEeSVXZYLUQ-Lfw">
+    <name xsi:nil="true"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_U-SwMd-tEeSVXZYLUQ-Lfw" name="car" type="_fgXaoNPiEeSUGckh_6Mw9g" association="_U-SwMN-tEeSVXZYLUQ-Lfw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_U-SwMt-tEeSVXZYLUQ-Lfw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_U-SwM9-tEeSVXZYLUQ-Lfw" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_D6ZfcN-vEeSVXZYLUQ-Lfw" memberEnd="_D6Zfcd-vEeSVXZYLUQ-Lfw _D6TY0N-vEeSVXZYLUQ-Lfw">
+    <name xsi:nil="true"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_D6Zfcd-vEeSVXZYLUQ-Lfw" name="car" type="_fgXaoNPiEeSUGckh_6Mw9g" association="_D6ZfcN-vEeSVXZYLUQ-Lfw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_D6Zfct-vEeSVXZYLUQ-Lfw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_D6Zfc9-vEeSVXZYLUQ-Lfw" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_hkg-89-vEeSVXZYLUQ-Lfw" memberEnd="_hkg-9N-vEeSVXZYLUQ-Lfw _hkg-8N-vEeSVXZYLUQ-Lfw">
+    <name xsi:nil="true"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_hkg-9N-vEeSVXZYLUQ-Lfw" name="car" type="_fgXaoNPiEeSUGckh_6Mw9g" association="_hkg-89-vEeSVXZYLUQ-Lfw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_hkg-9d-vEeSVXZYLUQ-Lfw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_hkg-9t-vEeSVXZYLUQ-Lfw" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_4s520N-vEeSVXZYLUQ-Lfw" name="CoolingSystem"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_91tm49-zEeSVXZYLUQ-Lfw" memberEnd="_91tm5N-zEeSVXZYLUQ-Lfw _91tm4N-zEeSVXZYLUQ-Lfw">
+    <name xsi:nil="true"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_91tm5N-zEeSVXZYLUQ-Lfw" name="engine" type="_V8l2YN-rEeSVXZYLUQ-Lfw" association="_91tm49-zEeSVXZYLUQ-Lfw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_91tm5d-zEeSVXZYLUQ-Lfw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_91tm5t-zEeSVXZYLUQ-Lfw" value="*"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_F2BsYN-0EeSVXZYLUQ-Lfw" name="FuelTank"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_ixevE9-0EeSVXZYLUQ-Lfw" memberEnd="_ixevFN-0EeSVXZYLUQ-Lfw _ixevEN-0EeSVXZYLUQ-Lfw">
+    <name xsi:nil="true"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_ixevFN-0EeSVXZYLUQ-Lfw" name="engine" type="_V8l2YN-rEeSVXZYLUQ-Lfw" association="_ixevE9-0EeSVXZYLUQ-Lfw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ixevFd-0EeSVXZYLUQ-Lfw"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ixevFt-0EeSVXZYLUQ-Lfw" value="*"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_2oumUN-0EeSVXZYLUQ-Lfw" name="ExhaustSystem"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_Ag2iAN-1EeSVXZYLUQ-Lfw" memberEnd="_Ag2iAd-1EeSVXZYLUQ-Lfw _Ag1T4N-1EeSVXZYLUQ-Lfw">
+    <name xsi:nil="true"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_Ag2iAd-1EeSVXZYLUQ-Lfw" name="engine" type="_V8l2YN-rEeSVXZYLUQ-Lfw" association="_Ag2iAN-1EeSVXZYLUQ-Lfw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Ag2iAt-1EeSVXZYLUQ-Lfw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Ag2iA9-1EeSVXZYLUQ-Lfw" value="*"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Enumeration" xmi:id="_oTp20N-3EeSVXZYLUQ-Lfw" name="EngineType">
+    <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_5APv8N-3EeSVXZYLUQ-Lfw" name="OilBasedEngine"/>
+    <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_EYGZAN-4EeSVXZYLUQ-Lfw" name="ElectricityBasedEngine"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_0N9ZwN_EEeSVXZYLUQ-Lfw" name="Person">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_9sa4QN_EEeSVXZYLUQ-Lfw" name="age">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EInt"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_FDpkgN_FEeSVXZYLUQ-Lfw" name="car" type="_fgXaoNPiEeSUGckh_6Mw9g" association="_FDpkg9_FEeSVXZYLUQ-Lfw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_FDpkgd_FEeSVXZYLUQ-Lfw"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_FDpkgt_FEeSVXZYLUQ-Lfw" value="*"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_FDpkg9_FEeSVXZYLUQ-Lfw" memberEnd="_FDpkhN_FEeSVXZYLUQ-Lfw _FDpkgN_FEeSVXZYLUQ-Lfw">
+    <name xsi:nil="true"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_FDpkhN_FEeSVXZYLUQ-Lfw" name="carOwner" type="_0N9ZwN_EEeSVXZYLUQ-Lfw" association="_FDpkg9_FEeSVXZYLUQ-Lfw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_FDpkhd_FEeSVXZYLUQ-Lfw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_FDpkht_FEeSVXZYLUQ-Lfw" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+</uml:Model>
