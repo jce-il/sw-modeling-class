@@ -1,0 +1,163 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<XMI xmi.version = "1.1" xmlns:UML="href://org.omg/UML/1.3" timestamp = "Thu Apr 16 17:49:29 2015">
+<XMI.header>
+  <XMI.documentation>
+    <XMI.owner></XMI.owner>
+    <XMI.contact></XMI.contact>
+    <XMI.exporter>StarUML.XMI-Addin</XMI.exporter>
+    <XMI.exporterVersion>1.0</XMI.exporterVersion>
+    <XMI.notice></XMI.notice>
+  </XMI.documentation>
+  <XMI.metamodel xmi.name = "UML" xmi.version = "1.3"/>
+ </XMI.header>
+<XMI.content>
+<UML:Model xmi.id="UMLProject.1" xmi.uuid="DCE:E77375AF-960B-420A-AEE3-90EABAFFAE8A">
+  <UML:Namespace.ownedElement>
+    <UML:Model xmi.id="UMLModel.2" xmi.uuid="DCE:C1999EA5-B797-4C33-B81C-618D6909E933" name="Use Case Model" visibility="public" isSpecification="false" namespace="UMLProject.1" isRoot="false" isLeaf="false" isAbstract="false">
+      <UML:Namespace.ownedElement>
+        <UML:Stereotype xmi.id="X.39" xmi.uuid="DCE:B584FDFB-F5F4-45E0-A03C-523D1F4BF979" name="useCaseModel" extendedElement="UMLModel.2"/>
+      </UML:Namespace.ownedElement>
+    </UML:Model>
+    <UML:Model xmi.id="UMLModel.3" xmi.uuid="DCE:2BEC6254-0950-4389-9AE7-8C4B60AC9815" name="Analysis Model" visibility="public" isSpecification="false" namespace="UMLProject.1" isRoot="false" isLeaf="false" isAbstract="false">
+      <UML:Namespace.ownedElement>
+        <UML:Stereotype xmi.id="X.40" xmi.uuid="DCE:4D43A7A2-BBAB-47C5-9724-4AB41A8A7796" name="analysisModel" extendedElement="UMLModel.3"/>
+      </UML:Namespace.ownedElement>
+    </UML:Model>
+    <UML:Model xmi.id="UMLModel.4" xmi.uuid="DCE:B7823BB5-7A42-43A4-ACA9-182E6111CFF3" name="Design Model" visibility="public" isSpecification="false" namespace="UMLProject.1" isRoot="false" isLeaf="false" isAbstract="false">
+      <UML:Namespace.ownedElement>
+        <UML:Stereotype xmi.id="X.41" xmi.uuid="DCE:607537A8-D8CA-4D65-816D-5801FDD45337" name="designModel" extendedElement="UMLModel.4"/>
+      </UML:Namespace.ownedElement>
+    </UML:Model>
+    <UML:Model xmi.id="UMLModel.5" xmi.uuid="DCE:92F3BF72-DF5A-420A-80C8-12C2B94AF58E" name="Implementation Model" visibility="public" isSpecification="false" namespace="UMLProject.1" isRoot="false" isLeaf="false" isAbstract="false">
+      <UML:Namespace.ownedElement>
+        <UML:Stereotype xmi.id="X.42" xmi.uuid="DCE:0A1B5898-C340-40C6-97F0-DFB17EE24321" name="implementationModel" extendedElement="UMLModel.5"/>
+      </UML:Namespace.ownedElement>
+    </UML:Model>
+    <UML:Model xmi.id="UMLModel.6" xmi.uuid="DCE:D2CA5345-ABEB-4EBA-A315-194B5F5B34B4" name="Deployment Model" visibility="public" isSpecification="false" namespace="UMLProject.1" isRoot="false" isLeaf="false" isAbstract="false">
+      <UML:Namespace.ownedElement>
+        <UML:Stereotype xmi.id="X.43" xmi.uuid="DCE:70A7A816-21CD-4561-B2D5-91699F663301" name="deploymentModel" extendedElement="UMLModel.6"/>
+      </UML:Namespace.ownedElement>
+    </UML:Model>
+    <UML:Model xmi.id="UMLModel.7" xmi.uuid="DCE:0E7ED853-9236-4007-8736-8FFC41303F3A" name="SequenceModel" visibility="public" isSpecification="false" namespace="UMLProject.1" isRoot="false" isLeaf="false" isAbstract="false">
+      <UML:Namespace.ownedElement>
+        <UML:Collaboration xmi.id="UMLCollaborationInstanceSet.8" xmi.uuid="DCE:B8C8762F-6B1D-454F-BD1B-0710B0328673" name="CollaborationInstanceSet1" visibility="public" isSpecification="false">
+          <UML:Collaboration.interaction>
+            <UML:Interaction xmi.id="UMLInteractionInstanceSet.9" xmi.uuid="DCE:24CA2288-EDF6-42F4-8083-EFBC3B92F0FF" name="InteractionInstanceSet1" visibility="public" isSpecification="false" context="UMLCollaborationInstanceSet.8">
+              <UML:Interaction.message>
+                <UML:Message xmi.id="UMLStimulus.10" xmi.uuid="DCE:676F1DC1-654D-44E1-BFFF-0ED8C00A9831" name="add item to cart" visibility="public" isSpecification="false" sender="UMLObject.35" receiver="UMLObject.34" interaction="UMLInteractionInstanceSet.9">
+                  <UML:Message.action>
+                    <UML:CallAction xmi.id="UMLCallAction.11" xmi.uuid="DCE:B8278402-4A66-431E-A316-C4509E0E2B81" name="" visibility="public" isSpecification="false" isAsynchronous="false" stimulus="UMLStimulus.10"/>
+                  </UML:Message.action>
+                </UML:Message>
+                <UML:Message xmi.id="UMLStimulus.12" xmi.uuid="DCE:578285D5-6156-4470-B6A0-119D0770A855" name="remove item from cart" visibility="public" isSpecification="false" sender="UMLObject.35" receiver="UMLObject.34" interaction="UMLInteractionInstanceSet.9">
+                  <UML:Message.action>
+                    <UML:CallAction xmi.id="UMLCallAction.13" xmi.uuid="DCE:F07285C0-5BD1-4462-9065-EF12CBAB5647" name="" visibility="public" isSpecification="false" isAsynchronous="false" stimulus="UMLStimulus.12"/>
+                  </UML:Message.action>
+                </UML:Message>
+                <UML:Message xmi.id="UMLStimulus.14" xmi.uuid="DCE:0C6E99F0-8403-4850-904A-7A6414BC87C9" name="display cart" visibility="public" isSpecification="false" sender="UMLObject.35" receiver="UMLObject.34" interaction="UMLInteractionInstanceSet.9">
+                  <UML:Message.action>
+                    <UML:CallAction xmi.id="UMLCallAction.15" xmi.uuid="DCE:CD4265EB-C25F-46B4-8D3C-1DD926582C0E" name="" visibility="public" isSpecification="false" isAsynchronous="false" stimulus="UMLStimulus.14"/>
+                  </UML:Message.action>
+                </UML:Message>
+                <UML:Message xmi.id="UMLStimulus.16" xmi.uuid="DCE:632E9DA0-597D-4541-94B1-7CF3F8C55F87" name="click place order" visibility="public" isSpecification="false" sender="UMLObject.35" receiver="UMLObject.34" interaction="UMLInteractionInstanceSet.9">
+                  <UML:Message.action>
+                    <UML:CallAction xmi.id="UMLCallAction.17" xmi.uuid="DCE:8F3A1644-BCE0-4F51-8174-36BD017362B1" name="" visibility="public" isSpecification="false" isAsynchronous="false" stimulus="UMLStimulus.16"/>
+                  </UML:Message.action>
+                </UML:Message>
+                <UML:Message xmi.id="UMLStimulus.18" xmi.uuid="DCE:9DFF8497-9EBC-4332-AC34-83C10B7D9401" name="receive order" visibility="public" isSpecification="false" sender="UMLObject.34" receiver="UMLObject.36" interaction="UMLInteractionInstanceSet.9">
+                  <UML:Message.action>
+                    <UML:CallAction xmi.id="UMLCallAction.19" xmi.uuid="DCE:81EAFF6A-FE76-4992-8E5D-7245EBE62EB0" name="" visibility="public" isSpecification="false" isAsynchronous="false" stimulus="UMLStimulus.18"/>
+                  </UML:Message.action>
+                </UML:Message>
+                <UML:Message xmi.id="UMLStimulus.20" xmi.uuid="DCE:A23551CC-EC87-4E9E-B2FB-6C59B896A97F" name="check payment method" visibility="public" isSpecification="false" sender="UMLObject.36" receiver="UMLObject.34" interaction="UMLInteractionInstanceSet.9">
+                  <UML:Message.action>
+                    <UML:CallAction xmi.id="UMLCallAction.21" xmi.uuid="DCE:6A7950D5-9BCE-4367-BCE8-8E3586F8B353" name="" visibility="public" isSpecification="false" isAsynchronous="false" stimulus="UMLStimulus.20"/>
+                  </UML:Message.action>
+                </UML:Message>
+                <UML:Message xmi.id="UMLStimulus.22" xmi.uuid="DCE:C0957E64-AF0F-449A-BC3A-4F2A5A3AC1B6" name="" visibility="public" isSpecification="false" sender="UMLObject.34" receiver="UMLObject.36" interaction="UMLInteractionInstanceSet.9">
+                  <UML:Message.action>
+                    <UML:CallAction xmi.id="UMLCallAction.23" xmi.uuid="DCE:EC2F02D8-E1F3-4D1C-A26B-EB2199C4AF09" name="" visibility="public" isSpecification="false" isAsynchronous="false" stimulus="UMLStimulus.22"/>
+                  </UML:Message.action>
+                </UML:Message>
+                <UML:Message xmi.id="UMLStimulus.24" xmi.uuid="DCE:667C4712-26C7-49AA-8325-74CD19055D7B" name="verify payment" visibility="public" isSpecification="false" sender="UMLObject.36" receiver="UMLObject.38" interaction="UMLInteractionInstanceSet.9">
+                  <UML:Message.action>
+                    <UML:CallAction xmi.id="UMLCallAction.25" xmi.uuid="DCE:CD7058E7-17F6-4C36-992C-7E6FE58D7C14" name="" visibility="public" isSpecification="false" isAsynchronous="false" stimulus="UMLStimulus.24"/>
+                  </UML:Message.action>
+                </UML:Message>
+                <UML:Message xmi.id="UMLStimulus.26" xmi.uuid="DCE:28AF8E9B-AEC8-4573-AE24-B83033816712" name="payment verified" visibility="public" isSpecification="false" sender="UMLObject.38" receiver="UMLObject.36" interaction="UMLInteractionInstanceSet.9">
+                  <UML:Message.action>
+                    <UML:CallAction xmi.id="UMLCallAction.27" xmi.uuid="DCE:1441E084-D23F-4DE3-B882-AE4D93C077D9" name="" visibility="public" isSpecification="false" isAsynchronous="false" stimulus="UMLStimulus.26"/>
+                  </UML:Message.action>
+                </UML:Message>
+                <UML:Message xmi.id="UMLStimulus.28" xmi.uuid="DCE:94D5AF8B-25B7-4D94-95E1-56BF595707F1" name="notify order" visibility="public" isSpecification="false" sender="UMLObject.36" receiver="UMLObject.37" interaction="UMLInteractionInstanceSet.9">
+                  <UML:Message.action>
+                    <UML:CallAction xmi.id="UMLCallAction.29" xmi.uuid="DCE:4F855F42-8362-44FD-940E-6525278EA77C" name="" visibility="public" isSpecification="false" isAsynchronous="false" stimulus="UMLStimulus.28"/>
+                  </UML:Message.action>
+                </UML:Message>
+                <UML:Message xmi.id="UMLStimulus.30" xmi.uuid="DCE:E5628542-EE06-4071-B054-1C85C5C278A0" name="update order status" visibility="public" isSpecification="false" sender="UMLObject.37" receiver="UMLObject.34" interaction="UMLInteractionInstanceSet.9">
+                  <UML:Message.action>
+                    <UML:CallAction xmi.id="UMLCallAction.31" xmi.uuid="DCE:C337F841-3A86-4BAC-95F4-A6E940D8ECB5" name="" visibility="public" isSpecification="false" isAsynchronous="false" stimulus="UMLStimulus.30"/>
+                  </UML:Message.action>
+                </UML:Message>
+                <UML:Message xmi.id="UMLStimulus.32" xmi.uuid="DCE:ACCC0A29-4CD1-4354-A34C-0990731E854A" name="get order status" visibility="public" isSpecification="false" sender="UMLObject.35" receiver="UMLObject.34" interaction="UMLInteractionInstanceSet.9">
+                  <UML:Message.action>
+                    <UML:CallAction xmi.id="UMLCallAction.33" xmi.uuid="DCE:42628CDD-3072-4B6D-84CC-D5F0505CC216" name="" visibility="public" isSpecification="false" isAsynchronous="false" stimulus="UMLStimulus.32"/>
+                  </UML:Message.action>
+                </UML:Message>
+              </UML:Interaction.message>
+            </UML:Interaction>
+          </UML:Collaboration.interaction>
+          <UML:Namespace.ownedElement>
+            <UML:ClassifierRole xmi.id="UMLObject.34" xmi.uuid="DCE:40D60BB6-F7DB-427E-B8B4-3EEBE250298F" name="Online Shoping System" visibility="public" isSpecification="false" message2="UMLStimulus.18 UMLStimulus.22" message1="UMLStimulus.10 UMLStimulus.12 UMLStimulus.14 UMLStimulus.16 UMLStimulus.20 UMLStimulus.30 UMLStimulus.32" isRoot="false" isLeaf="false" isAbstract="false">
+              <UML:ClassifierRole.multiplicity>
+                <UML:Multiplicity xmi.id="X.44" xmi.uuid="DCE:F0F3FD95-6656-4997-BDEA-5C02980E56D5">
+                  <UML:Multiplicity.range>
+                    <UML:MultiplicityRange xmi.id="X.45" xmi.uuid="DCE:E53962EC-D703-477A-9801-23F79F2B2633" lower="1" upper="1" multiplicity="X.44"/>
+                  </UML:Multiplicity.range>
+                </UML:Multiplicity>
+              </UML:ClassifierRole.multiplicity>
+            </UML:ClassifierRole>
+            <UML:ClassifierRole xmi.id="UMLObject.35" xmi.uuid="DCE:DB97628B-EC9B-4CED-8D9F-1A272505B166" name="Customer" visibility="public" isSpecification="false" message2="UMLStimulus.10 UMLStimulus.12 UMLStimulus.14 UMLStimulus.16 UMLStimulus.32" isRoot="false" isLeaf="false" isAbstract="false">
+              <UML:ClassifierRole.multiplicity>
+                <UML:Multiplicity xmi.id="X.46" xmi.uuid="DCE:82AAE037-DD49-4C5B-9CB2-093A3C49DA2B">
+                  <UML:Multiplicity.range>
+                    <UML:MultiplicityRange xmi.id="X.47" xmi.uuid="DCE:FA2FEF78-F72F-43C4-BD6C-BADA90197E7F" lower="1" upper="1" multiplicity="X.46"/>
+                  </UML:Multiplicity.range>
+                </UML:Multiplicity>
+              </UML:ClassifierRole.multiplicity>
+            </UML:ClassifierRole>
+            <UML:ClassifierRole xmi.id="UMLObject.36" xmi.uuid="DCE:96060664-0396-41A3-BD5A-600F45CD6C02" name="store admin" visibility="public" isSpecification="false" message2="UMLStimulus.20 UMLStimulus.24 UMLStimulus.28" message1="UMLStimulus.18 UMLStimulus.22 UMLStimulus.26" isRoot="false" isLeaf="false" isAbstract="false">
+              <UML:ClassifierRole.multiplicity>
+                <UML:Multiplicity xmi.id="X.48" xmi.uuid="DCE:C6760FF1-B211-4A71-B0FB-1AF9F593F3D2">
+                  <UML:Multiplicity.range>
+                    <UML:MultiplicityRange xmi.id="X.49" xmi.uuid="DCE:29B3724A-365C-4989-BBFE-80D5D81653CE" lower="1" upper="1" multiplicity="X.48"/>
+                  </UML:Multiplicity.range>
+                </UML:Multiplicity>
+              </UML:ClassifierRole.multiplicity>
+            </UML:ClassifierRole>
+            <UML:ClassifierRole xmi.id="UMLObject.37" xmi.uuid="DCE:7D7C867A-DEA9-469A-B0FF-6679D98E7B0C" name="warehouse stuff" visibility="public" isSpecification="false" message2="UMLStimulus.30" message1="UMLStimulus.28" isRoot="false" isLeaf="false" isAbstract="false">
+              <UML:ClassifierRole.multiplicity>
+                <UML:Multiplicity xmi.id="X.50" xmi.uuid="DCE:298ACEFD-43DD-4987-8AC8-055769807F4F">
+                  <UML:Multiplicity.range>
+                    <UML:MultiplicityRange xmi.id="X.51" xmi.uuid="DCE:B4C2A26D-FA6F-49BC-9C4D-528B718F8F9E" lower="1" upper="1" multiplicity="X.50"/>
+                  </UML:Multiplicity.range>
+                </UML:Multiplicity>
+              </UML:ClassifierRole.multiplicity>
+            </UML:ClassifierRole>
+            <UML:ClassifierRole xmi.id="UMLObject.38" xmi.uuid="DCE:5AE9E0A7-D6E9-40AF-B912-8C8F3C3DA206" name="bank" visibility="public" isSpecification="false" message2="UMLStimulus.26" message1="UMLStimulus.24" isRoot="false" isLeaf="false" isAbstract="false">
+              <UML:ClassifierRole.multiplicity>
+                <UML:Multiplicity xmi.id="X.52" xmi.uuid="DCE:3F7BDE76-B14D-4195-8924-71E0372CF659">
+                  <UML:Multiplicity.range>
+                    <UML:MultiplicityRange xmi.id="X.53" xmi.uuid="DCE:A6E3DDAA-9491-42FF-8A29-512277F367D8" lower="1" upper="1" multiplicity="X.52"/>
+                  </UML:Multiplicity.range>
+                </UML:Multiplicity>
+              </UML:ClassifierRole.multiplicity>
+            </UML:ClassifierRole>
+          </UML:Namespace.ownedElement>
+        </UML:Collaboration>
+      </UML:Namespace.ownedElement>
+    </UML:Model>
+  </UML:Namespace.ownedElement>
+</UML:Model>
+</XMI.content>
+</XMI>

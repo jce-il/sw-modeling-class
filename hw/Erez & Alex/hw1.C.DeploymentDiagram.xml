@@ -1,0 +1,503 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<XMI xmi.version = "1.1" xmlns:UML="href://org.omg/UML/1.3" timestamp = "Sun Apr 19 0:4:0 2015">
+<XMI.header>
+  <XMI.documentation>
+    <XMI.owner></XMI.owner>
+    <XMI.contact></XMI.contact>
+    <XMI.exporter>StarUML.XMI-Addin</XMI.exporter>
+    <XMI.exporterVersion>1.0</XMI.exporterVersion>
+    <XMI.notice></XMI.notice>
+  </XMI.documentation>
+  <XMI.metamodel xmi.name = "UML" xmi.version = "1.3"/>
+ </XMI.header>
+<XMI.content>
+<UML:Model xmi.id="UMLProject.1">
+  <UML:Namespace.ownedElement>
+    <UML:Model xmi.id="UMLModel.2" name="Use Case Model" visibility="public" isSpecification="false" namespace="UMLProject.1" isRoot="false" isLeaf="false" isAbstract="false">
+      <UML:Namespace.ownedElement>
+        <UML:Stereotype xmi.id="X.231" name="useCaseModel" extendedElement="UMLModel.2"/>
+      </UML:Namespace.ownedElement>
+    </UML:Model>
+    <UML:Model xmi.id="UMLModel.3" name="Analysis Model" visibility="public" isSpecification="false" namespace="UMLProject.1" isRoot="false" isLeaf="false" isAbstract="false">
+      <UML:Namespace.ownedElement>
+        <UML:Stereotype xmi.id="X.232" name="analysisModel" extendedElement="UMLModel.3"/>
+      </UML:Namespace.ownedElement>
+    </UML:Model>
+    <UML:Model xmi.id="UMLModel.4" name="Design Model" visibility="public" isSpecification="false" namespace="UMLProject.1" isRoot="false" isLeaf="false" isAbstract="false">
+      <UML:Namespace.ownedElement>
+        <UML:Stereotype xmi.id="X.233" name="designModel" extendedElement="UMLModel.4"/>
+      </UML:Namespace.ownedElement>
+    </UML:Model>
+    <UML:Model xmi.id="UMLModel.5" name="Implementation Model" visibility="public" isSpecification="false" namespace="UMLProject.1" isRoot="false" isLeaf="false" isAbstract="false">
+      <UML:Namespace.ownedElement>
+        <UML:Stereotype xmi.id="X.234" name="implementationModel" extendedElement="UMLModel.5"/>
+      </UML:Namespace.ownedElement>
+    </UML:Model>
+    <UML:Model xmi.id="UMLModel.6" name="Deployment Model" visibility="public" isSpecification="false" namespace="UMLProject.1" isRoot="false" isLeaf="false" isAbstract="false">
+      <UML:Namespace.ownedElement>
+        <UML:Node xmi.id="UMLNode.7" name="WebStore" visibility="public" isSpecification="false" namespace="UMLModel.6" isRoot="false" isLeaf="false" isAbstract="false" participant="UMLAssociationEnd.62 UMLAssociationEnd.65" resident="UMLComponent.228 UMLComponent.229 UMLComponent.230"/>
+        <UML:Node xmi.id="UMLNode.8" name="accounting" visibility="public" isSpecification="false" namespace="UMLModel.6" isRoot="false" isLeaf="false" isAbstract="false" participant="UMLAssociationEnd.63 UMLAssociationEnd.68" resident="UMLComponent.11 UMLComponent.36 UMLComponent.45"/>
+        <UML:Node xmi.id="UMLNode.9" name="warehouse" visibility="public" isSpecification="false" namespace="UMLModel.6" isRoot="false" isLeaf="false" isAbstract="false" participant="UMLAssociationEnd.66 UMLAssociationEnd.69" resident="UMLComponent.10"/>
+        <UML:Component xmi.id="UMLComponent.10" name="invertory" visibility="public" isSpecification="false" namespace="UMLModel.6" isRoot="false" isLeaf="false" isAbstract="false" participant="UMLAssociationEnd.16 UMLAssociationEnd.60" deploymentLocation="UMLNode.9"/>
+        <UML:Component xmi.id="UMLComponent.11" name="orders" visibility="public" isSpecification="false" namespace="UMLModel.6" clientDependency="UMLDependency.52 UMLDependency.57" isRoot="false" isLeaf="false" isAbstract="false" participant="UMLAssociationEnd.21" deploymentLocation="UMLNode.8"/>
+        <UML:Interface xmi.id="UMLInterface.12" name="manage orders" visibility="public" isSpecification="false" namespace="UMLModel.6" supplierDependency="UMLDependency.18" isRoot="false" isLeaf="false" isAbstract="false" participant="UMLAssociationEnd.20"/>
+        <UML:Interface xmi.id="UMLInterface.13" name="search invertory" visibility="public" isSpecification="false" namespace="UMLModel.6" supplierDependency="UMLDependency.17" isRoot="false" isLeaf="false" isAbstract="false" participant="UMLAssociationEnd.15"/>
+        <UML:Association xmi.id="UMLAssociation.14" name="" visibility="public" isSpecification="false" namespace="UMLModel.6">
+          <UML:Association.connection>
+            <UML:AssociationEnd xmi.id="UMLAssociationEnd.15" name="" visibility="public" isSpecification="false" isNavigable="true" ordering="unordered" aggregation="none" targetScope="instance" changeability="changeable" association="UMLAssociation.14" type="UMLInterface.13"/>
+            <UML:AssociationEnd xmi.id="UMLAssociationEnd.16" name="" visibility="public" isSpecification="false" isNavigable="true" ordering="unordered" aggregation="none" targetScope="instance" changeability="changeable" association="UMLAssociation.14" type="UMLComponent.10"/>
+          </UML:Association.connection>
+        </UML:Association>
+        <UML:Dependency xmi.id="UMLDependency.17" name="" visibility="public" isSpecification="false" namespace="UMLModel.6" client="UMLComponent.228" supplier="UMLInterface.13"/>
+        <UML:Dependency xmi.id="UMLDependency.18" name="" visibility="public" isSpecification="false" namespace="UMLModel.6" client="UMLComponent.229" supplier="UMLInterface.12"/>
+        <UML:Association xmi.id="UMLAssociation.19" name="" visibility="public" isSpecification="false" namespace="UMLModel.6">
+          <UML:Association.connection>
+            <UML:AssociationEnd xmi.id="UMLAssociationEnd.20" name="" visibility="public" isSpecification="false" isNavigable="true" ordering="unordered" aggregation="none" targetScope="instance" changeability="changeable" association="UMLAssociation.19" type="UMLInterface.12"/>
+            <UML:AssociationEnd xmi.id="UMLAssociationEnd.21" name="" visibility="public" isSpecification="false" isNavigable="true" ordering="unordered" aggregation="none" targetScope="instance" changeability="changeable" association="UMLAssociation.19" type="UMLComponent.11"/>
+          </UML:Association.connection>
+        </UML:Association>
+        <UML:Interface xmi.id="UMLInterface.22" name="product search" visibility="public" isSpecification="false" namespace="UMLModel.6" isRoot="false" isLeaf="false" isAbstract="false" participant="UMLAssociationEnd.24"/>
+        <UML:Association xmi.id="UMLAssociation.23" name="" visibility="public" isSpecification="false" namespace="UMLModel.6">
+          <UML:Association.connection>
+            <UML:AssociationEnd xmi.id="UMLAssociationEnd.24" name="" visibility="public" isSpecification="false" isNavigable="true" ordering="unordered" aggregation="none" targetScope="instance" changeability="changeable" association="UMLAssociation.23" type="UMLInterface.22"/>
+            <UML:AssociationEnd xmi.id="UMLAssociationEnd.25" name="" visibility="public" isSpecification="false" isNavigable="true" ordering="unordered" aggregation="none" targetScope="instance" changeability="changeable" association="UMLAssociation.23" type="UMLComponent.228"/>
+          </UML:Association.connection>
+        </UML:Association>
+        <UML:Interface xmi.id="UMLInterface.26" name="online shopping" visibility="public" isSpecification="false" namespace="UMLModel.6" isRoot="false" isLeaf="false" isAbstract="false" participant="UMLAssociationEnd.28"/>
+        <UML:Association xmi.id="UMLAssociation.27" name="" visibility="public" isSpecification="false" namespace="UMLModel.6">
+          <UML:Association.connection>
+            <UML:AssociationEnd xmi.id="UMLAssociationEnd.28" name="" visibility="public" isSpecification="false" isNavigable="true" ordering="unordered" aggregation="none" targetScope="instance" changeability="changeable" association="UMLAssociation.27" type="UMLInterface.26"/>
+            <UML:AssociationEnd xmi.id="UMLAssociationEnd.29" name="" visibility="public" isSpecification="false" isNavigable="true" ordering="unordered" aggregation="none" targetScope="instance" changeability="changeable" association="UMLAssociation.27" type="UMLComponent.229"/>
+          </UML:Association.connection>
+        </UML:Association>
+        <UML:Interface xmi.id="UMLInterface.30" name="user session" visibility="public" isSpecification="false" namespace="UMLModel.6" isRoot="false" isLeaf="false" isAbstract="false" participant="UMLAssociationEnd.43"/>
+        <UML:Interface xmi.id="UMLInterface.31" name="" visibility="public" isSpecification="false" namespace="UMLModel.6" supplierDependency="UMLDependency.32" isRoot="false" isLeaf="false" isAbstract="false" participant="UMLAssociationEnd.34"/>
+        <UML:Dependency xmi.id="UMLDependency.32" name="" visibility="public" isSpecification="false" namespace="UMLModel.6" client="UMLComponent.229" supplier="UMLInterface.31"/>
+        <UML:Association xmi.id="UMLAssociation.33" name="" visibility="public" isSpecification="false" namespace="UMLModel.6">
+          <UML:Association.connection>
+            <UML:AssociationEnd xmi.id="UMLAssociationEnd.34" name="" visibility="public" isSpecification="false" isNavigable="true" ordering="unordered" aggregation="none" targetScope="instance" changeability="changeable" association="UMLAssociation.33" type="UMLInterface.31"/>
+            <UML:AssociationEnd xmi.id="UMLAssociationEnd.35" name="" visibility="public" isSpecification="false" isNavigable="true" ordering="unordered" aggregation="none" targetScope="instance" changeability="changeable" association="UMLAssociation.33" type="UMLComponent.230"/>
+          </UML:Association.connection>
+        </UML:Association>
+        <UML:Component xmi.id="UMLComponent.36" name="customers" visibility="public" isSpecification="false" namespace="UMLModel.6" clientDependency="UMLDependency.47" isRoot="false" isLeaf="false" isAbstract="false" participant="UMLAssociationEnd.41 UMLAssociationEnd.55" deploymentLocation="UMLNode.8"/>
+        <UML:Interface xmi.id="UMLInterface.37" name="manage customers" visibility="public" isSpecification="false" namespace="UMLModel.6" supplierDependency="UMLDependency.38" isRoot="false" isLeaf="false" isAbstract="false" participant="UMLAssociationEnd.40"/>
+        <UML:Dependency xmi.id="UMLDependency.38" name="" visibility="public" isSpecification="false" namespace="UMLModel.6" client="UMLComponent.230" supplier="UMLInterface.37"/>
+        <UML:Association xmi.id="UMLAssociation.39" name="" visibility="public" isSpecification="false" namespace="UMLModel.6">
+          <UML:Association.connection>
+            <UML:AssociationEnd xmi.id="UMLAssociationEnd.40" name="" visibility="public" isSpecification="false" isNavigable="true" ordering="unordered" aggregation="none" targetScope="instance" changeability="changeable" association="UMLAssociation.39" type="UMLInterface.37"/>
+            <UML:AssociationEnd xmi.id="UMLAssociationEnd.41" name="" visibility="public" isSpecification="false" isNavigable="true" ordering="unordered" aggregation="none" targetScope="instance" changeability="changeable" association="UMLAssociation.39" type="UMLComponent.36"/>
+          </UML:Association.connection>
+        </UML:Association>
+        <UML:Association xmi.id="UMLAssociation.42" name="" visibility="public" isSpecification="false" namespace="UMLModel.6">
+          <UML:Association.connection>
+            <UML:AssociationEnd xmi.id="UMLAssociationEnd.43" name="" visibility="public" isSpecification="false" isNavigable="true" ordering="unordered" aggregation="none" targetScope="instance" changeability="changeable" association="UMLAssociation.42" type="UMLInterface.30"/>
+            <UML:AssociationEnd xmi.id="UMLAssociationEnd.44" name="" visibility="public" isSpecification="false" isNavigable="true" ordering="unordered" aggregation="none" targetScope="instance" changeability="changeable" association="UMLAssociation.42" type="UMLComponent.230"/>
+          </UML:Association.connection>
+        </UML:Association>
+        <UML:Component xmi.id="UMLComponent.45" name="accounts" visibility="public" isSpecification="false" namespace="UMLModel.6" isRoot="false" isLeaf="false" isAbstract="false" participant="UMLAssociationEnd.50" deploymentLocation="UMLNode.8"/>
+        <UML:Interface xmi.id="UMLInterface.46" name="manage accounts" visibility="public" isSpecification="false" namespace="UMLModel.6" supplierDependency="UMLDependency.47" isRoot="false" isLeaf="false" isAbstract="false" participant="UMLAssociationEnd.49"/>
+        <UML:Dependency xmi.id="UMLDependency.47" name="" visibility="public" isSpecification="false" namespace="UMLModel.6" client="UMLComponent.36" supplier="UMLInterface.46"/>
+        <UML:Association xmi.id="UMLAssociation.48" name="" visibility="public" isSpecification="false" namespace="UMLModel.6">
+          <UML:Association.connection>
+            <UML:AssociationEnd xmi.id="UMLAssociationEnd.49" name="" visibility="public" isSpecification="false" isNavigable="true" ordering="unordered" aggregation="none" targetScope="instance" changeability="changeable" association="UMLAssociation.48" type="UMLInterface.46"/>
+            <UML:AssociationEnd xmi.id="UMLAssociationEnd.50" name="" visibility="public" isSpecification="false" isNavigable="true" ordering="unordered" aggregation="none" targetScope="instance" changeability="changeable" association="UMLAssociation.48" type="UMLComponent.45"/>
+          </UML:Association.connection>
+        </UML:Association>
+        <UML:Interface xmi.id="UMLInterface.51" name="manage customers1" visibility="public" isSpecification="false" namespace="UMLModel.6" supplierDependency="UMLDependency.52" isRoot="false" isLeaf="false" isAbstract="false" participant="UMLAssociationEnd.54"/>
+        <UML:Dependency xmi.id="UMLDependency.52" name="" visibility="public" isSpecification="false" namespace="UMLModel.6" client="UMLComponent.11" supplier="UMLInterface.51"/>
+        <UML:Association xmi.id="UMLAssociation.53" name="" visibility="public" isSpecification="false" namespace="UMLModel.6">
+          <UML:Association.connection>
+            <UML:AssociationEnd xmi.id="UMLAssociationEnd.54" name="" visibility="public" isSpecification="false" isNavigable="true" ordering="unordered" aggregation="none" targetScope="instance" changeability="changeable" association="UMLAssociation.53" type="UMLInterface.51"/>
+            <UML:AssociationEnd xmi.id="UMLAssociationEnd.55" name="" visibility="public" isSpecification="false" isNavigable="true" ordering="unordered" aggregation="none" targetScope="instance" changeability="changeable" association="UMLAssociation.53" type="UMLComponent.36"/>
+          </UML:Association.connection>
+        </UML:Association>
+        <UML:Interface xmi.id="UMLInterface.56" name="manage invertory" visibility="public" isSpecification="false" namespace="UMLModel.6" supplierDependency="UMLDependency.57" isRoot="false" isLeaf="false" isAbstract="false" participant="UMLAssociationEnd.59"/>
+        <UML:Dependency xmi.id="UMLDependency.57" name="" visibility="public" isSpecification="false" namespace="UMLModel.6" client="UMLComponent.11" supplier="UMLInterface.56"/>
+        <UML:Association xmi.id="UMLAssociation.58" name="" visibility="public" isSpecification="false" namespace="UMLModel.6">
+          <UML:Association.connection>
+            <UML:AssociationEnd xmi.id="UMLAssociationEnd.59" name="" visibility="public" isSpecification="false" isNavigable="true" ordering="unordered" aggregation="none" targetScope="instance" changeability="changeable" association="UMLAssociation.58" type="UMLInterface.56"/>
+            <UML:AssociationEnd xmi.id="UMLAssociationEnd.60" name="" visibility="public" isSpecification="false" isNavigable="true" ordering="unordered" aggregation="none" targetScope="instance" changeability="changeable" association="UMLAssociation.58" type="UMLComponent.10"/>
+          </UML:Association.connection>
+        </UML:Association>
+        <UML:Association xmi.id="UMLAssociation.61" name="" visibility="public" isSpecification="false" namespace="UMLModel.6">
+          <UML:Association.connection>
+            <UML:AssociationEnd xmi.id="UMLAssociationEnd.62" name="" visibility="public" isSpecification="false" isNavigable="false" ordering="unordered" aggregation="none" targetScope="instance" changeability="changeable" association="UMLAssociation.61" type="UMLNode.7"/>
+            <UML:AssociationEnd xmi.id="UMLAssociationEnd.63" name="" visibility="public" isSpecification="false" isNavigable="true" ordering="unordered" aggregation="none" targetScope="instance" changeability="changeable" association="UMLAssociation.61" type="UMLNode.8"/>
+          </UML:Association.connection>
+        </UML:Association>
+        <UML:Association xmi.id="UMLAssociation.64" name="" visibility="public" isSpecification="false" namespace="UMLModel.6">
+          <UML:Association.connection>
+            <UML:AssociationEnd xmi.id="UMLAssociationEnd.65" name="" visibility="public" isSpecification="false" isNavigable="false" ordering="unordered" aggregation="none" targetScope="instance" changeability="changeable" association="UMLAssociation.64" type="UMLNode.7"/>
+            <UML:AssociationEnd xmi.id="UMLAssociationEnd.66" name="" visibility="public" isSpecification="false" isNavigable="true" ordering="unordered" aggregation="none" targetScope="instance" changeability="changeable" association="UMLAssociation.64" type="UMLNode.9"/>
+          </UML:Association.connection>
+        </UML:Association>
+        <UML:Association xmi.id="UMLAssociation.67" name="" visibility="public" isSpecification="false" namespace="UMLModel.6">
+          <UML:Association.connection>
+            <UML:AssociationEnd xmi.id="UMLAssociationEnd.68" name="" visibility="public" isSpecification="false" isNavigable="false" ordering="unordered" aggregation="none" targetScope="instance" changeability="changeable" association="UMLAssociation.67" type="UMLNode.8"/>
+            <UML:AssociationEnd xmi.id="UMLAssociationEnd.69" name="" visibility="public" isSpecification="false" isNavigable="true" ordering="unordered" aggregation="none" targetScope="instance" changeability="changeable" association="UMLAssociation.67" type="UMLNode.9"/>
+          </UML:Association.connection>
+        </UML:Association>
+        <UML:Stereotype xmi.id="X.235" name="deploymentModel" extendedElement="UMLModel.6"/>
+      </UML:Namespace.ownedElement>
+    </UML:Model>
+    <UML:Model xmi.id="UMLModel.70" name="SequenceModel" visibility="public" isSpecification="false" namespace="UMLProject.1" isRoot="false" isLeaf="false" isAbstract="false">
+      <UML:Namespace.ownedElement>
+        <UML:Collaboration xmi.id="UMLCollaborationInstanceSet.71" name="CollaborationInstanceSet" visibility="public" isSpecification="false">
+          <UML:Collaboration.interaction>
+            <UML:Interaction xmi.id="UMLInteractionInstanceSet.72" name="InteractionInstanceSet" visibility="public" isSpecification="false" context="UMLCollaborationInstanceSet.71">
+              <UML:Interaction.message>
+                <UML:Message xmi.id="UMLStimulus.73" name="add item to cart" visibility="public" isSpecification="false" sender="UMLObject.98" receiver="UMLObject.97" interaction="UMLInteractionInstanceSet.72">
+                  <UML:Message.action>
+                    <UML:CallAction xmi.id="UMLCallAction.74" name="" visibility="public" isSpecification="false" isAsynchronous="false" stimulus="UMLStimulus.73"/>
+                  </UML:Message.action>
+                </UML:Message>
+                <UML:Message xmi.id="UMLStimulus.75" name="remove item from cart" visibility="public" isSpecification="false" sender="UMLObject.98" receiver="UMLObject.97" interaction="UMLInteractionInstanceSet.72">
+                  <UML:Message.action>
+                    <UML:CallAction xmi.id="UMLCallAction.76" name="" visibility="public" isSpecification="false" isAsynchronous="false" stimulus="UMLStimulus.75"/>
+                  </UML:Message.action>
+                </UML:Message>
+                <UML:Message xmi.id="UMLStimulus.77" name="display cart" visibility="public" isSpecification="false" sender="UMLObject.98" receiver="UMLObject.97" interaction="UMLInteractionInstanceSet.72">
+                  <UML:Message.action>
+                    <UML:CallAction xmi.id="UMLCallAction.78" name="" visibility="public" isSpecification="false" isAsynchronous="false" stimulus="UMLStimulus.77"/>
+                  </UML:Message.action>
+                </UML:Message>
+                <UML:Message xmi.id="UMLStimulus.79" name="click place order" visibility="public" isSpecification="false" sender="UMLObject.98" receiver="UMLObject.97" interaction="UMLInteractionInstanceSet.72">
+                  <UML:Message.action>
+                    <UML:CallAction xmi.id="UMLCallAction.80" name="" visibility="public" isSpecification="false" isAsynchronous="false" stimulus="UMLStimulus.79"/>
+                  </UML:Message.action>
+                </UML:Message>
+                <UML:Message xmi.id="UMLStimulus.81" name="receive order" visibility="public" isSpecification="false" sender="UMLObject.97" receiver="UMLObject.99" interaction="UMLInteractionInstanceSet.72">
+                  <UML:Message.action>
+                    <UML:CallAction xmi.id="UMLCallAction.82" name="" visibility="public" isSpecification="false" isAsynchronous="false" stimulus="UMLStimulus.81"/>
+                  </UML:Message.action>
+                </UML:Message>
+                <UML:Message xmi.id="UMLStimulus.83" name="check payment method" visibility="public" isSpecification="false" sender="UMLObject.99" receiver="UMLObject.97" interaction="UMLInteractionInstanceSet.72">
+                  <UML:Message.action>
+                    <UML:CallAction xmi.id="UMLCallAction.84" name="" visibility="public" isSpecification="false" isAsynchronous="false" stimulus="UMLStimulus.83"/>
+                  </UML:Message.action>
+                </UML:Message>
+                <UML:Message xmi.id="UMLStimulus.85" name="" visibility="public" isSpecification="false" sender="UMLObject.97" receiver="UMLObject.99" interaction="UMLInteractionInstanceSet.72">
+                  <UML:Message.action>
+                    <UML:CallAction xmi.id="UMLCallAction.86" name="" visibility="public" isSpecification="false" isAsynchronous="false" stimulus="UMLStimulus.85"/>
+                  </UML:Message.action>
+                </UML:Message>
+                <UML:Message xmi.id="UMLStimulus.87" name="verify payment" visibility="public" isSpecification="false" sender="UMLObject.99" receiver="UMLObject.101" interaction="UMLInteractionInstanceSet.72">
+                  <UML:Message.action>
+                    <UML:CallAction xmi.id="UMLCallAction.88" name="" visibility="public" isSpecification="false" isAsynchronous="false" stimulus="UMLStimulus.87"/>
+                  </UML:Message.action>
+                </UML:Message>
+                <UML:Message xmi.id="UMLStimulus.89" name="payment verified" visibility="public" isSpecification="false" sender="UMLObject.101" receiver="UMLObject.99" interaction="UMLInteractionInstanceSet.72">
+                  <UML:Message.action>
+                    <UML:CallAction xmi.id="UMLCallAction.90" name="" visibility="public" isSpecification="false" isAsynchronous="false" stimulus="UMLStimulus.89"/>
+                  </UML:Message.action>
+                </UML:Message>
+                <UML:Message xmi.id="UMLStimulus.91" name="notify order" visibility="public" isSpecification="false" sender="UMLObject.99" receiver="UMLObject.100" interaction="UMLInteractionInstanceSet.72">
+                  <UML:Message.action>
+                    <UML:CallAction xmi.id="UMLCallAction.92" name="" visibility="public" isSpecification="false" isAsynchronous="false" stimulus="UMLStimulus.91"/>
+                  </UML:Message.action>
+                </UML:Message>
+                <UML:Message xmi.id="UMLStimulus.93" name="update order status" visibility="public" isSpecification="false" sender="UMLObject.100" receiver="UMLObject.97" interaction="UMLInteractionInstanceSet.72">
+                  <UML:Message.action>
+                    <UML:CallAction xmi.id="UMLCallAction.94" name="" visibility="public" isSpecification="false" isAsynchronous="false" stimulus="UMLStimulus.93"/>
+                  </UML:Message.action>
+                </UML:Message>
+                <UML:Message xmi.id="UMLStimulus.95" name="get order status" visibility="public" isSpecification="false" sender="UMLObject.98" receiver="UMLObject.97" interaction="UMLInteractionInstanceSet.72">
+                  <UML:Message.action>
+                    <UML:CallAction xmi.id="UMLCallAction.96" name="" visibility="public" isSpecification="false" isAsynchronous="false" stimulus="UMLStimulus.95"/>
+                  </UML:Message.action>
+                </UML:Message>
+              </UML:Interaction.message>
+            </UML:Interaction>
+          </UML:Collaboration.interaction>
+          <UML:Namespace.ownedElement>
+            <UML:ClassifierRole xmi.id="UMLObject.97" name="Online Shoping System" visibility="public" isSpecification="false" message2="UMLStimulus.81 UMLStimulus.85" message1="UMLStimulus.73 UMLStimulus.75 UMLStimulus.77 UMLStimulus.79 UMLStimulus.83 UMLStimulus.93 UMLStimulus.95" isRoot="false" isLeaf="false" isAbstract="false">
+              <UML:ClassifierRole.multiplicity>
+                <UML:Multiplicity xmi.id="X.236">
+                  <UML:Multiplicity.range>
+                    <UML:MultiplicityRange xmi.id="X.237" lower="1" upper="1" multiplicity="X.236"/>
+                  </UML:Multiplicity.range>
+                </UML:Multiplicity>
+              </UML:ClassifierRole.multiplicity>
+            </UML:ClassifierRole>
+            <UML:ClassifierRole xmi.id="UMLObject.98" name="Customer" visibility="public" isSpecification="false" message2="UMLStimulus.73 UMLStimulus.75 UMLStimulus.77 UMLStimulus.79 UMLStimulus.95" isRoot="false" isLeaf="false" isAbstract="false">
+              <UML:ClassifierRole.multiplicity>
+                <UML:Multiplicity xmi.id="X.238">
+                  <UML:Multiplicity.range>
+                    <UML:MultiplicityRange xmi.id="X.239" lower="1" upper="1" multiplicity="X.238"/>
+                  </UML:Multiplicity.range>
+                </UML:Multiplicity>
+              </UML:ClassifierRole.multiplicity>
+            </UML:ClassifierRole>
+            <UML:ClassifierRole xmi.id="UMLObject.99" name="store admin" visibility="public" isSpecification="false" message2="UMLStimulus.83 UMLStimulus.87 UMLStimulus.91" message1="UMLStimulus.81 UMLStimulus.85 UMLStimulus.89" isRoot="false" isLeaf="false" isAbstract="false">
+              <UML:ClassifierRole.multiplicity>
+                <UML:Multiplicity xmi.id="X.240">
+                  <UML:Multiplicity.range>
+                    <UML:MultiplicityRange xmi.id="X.241" lower="1" upper="1" multiplicity="X.240"/>
+                  </UML:Multiplicity.range>
+                </UML:Multiplicity>
+              </UML:ClassifierRole.multiplicity>
+            </UML:ClassifierRole>
+            <UML:ClassifierRole xmi.id="UMLObject.100" name="warehouse stuff" visibility="public" isSpecification="false" message2="UMLStimulus.93" message1="UMLStimulus.91" isRoot="false" isLeaf="false" isAbstract="false">
+              <UML:ClassifierRole.multiplicity>
+                <UML:Multiplicity xmi.id="X.242">
+                  <UML:Multiplicity.range>
+                    <UML:MultiplicityRange xmi.id="X.243" lower="1" upper="1" multiplicity="X.242"/>
+                  </UML:Multiplicity.range>
+                </UML:Multiplicity>
+              </UML:ClassifierRole.multiplicity>
+            </UML:ClassifierRole>
+            <UML:ClassifierRole xmi.id="UMLObject.101" name="bank" visibility="public" isSpecification="false" message2="UMLStimulus.89" message1="UMLStimulus.87" isRoot="false" isLeaf="false" isAbstract="false">
+              <UML:ClassifierRole.multiplicity>
+                <UML:Multiplicity xmi.id="X.244">
+                  <UML:Multiplicity.range>
+                    <UML:MultiplicityRange xmi.id="X.245" lower="1" upper="1" multiplicity="X.244"/>
+                  </UML:Multiplicity.range>
+                </UML:Multiplicity>
+              </UML:ClassifierRole.multiplicity>
+            </UML:ClassifierRole>
+          </UML:Namespace.ownedElement>
+        </UML:Collaboration>
+      </UML:Namespace.ownedElement>
+    </UML:Model>
+    <UML:Model xmi.id="UMLModel.102" name="ClassModel" visibility="public" isSpecification="false" namespace="UMLProject.1" isRoot="false" isLeaf="false" isAbstract="false">
+      <UML:Namespace.ownedElement>
+        <UML:Class xmi.id="UMLClass.103" name="Web User" visibility="public" isSpecification="false" namespace="UMLModel.102" isRoot="false" isLeaf="false" isAbstract="false" participant="UMLAssociationEnd.119 UMLAssociationEnd.137" isActive="false">
+          <UML:Classifier.feature>
+            <UML:Attribute xmi.id="UMLAttribute.104" name="login_id : String{id}" visibility="public" isSpecification="false" ownerScope="instance" changeability="changeable" targetScope="instance" type="" owner="UMLClass.103"/>
+            <UML:Attribute xmi.id="UMLAttribute.105" name="password : String" visibility="public" isSpecification="false" ownerScope="instance" changeability="changeable" targetScope="instance" type="" owner="UMLClass.103"/>
+            <UML:Attribute xmi.id="UMLAttribute.106" name="state : UserState" visibility="public" isSpecification="false" ownerScope="instance" changeability="changeable" targetScope="instance" type="" owner="UMLClass.103"/>
+          </UML:Classifier.feature>
+        </UML:Class>
+        <UML:Class xmi.id="UMLEnumeration.107" name="UserState" visibility="public" isSpecification="false" namespace="UMLModel.102" isRoot="false" isLeaf="false" isAbstract="false">
+          <UML:Classifier.feature>
+            <UML:Operation xmi.id="UMLOperation.108" name="new" visibility="public" isSpecification="false" ownerScope="instance" isQuery="false" concurrency="sequential" isRoot="false" isLeaf="false" isAbstract="false" specification="" owner="UMLEnumeration.107"/>
+            <UML:Operation xmi.id="UMLOperation.109" name="active" visibility="public" isSpecification="false" ownerScope="instance" isQuery="false" concurrency="sequential" isRoot="false" isLeaf="false" isAbstract="false" specification="" owner="UMLEnumeration.107"/>
+            <UML:Operation xmi.id="UMLOperation.110" name="blocked" visibility="public" isSpecification="false" ownerScope="instance" isQuery="false" concurrency="sequential" isRoot="false" isLeaf="false" isAbstract="false" specification="" owner="UMLEnumeration.107"/>
+            <UML:Operation xmi.id="UMLOperation.111" name="banned" visibility="public" isSpecification="false" ownerScope="instance" isQuery="false" concurrency="sequential" isRoot="false" isLeaf="false" isAbstract="false" specification="" owner="UMLEnumeration.107"/>
+          </UML:Classifier.feature>
+        </UML:Class>
+        <UML:Class xmi.id="UMLClass.112" name="Customer" visibility="public" isSpecification="false" namespace="UMLModel.102" isRoot="false" isLeaf="false" isAbstract="false" participant="UMLAssociationEnd.118 UMLAssociationEnd.128" isActive="false">
+          <UML:Classifier.feature>
+            <UML:Attribute xmi.id="UMLAttribute.113" name="id : string{id}" visibility="public" isSpecification="false" ownerScope="instance" changeability="changeable" targetScope="instance" type="" owner="UMLClass.112"/>
+            <UML:Attribute xmi.id="UMLAttribute.114" name="address: Address" visibility="public" isSpecification="false" ownerScope="instance" changeability="changeable" targetScope="instance" type="" owner="UMLClass.112"/>
+            <UML:Attribute xmi.id="UMLAttribute.115" name="phone : Phone" visibility="public" isSpecification="false" ownerScope="instance" changeability="changeable" targetScope="instance" type="" owner="UMLClass.112"/>
+            <UML:Attribute xmi.id="UMLAttribute.116" name="email : string" visibility="public" isSpecification="false" ownerScope="instance" changeability="changeable" targetScope="instance" type="" owner="UMLClass.112"/>
+          </UML:Classifier.feature>
+        </UML:Class>
+        <UML:Association xmi.id="UMLAssociation.117" name="" visibility="public" isSpecification="false" namespace="UMLModel.102">
+          <UML:Association.connection>
+            <UML:AssociationEnd xmi.id="UMLAssociationEnd.118" name="" visibility="public" isSpecification="false" isNavigable="true" ordering="unordered" aggregation="none" targetScope="instance" changeability="changeable" association="UMLAssociation.117" type="UMLClass.112"/>
+            <UML:AssociationEnd xmi.id="UMLAssociationEnd.119" name="" visibility="public" isSpecification="false" isNavigable="true" ordering="unordered" aggregation="none" targetScope="instance" changeability="changeable" association="UMLAssociation.117" type="UMLClass.103"/>
+          </UML:Association.connection>
+        </UML:Association>
+        <UML:Class xmi.id="UMLClass.120" name="Account" visibility="public" isSpecification="false" namespace="UMLModel.102" isRoot="false" isLeaf="false" isAbstract="false" participant="UMLAssociationEnd.127 UMLAssociationEnd.134 UMLAssociationEnd.147 UMLAssociationEnd.155" isActive="false">
+          <UML:Classifier.feature>
+            <UML:Attribute xmi.id="UMLAttribute.121" name="id" visibility="public" isSpecification="false" ownerScope="instance" changeability="changeable" targetScope="instance" type="X.255" owner="UMLClass.120"/>
+            <UML:Attribute xmi.id="UMLAttribute.122" name="billing_address" visibility="public" isSpecification="false" ownerScope="instance" changeability="changeable" targetScope="instance" type="X.257" owner="UMLClass.120"/>
+            <UML:Attribute xmi.id="UMLAttribute.123" name="is_closed" visibility="public" isSpecification="false" ownerScope="instance" changeability="changeable" targetScope="instance" type="X.259" owner="UMLClass.120"/>
+            <UML:Attribute xmi.id="UMLAttribute.124" name="open" visibility="public" isSpecification="false" ownerScope="instance" changeability="changeable" targetScope="instance" type="X.261" owner="UMLClass.120"/>
+            <UML:Attribute xmi.id="UMLAttribute.125" name="closed" visibility="public" isSpecification="false" ownerScope="instance" changeability="changeable" targetScope="instance" type="X.261" owner="UMLClass.120"/>
+          </UML:Classifier.feature>
+        </UML:Class>
+        <UML:Association xmi.id="UMLAssociation.126" name="" visibility="public" isSpecification="false" namespace="UMLModel.102">
+          <UML:Association.connection>
+            <UML:AssociationEnd xmi.id="UMLAssociationEnd.127" name="" visibility="public" isSpecification="false" isNavigable="true" ordering="unordered" aggregation="none" targetScope="instance" changeability="changeable" association="UMLAssociation.126" type="UMLClass.120"/>
+            <UML:AssociationEnd xmi.id="UMLAssociationEnd.128" name="" visibility="public" isSpecification="false" isNavigable="true" ordering="unordered" aggregation="composite" targetScope="instance" changeability="changeable" association="UMLAssociation.126" type="UMLClass.112"/>
+          </UML:Association.connection>
+        </UML:Association>
+        <UML:Class xmi.id="UMLClass.129" name="Shopping Cart" visibility="public" isSpecification="false" namespace="UMLModel.102" isRoot="false" isLeaf="false" isAbstract="false" participant="UMLAssociationEnd.133 UMLAssociationEnd.136 UMLAssociationEnd.165 UMLAssociationEnd.167" isActive="false">
+          <UML:Classifier.feature>
+            <UML:Attribute xmi.id="UMLAttribute.130" name="created: Date" visibility="public" isSpecification="false" ownerScope="instance" changeability="changeable" targetScope="instance" type="" owner="UMLClass.129"/>
+            <UML:Attribute xmi.id="UMLAttribute.131" name="items" visibility="public" isSpecification="false" ownerScope="instance" changeability="changeable" targetScope="instance" type="X.265" owner="UMLClass.129"/>
+          </UML:Classifier.feature>
+        </UML:Class>
+        <UML:Association xmi.id="UMLAssociation.132" name="" visibility="public" isSpecification="false" namespace="UMLModel.102">
+          <UML:Association.connection>
+            <UML:AssociationEnd xmi.id="UMLAssociationEnd.133" name="" visibility="public" isSpecification="false" isNavigable="true" ordering="unordered" aggregation="none" targetScope="instance" changeability="changeable" association="UMLAssociation.132" type="UMLClass.129"/>
+            <UML:AssociationEnd xmi.id="UMLAssociationEnd.134" name="" visibility="public" isSpecification="false" isNavigable="true" ordering="unordered" aggregation="composite" targetScope="instance" changeability="changeable" association="UMLAssociation.132" type="UMLClass.120"/>
+          </UML:Association.connection>
+        </UML:Association>
+        <UML:Association xmi.id="UMLAssociation.135" name="" visibility="public" isSpecification="false" namespace="UMLModel.102">
+          <UML:Association.connection>
+            <UML:AssociationEnd xmi.id="UMLAssociationEnd.136" name="" visibility="public" isSpecification="false" isNavigable="true" ordering="unordered" aggregation="none" targetScope="instance" changeability="changeable" association="UMLAssociation.135" type="UMLClass.129"/>
+            <UML:AssociationEnd xmi.id="UMLAssociationEnd.137" name="" visibility="public" isSpecification="false" isNavigable="true" ordering="unordered" aggregation="none" targetScope="instance" changeability="changeable" association="UMLAssociation.135" type="UMLClass.103"/>
+          </UML:Association.connection>
+        </UML:Association>
+        <UML:Class xmi.id="UMLClass.138" name="Order" visibility="public" isSpecification="false" namespace="UMLModel.102" isRoot="false" isLeaf="false" isAbstract="false" participant="UMLAssociationEnd.146 UMLAssociationEnd.158 UMLAssociationEnd.168" isActive="false">
+          <UML:Classifier.feature>
+            <UML:Attribute xmi.id="UMLAttribute.139" name="number" visibility="public" isSpecification="false" ownerScope="instance" changeability="changeable" targetScope="instance" type="X.255" owner="UMLClass.138"/>
+            <UML:Attribute xmi.id="UMLAttribute.140" name="ordered" visibility="public" isSpecification="false" ownerScope="instance" changeability="changeable" targetScope="instance" type="X.261" owner="UMLClass.138"/>
+            <UML:Attribute xmi.id="UMLAttribute.141" name="shipped" visibility="public" isSpecification="false" ownerScope="instance" changeability="changeable" targetScope="instance" type="X.261" owner="UMLClass.138"/>
+            <UML:Attribute xmi.id="UMLAttribute.142" name="ship_to" visibility="public" isSpecification="false" ownerScope="instance" changeability="changeable" targetScope="instance" type="X.257" owner="UMLClass.138"/>
+            <UML:Attribute xmi.id="UMLAttribute.143" name="status" visibility="public" isSpecification="false" ownerScope="instance" changeability="changeable" targetScope="instance" type="X.271" owner="UMLClass.138"/>
+            <UML:Attribute xmi.id="UMLAttribute.144" name="total" visibility="public" isSpecification="false" ownerScope="instance" changeability="changeable" targetScope="instance" type="X.273" owner="UMLClass.138"/>
+          </UML:Classifier.feature>
+        </UML:Class>
+        <UML:Association xmi.id="UMLAssociation.145" name="" visibility="public" isSpecification="false" namespace="UMLModel.102">
+          <UML:Association.connection>
+            <UML:AssociationEnd xmi.id="UMLAssociationEnd.146" name="" visibility="public" isSpecification="false" isNavigable="true" ordering="unordered" aggregation="none" targetScope="instance" changeability="changeable" association="UMLAssociation.145" type="UMLClass.138"/>
+            <UML:AssociationEnd xmi.id="UMLAssociationEnd.147" name="" visibility="public" isSpecification="false" isNavigable="true" ordering="unordered" aggregation="composite" targetScope="instance" changeability="changeable" association="UMLAssociation.145" type="UMLClass.120"/>
+          </UML:Association.connection>
+        </UML:Association>
+        <UML:Class xmi.id="UMLClass.148" name="Pyment" visibility="public" isSpecification="false" namespace="UMLModel.102" isRoot="false" isLeaf="false" isAbstract="false" participant="UMLAssociationEnd.154 UMLAssociationEnd.157" isActive="false">
+          <UML:Classifier.feature>
+            <UML:Attribute xmi.id="UMLAttribute.149" name="id" visibility="public" isSpecification="false" ownerScope="instance" changeability="changeable" targetScope="instance" type="X.255" owner="UMLClass.148"/>
+            <UML:Attribute xmi.id="UMLAttribute.150" name="paid" visibility="public" isSpecification="false" ownerScope="instance" changeability="changeable" targetScope="instance" type="X.261" owner="UMLClass.148"/>
+            <UML:Attribute xmi.id="UMLAttribute.151" name="total" visibility="public" isSpecification="false" ownerScope="instance" changeability="changeable" targetScope="instance" type="X.273" owner="UMLClass.148"/>
+            <UML:Attribute xmi.id="UMLAttribute.152" name="details" visibility="public" isSpecification="false" ownerScope="instance" changeability="changeable" targetScope="instance" type="X.278" owner="UMLClass.148"/>
+          </UML:Classifier.feature>
+        </UML:Class>
+        <UML:Association xmi.id="UMLAssociation.153" name="" visibility="public" isSpecification="false" namespace="UMLModel.102">
+          <UML:Association.connection>
+            <UML:AssociationEnd xmi.id="UMLAssociationEnd.154" name="" visibility="public" isSpecification="false" isNavigable="true" ordering="unordered" aggregation="none" targetScope="instance" changeability="changeable" association="UMLAssociation.153" type="UMLClass.148"/>
+            <UML:AssociationEnd xmi.id="UMLAssociationEnd.155" name="" visibility="public" isSpecification="false" isNavigable="true" ordering="unordered" aggregation="none" targetScope="instance" changeability="changeable" association="UMLAssociation.153" type="UMLClass.120"/>
+          </UML:Association.connection>
+        </UML:Association>
+        <UML:Association xmi.id="UMLAssociation.156" name="" visibility="public" isSpecification="false" namespace="UMLModel.102">
+          <UML:Association.connection>
+            <UML:AssociationEnd xmi.id="UMLAssociationEnd.157" name="" visibility="public" isSpecification="false" isNavigable="true" ordering="unordered" aggregation="none" targetScope="instance" changeability="changeable" association="UMLAssociation.156" type="UMLClass.148"/>
+            <UML:AssociationEnd xmi.id="UMLAssociationEnd.158" name="" visibility="public" isSpecification="false" isNavigable="true" ordering="unordered" aggregation="none" targetScope="instance" changeability="changeable" association="UMLAssociation.156" type="UMLClass.138"/>
+          </UML:Association.connection>
+        </UML:Association>
+        <UML:Class xmi.id="UMLClass.159" name="Item" visibility="public" isSpecification="false" namespace="UMLModel.102" isRoot="false" isLeaf="false" isAbstract="false" participant="UMLAssociationEnd.164" isActive="false">
+          <UML:Classifier.feature>
+            <UML:Attribute xmi.id="UMLAttribute.160" name="id" visibility="public" isSpecification="false" ownerScope="instance" changeability="changeable" targetScope="instance" type="X.255" owner="UMLClass.159"/>
+            <UML:Attribute xmi.id="UMLAttribute.161" name="name" visibility="public" isSpecification="false" ownerScope="instance" changeability="changeable" targetScope="instance" type="X.281" owner="UMLClass.159"/>
+            <UML:Attribute xmi.id="UMLAttribute.162" name="supplier" visibility="public" isSpecification="false" ownerScope="instance" changeability="changeable" targetScope="instance" type="X.283" owner="UMLClass.159"/>
+          </UML:Classifier.feature>
+        </UML:Class>
+        <UML:Association xmi.id="UMLAssociation.163" name="" visibility="public" isSpecification="false" namespace="UMLModel.102">
+          <UML:Association.connection>
+            <UML:AssociationEnd xmi.id="UMLAssociationEnd.164" name="" visibility="public" isSpecification="false" isNavigable="true" ordering="unordered" aggregation="none" targetScope="instance" changeability="changeable" association="UMLAssociation.163" type="UMLClass.159"/>
+            <UML:AssociationEnd xmi.id="UMLAssociationEnd.165" name="" visibility="public" isSpecification="false" isNavigable="true" ordering="unordered" aggregation="none" targetScope="instance" changeability="changeable" association="UMLAssociation.163" type="UMLClass.129"/>
+          </UML:Association.connection>
+        </UML:Association>
+        <UML:Association xmi.id="UMLAssociation.166" name="" visibility="public" isSpecification="false" namespace="UMLModel.102">
+          <UML:Association.connection>
+            <UML:AssociationEnd xmi.id="UMLAssociationEnd.167" name="" visibility="public" isSpecification="false" isNavigable="true" ordering="unordered" aggregation="none" targetScope="instance" changeability="changeable" association="UMLAssociation.166" type="UMLClass.129"/>
+            <UML:AssociationEnd xmi.id="UMLAssociationEnd.168" name="" visibility="public" isSpecification="false" isNavigable="true" ordering="unordered" aggregation="none" targetScope="instance" changeability="changeable" association="UMLAssociation.166" type="UMLClass.138"/>
+          </UML:Association.connection>
+        </UML:Association>
+        <UML:Class xmi.id="UMLEnumeration.169" name="OrderStatus" visibility="public" isSpecification="false" namespace="UMLModel.102" isRoot="false" isLeaf="false" isAbstract="false">
+          <UML:Classifier.feature>
+            <UML:Operation xmi.id="UMLOperation.170" name="new" visibility="public" isSpecification="false" ownerScope="instance" isQuery="false" concurrency="sequential" isRoot="false" isLeaf="false" isAbstract="false" specification="" owner="UMLEnumeration.169"/>
+            <UML:Operation xmi.id="UMLOperation.171" name="hold" visibility="public" isSpecification="false" ownerScope="instance" isQuery="false" concurrency="sequential" isRoot="false" isLeaf="false" isAbstract="false" specification="" owner="UMLEnumeration.169"/>
+            <UML:Operation xmi.id="UMLOperation.172" name="shipped" visibility="public" isSpecification="false" ownerScope="instance" isQuery="false" concurrency="sequential" isRoot="false" isLeaf="false" isAbstract="false" specification="" owner="UMLEnumeration.169"/>
+            <UML:Operation xmi.id="UMLOperation.173" name="delivered" visibility="public" isSpecification="false" ownerScope="instance" isQuery="false" concurrency="sequential" isRoot="false" isLeaf="false" isAbstract="false" specification="" owner="UMLEnumeration.169"/>
+            <UML:Operation xmi.id="UMLOperation.174" name="closed" visibility="public" isSpecification="false" ownerScope="instance" isQuery="false" concurrency="sequential" isRoot="false" isLeaf="false" isAbstract="false" specification="" owner="UMLEnumeration.169"/>
+          </UML:Classifier.feature>
+        </UML:Class>
+        <UML:Stereotype xmi.id="X.249" name="enumeration" extendedElement="UMLEnumeration.107 UMLEnumeration.169"/>
+      </UML:Namespace.ownedElement>
+    </UML:Model>
+    <UML:Model xmi.id="UMLModel.175" name="ActivityModel" visibility="public" isSpecification="false" namespace="UMLProject.1" isRoot="false" isLeaf="false" isAbstract="false">
+      <UML:Namespace.ownedElement>
+        <UML:ActivityGraph xmi.id="UMLActivityGraph.176" name="ActivityGraph1" visibility="public" isSpecification="false" context="UMLModel.175">
+          <UML:StateMachine.top>
+            <UML:CompositeState xmi.id="UMLCompositeState.177" name="TOP" visibility="public" isSpecification="false" stateMachine="UMLActivityGraph.176" isConcurrent="false">
+              <UML:CompositeState.subvertex>
+                <UML:Pseudostate xmi.id="UMLPseudostate.178" name="Decision1" visibility="public" isSpecification="false" container="UMLCompositeState.177" outgoing="UMLTransition.199 UMLTransition.200" incoming="UMLTransition.201 UMLTransition.207 UMLTransition.225" kind="branch"/>
+                <UML:Pseudostate xmi.id="UMLPseudostate.179" name="Decision2" visibility="public" isSpecification="false" container="UMLCompositeState.177" outgoing="UMLTransition.202" incoming="UMLTransition.199 UMLTransition.211" kind="branch"/>
+                <UML:Pseudostate xmi.id="UMLPseudostate.180" name="Decision3" visibility="public" isSpecification="false" container="UMLCompositeState.177" outgoing="UMLTransition.204" incoming="UMLTransition.200 UMLTransition.210" kind="branch"/>
+                <UML:Pseudostate xmi.id="UMLPseudostate.181" name="Initial1" visibility="public" isSpecification="false" container="UMLCompositeState.177" outgoing="UMLTransition.201" kind="initial"/>
+                <UML:ActionState xmi.id="UMLActionState.182" name="search item" visibility="public" isSpecification="false" container="UMLCompositeState.177" outgoing="UMLTransition.203" incoming="UMLTransition.202" isDynamic="false"/>
+                <UML:ActionState xmi.id="UMLActionState.183" name="browse item" visibility="public" isSpecification="false" container="UMLCompositeState.177" outgoing="UMLTransition.205" incoming="UMLTransition.204" isDynamic="false"/>
+                <UML:Pseudostate xmi.id="UMLPseudostate.184" name="Decision4" visibility="public" isSpecification="false" container="UMLCompositeState.177" outgoing="UMLTransition.208" incoming="UMLTransition.205 UMLTransition.206" kind="branch"/>
+                <UML:Pseudostate xmi.id="UMLPseudostate.185" name="Decision5" visibility="public" isSpecification="false" container="UMLCompositeState.177" outgoing="UMLTransition.206 UMLTransition.207" incoming="UMLTransition.203" kind="branch"/>
+                <UML:ActionState xmi.id="UMLActionState.186" name="view item" visibility="public" isSpecification="false" container="UMLCompositeState.177" outgoing="UMLTransition.209" incoming="UMLTransition.208" isDynamic="false"/>
+                <UML:Pseudostate xmi.id="UMLPseudostate.187" name="Decision6" visibility="public" isSpecification="false" container="UMLCompositeState.177" outgoing="UMLTransition.210 UMLTransition.211 UMLTransition.212" incoming="UMLTransition.209" kind="branch"/>
+                <UML:ActionState xmi.id="UMLActionState.188" name="add to shopping cart" visibility="public" isSpecification="false" container="UMLCompositeState.177" outgoing="UMLTransition.213" incoming="UMLTransition.212" isDynamic="false"/>
+                <UML:SubactivityState xmi.id="UMLSubactivityState.189" name="SubactivityState1" visibility="public" isSpecification="false" container="UMLCompositeState.177" isDynamic="false"/>
+                <UML:Pseudostate xmi.id="UMLPseudostate.190" name="Decision7" visibility="public" isSpecification="false" container="UMLCompositeState.177" outgoing="UMLTransition.214 UMLTransition.215" incoming="UMLTransition.213 UMLTransition.219" kind="branch"/>
+                <UML:Pseudostate xmi.id="UMLPseudostate.191" name="Decision8" visibility="public" isSpecification="false" container="UMLCompositeState.177" outgoing="UMLTransition.216" incoming="UMLTransition.214" kind="branch"/>
+                <UML:Pseudostate xmi.id="UMLPseudostate.192" name="Decision9" visibility="public" isSpecification="false" container="UMLCompositeState.177" outgoing="UMLTransition.225" incoming="UMLTransition.215 UMLTransition.220" kind="branch"/>
+                <UML:ActionState xmi.id="UMLActionState.193" name="view shopping cart" visibility="public" isSpecification="false" container="UMLCompositeState.177" outgoing="UMLTransition.217" incoming="UMLTransition.216" isDynamic="false"/>
+                <UML:Pseudostate xmi.id="UMLPseudostate.194" name="Decision10" visibility="public" isSpecification="false" container="UMLCompositeState.177" outgoing="UMLTransition.218 UMLTransition.220 UMLTransition.221 UMLTransition.226" incoming="UMLTransition.217" kind="branch"/>
+                <UML:ActionState xmi.id="UMLActionState.195" name="update needed" visibility="public" isSpecification="false" container="UMLCompositeState.177" outgoing="UMLTransition.219" incoming="UMLTransition.218" isDynamic="false"/>
+                <UML:Pseudostate xmi.id="UMLPseudostate.196" name="Decision11" visibility="public" isSpecification="false" container="UMLCompositeState.177" outgoing="UMLTransition.222" incoming="UMLTransition.221 UMLTransition.224" kind="branch"/>
+                <UML:ActionState xmi.id="UMLActionState.197" name="checkout" visibility="public" isSpecification="false" container="UMLCompositeState.177" outgoing="UMLTransition.223" incoming="UMLTransition.222 UMLTransition.226" isDynamic="false"/>
+                <UML:FinalState xmi.id="UMLFinalState.198" name="FinalState1" visibility="public" isSpecification="false" container="UMLCompositeState.177" incoming="UMLTransition.223"/>
+              </UML:CompositeState.subvertex>
+            </UML:CompositeState>
+          </UML:StateMachine.top>
+          <UML:StateMachine.transitions>
+            <UML:Transition xmi.id="UMLTransition.199" name="search" visibility="public" isSpecification="false" stateMachine="UMLActivityGraph.176" source="UMLPseudostate.178" target="UMLPseudostate.179"/>
+            <UML:Transition xmi.id="UMLTransition.200" name="browse" visibility="public" isSpecification="false" stateMachine="UMLActivityGraph.176" source="UMLPseudostate.178" target="UMLPseudostate.180"/>
+            <UML:Transition xmi.id="UMLTransition.201" name="" visibility="public" isSpecification="false" stateMachine="UMLActivityGraph.176" source="UMLPseudostate.181" target="UMLPseudostate.178"/>
+            <UML:Transition xmi.id="UMLTransition.202" name="" visibility="public" isSpecification="false" stateMachine="UMLActivityGraph.176" source="UMLPseudostate.179" target="UMLActionState.182"/>
+            <UML:Transition xmi.id="UMLTransition.203" name="" visibility="public" isSpecification="false" stateMachine="UMLActivityGraph.176" source="UMLActionState.182" target="UMLPseudostate.185"/>
+            <UML:Transition xmi.id="UMLTransition.204" name="" visibility="public" isSpecification="false" stateMachine="UMLActivityGraph.176" source="UMLPseudostate.180" target="UMLActionState.183"/>
+            <UML:Transition xmi.id="UMLTransition.205" name="" visibility="public" isSpecification="false" stateMachine="UMLActivityGraph.176" source="UMLActionState.183" target="UMLPseudostate.184"/>
+            <UML:Transition xmi.id="UMLTransition.206" name="found" visibility="public" isSpecification="false" stateMachine="UMLActivityGraph.176" source="UMLPseudostate.185" target="UMLPseudostate.184"/>
+            <UML:Transition xmi.id="UMLTransition.207" name="not found" visibility="public" isSpecification="false" stateMachine="UMLActivityGraph.176" source="UMLPseudostate.185" target="UMLPseudostate.178"/>
+            <UML:Transition xmi.id="UMLTransition.208" name="" visibility="public" isSpecification="false" stateMachine="UMLActivityGraph.176" source="UMLPseudostate.184" target="UMLActionState.186"/>
+            <UML:Transition xmi.id="UMLTransition.209" name="" visibility="public" isSpecification="false" stateMachine="UMLActivityGraph.176" source="UMLActionState.186" target="UMLPseudostate.187"/>
+            <UML:Transition xmi.id="UMLTransition.210" name="" visibility="public" isSpecification="false" stateMachine="UMLActivityGraph.176" source="UMLPseudostate.187" target="UMLPseudostate.180"/>
+            <UML:Transition xmi.id="UMLTransition.211" name="" visibility="public" isSpecification="false" stateMachine="UMLActivityGraph.176" source="UMLPseudostate.187" target="UMLPseudostate.179"/>
+            <UML:Transition xmi.id="UMLTransition.212" name="decision" visibility="public" isSpecification="false" stateMachine="UMLActivityGraph.176" source="UMLPseudostate.187" target="UMLActionState.188"/>
+            <UML:Transition xmi.id="UMLTransition.213" name="" visibility="public" isSpecification="false" stateMachine="UMLActivityGraph.176" source="UMLActionState.188" target="UMLPseudostate.190"/>
+            <UML:Transition xmi.id="UMLTransition.214" name="view cart" visibility="public" isSpecification="false" stateMachine="UMLActivityGraph.176" source="UMLPseudostate.190" target="UMLPseudostate.191"/>
+            <UML:Transition xmi.id="UMLTransition.215" name="procceed" visibility="public" isSpecification="false" stateMachine="UMLActivityGraph.176" source="UMLPseudostate.190" target="UMLPseudostate.192"/>
+            <UML:Transition xmi.id="UMLTransition.216" name="" visibility="public" isSpecification="false" stateMachine="UMLActivityGraph.176" source="UMLPseudostate.191" target="UMLActionState.193"/>
+            <UML:Transition xmi.id="UMLTransition.217" name="" visibility="public" isSpecification="false" stateMachine="UMLActivityGraph.176" source="UMLActionState.193" target="UMLPseudostate.194"/>
+            <UML:Transition xmi.id="UMLTransition.218" name="update needed" visibility="public" isSpecification="false" stateMachine="UMLActivityGraph.176" source="UMLPseudostate.194" target="UMLActionState.195"/>
+            <UML:Transition xmi.id="UMLTransition.219" name="" visibility="public" isSpecification="false" stateMachine="UMLActivityGraph.176" source="UMLActionState.195" target="UMLPseudostate.190"/>
+            <UML:Transition xmi.id="UMLTransition.220" name="more shopping" visibility="public" isSpecification="false" stateMachine="UMLActivityGraph.176" source="UMLPseudostate.194" target="UMLPseudostate.192"/>
+            <UML:Transition xmi.id="UMLTransition.221" name="done with shopping" visibility="public" isSpecification="false" stateMachine="UMLActivityGraph.176" source="UMLPseudostate.194" target="UMLPseudostate.196"/>
+            <UML:Transition xmi.id="UMLTransition.222" name="" visibility="public" isSpecification="false" stateMachine="UMLActivityGraph.176" source="UMLPseudostate.196" target="UMLActionState.197"/>
+            <UML:Transition xmi.id="UMLTransition.223" name="" visibility="public" isSpecification="false" stateMachine="UMLActivityGraph.176" source="UMLActionState.197" target="UMLFinalState.198"/>
+            <UML:Transition xmi.id="UMLTransition.224" name="" visibility="public" isSpecification="false" stateMachine="UMLActivityGraph.176" target="UMLPseudostate.196"/>
+            <UML:Transition xmi.id="UMLTransition.225" name="" visibility="public" isSpecification="false" stateMachine="UMLActivityGraph.176" source="UMLPseudostate.192" target="UMLPseudostate.178"/>
+            <UML:Transition xmi.id="UMLTransition.226" name="" visibility="public" isSpecification="false" stateMachine="UMLActivityGraph.176" source="UMLPseudostate.194" target="UMLActionState.197"/>
+          </UML:StateMachine.transitions>
+        </UML:ActivityGraph>
+      </UML:Namespace.ownedElement>
+    </UML:Model>
+    <UML:Model xmi.id="UMLModel.227" name="ComponentModel" visibility="public" isSpecification="false" namespace="UMLProject.1" isRoot="false" isLeaf="false" isAbstract="false">
+      <UML:Namespace.ownedElement>
+        <UML:Component xmi.id="UMLComponent.228" name="search engine" visibility="public" isSpecification="false" namespace="UMLModel.227" clientDependency="UMLDependency.17" isRoot="false" isLeaf="false" isAbstract="false" participant="UMLAssociationEnd.25" deploymentLocation="UMLNode.7"/>
+        <UML:Component xmi.id="UMLComponent.229" name="shopping cart" visibility="public" isSpecification="false" namespace="UMLModel.227" clientDependency="UMLDependency.18 UMLDependency.32" isRoot="false" isLeaf="false" isAbstract="false" participant="UMLAssociationEnd.29" deploymentLocation="UMLNode.7"/>
+        <UML:Component xmi.id="UMLComponent.230" name="authentication" visibility="public" isSpecification="false" namespace="UMLModel.227" clientDependency="UMLDependency.38" isRoot="false" isLeaf="false" isAbstract="false" participant="UMLAssociationEnd.35 UMLAssociationEnd.44" deploymentLocation="UMLNode.7"/>
+      </UML:Namespace.ownedElement>
+    </UML:Model>
+    <UML:DataType xmi.id="X.255" name="String{id}" visibility="public" isSpecification="false" isRoot="false" isLeaf="false" isAbstract="false"/>
+    <UML:DataType xmi.id="X.257" name="Address" visibility="public" isSpecification="false" isRoot="false" isLeaf="false" isAbstract="false"/>
+    <UML:DataType xmi.id="X.259" name="Boolean" visibility="public" isSpecification="false" isRoot="false" isLeaf="false" isAbstract="false"/>
+    <UML:DataType xmi.id="X.261" name="Date" visibility="public" isSpecification="false" isRoot="false" isLeaf="false" isAbstract="false"/>
+    <UML:DataType xmi.id="X.265" name="String{id} array" visibility="public" isSpecification="false" isRoot="false" isLeaf="false" isAbstract="false"/>
+    <UML:DataType xmi.id="X.271" name="OrderStatus" visibility="public" isSpecification="false" isRoot="false" isLeaf="false" isAbstract="false"/>
+    <UML:DataType xmi.id="X.273" name="Real" visibility="public" isSpecification="false" isRoot="false" isLeaf="false" isAbstract="false"/>
+    <UML:DataType xmi.id="X.278" name="Stirng" visibility="public" isSpecification="false" isRoot="false" isLeaf="false" isAbstract="false"/>
+    <UML:DataType xmi.id="X.281" name="String" visibility="public" isSpecification="false" isRoot="false" isLeaf="false" isAbstract="false"/>
+    <UML:DataType xmi.id="X.283" name="Supplier" visibility="public" isSpecification="false" isRoot="false" isLeaf="false" isAbstract="false"/>
+  </UML:Namespace.ownedElement>
+</UML:Model>
+<UML:TaggedValue xmi.id="X.246" tag="ordering" value="unordered" modelElement="UMLAttribute.104"/>
+<UML:TaggedValue xmi.id="X.247" tag="ordering" value="unordered" modelElement="UMLAttribute.105"/>
+<UML:TaggedValue xmi.id="X.248" tag="ordering" value="unordered" modelElement="UMLAttribute.106"/>
+<UML:TaggedValue xmi.id="X.250" tag="ordering" value="unordered" modelElement="UMLAttribute.113"/>
+<UML:TaggedValue xmi.id="X.251" tag="ordering" value="unordered" modelElement="UMLAttribute.114"/>
+<UML:TaggedValue xmi.id="X.252" tag="ordering" value="unordered" modelElement="UMLAttribute.115"/>
+<UML:TaggedValue xmi.id="X.253" tag="ordering" value="unordered" modelElement="UMLAttribute.116"/>
+<UML:TaggedValue xmi.id="X.254" tag="ordering" value="unordered" modelElement="UMLAttribute.121"/>
+<UML:TaggedValue xmi.id="X.256" tag="ordering" value="unordered" modelElement="UMLAttribute.122"/>
+<UML:TaggedValue xmi.id="X.258" tag="ordering" value="unordered" modelElement="UMLAttribute.123"/>
+<UML:TaggedValue xmi.id="X.260" tag="ordering" value="unordered" modelElement="UMLAttribute.124"/>
+<UML:TaggedValue xmi.id="X.262" tag="ordering" value="unordered" modelElement="UMLAttribute.125"/>
+<UML:TaggedValue xmi.id="X.263" tag="ordering" value="unordered" modelElement="UMLAttribute.130"/>
+<UML:TaggedValue xmi.id="X.264" tag="ordering" value="unordered" modelElement="UMLAttribute.131"/>
+<UML:TaggedValue xmi.id="X.266" tag="ordering" value="unordered" modelElement="UMLAttribute.139"/>
+<UML:TaggedValue xmi.id="X.267" tag="ordering" value="unordered" modelElement="UMLAttribute.140"/>
+<UML:TaggedValue xmi.id="X.268" tag="ordering" value="unordered" modelElement="UMLAttribute.141"/>
+<UML:TaggedValue xmi.id="X.269" tag="ordering" value="unordered" modelElement="UMLAttribute.142"/>
+<UML:TaggedValue xmi.id="X.270" tag="ordering" value="unordered" modelElement="UMLAttribute.143"/>
+<UML:TaggedValue xmi.id="X.272" tag="ordering" value="unordered" modelElement="UMLAttribute.144"/>
+<UML:TaggedValue xmi.id="X.274" tag="ordering" value="unordered" modelElement="UMLAttribute.149"/>
+<UML:TaggedValue xmi.id="X.275" tag="ordering" value="unordered" modelElement="UMLAttribute.150"/>
+<UML:TaggedValue xmi.id="X.276" tag="ordering" value="unordered" modelElement="UMLAttribute.151"/>
+<UML:TaggedValue xmi.id="X.277" tag="ordering" value="unordered" modelElement="UMLAttribute.152"/>
+<UML:TaggedValue xmi.id="X.279" tag="ordering" value="unordered" modelElement="UMLAttribute.160"/>
+<UML:TaggedValue xmi.id="X.280" tag="ordering" value="unordered" modelElement="UMLAttribute.161"/>
+<UML:TaggedValue xmi.id="X.282" tag="ordering" value="unordered" modelElement="UMLAttribute.162"/>
+</XMI.content>
+</XMI>
