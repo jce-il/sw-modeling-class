@@ -11,6 +11,8 @@ If you prefer that your solution will not be publicly visible [request private r
 1. [**Push**][ref-push]/sync the changes up to GitHub.
 1. [Create a **pull request**][pull-request] on the original repository to turn in the assignment.
 
+Pull request screencast [demo](http://screencast-o-matic.com/watch/coe3IEeMDa)
+
 ## Homework1 UML/OCL
 Modeling an online store (Amazon like), through:
 
