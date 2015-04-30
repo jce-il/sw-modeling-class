@@ -26,7 +26,9 @@ Modeling an online store (Amazon like), through:
 
 ## Homework2 Running mapreduce on MS Cloud
 
-1. Follow lab instructions on lecture/azure/mapreduce-lab/
+1. Follow lab instructions on:
+  - hw/hw2-HDInsightLab/demo and 
+  - hw/hw2-HDInsightLab/docs /azure/mapreduce-lab/running a map reduce job.pdf
 1. Submit a PR with lab results in hw/hw2-HDInsightLab/results folder (TBD)
 
 **Submission date**: 14/4
