@@ -24,14 +24,23 @@ Modeling an online store (Amazon like), through:
 - Format: XMI files in a github repo + Readme
 - **Submission dates**: Part 1. 26/3 17:15, Part 2+3. a week after, part 4: next lecture 
 
+## Homework2 Running mapreduce on MS Cloud
+
+1. Follow lab instructions on lecture/azure/mapreduce-lab/
+1. Submit a PR with lab results in hw/hw2-HDInsightLab/results folder (TBD)
+
+**Submission date**: 14/4
+
 ## Final Project (Preliminary)
 ### Stage 1
 - Select a known open source project (git is already captured for class demo)
   - Here are some sources for ideas: [leading github projects](https://github.com/showcases), Book: [The Architecture of Open Source Applications](http://www.aosabook.org/en/index.html), [Hasadna](http://www.hasadna.org.il/projects/) (The Public Knowledge Workshop),...
   - Cloud related ideas and papers from the source course we use: https://courses.engr.illinois.edu/cs525/sp2015/sched.htm 
 - Review resources (repos, papers, posts)
-- Open a repo for this project and link from the project list on the course wiki (by PR the README)
+- Open a repo for your project and link from the [project](Projects.md) list on the course wiki (by PR of course)
 - (the lecturer will discuss the suggestion with you)
+
+**Submission date**: 14/4
 
 ### Stage 2
 - Describe the main requirements/features of the product
@@ -43,11 +52,6 @@ Modeling an online store (Amazon like), through:
 ### Stage 3
 - Summarise the project, in particular a section about how modeling contributed to your work (or how it got in the way..)
 
-### Project List
-
-| # | Nicknames | [Subject](link to page) | Presentation Date |
-|---|-----------|-------------------------|-------------------|
-| 1 |  |  |  |
 
 <!-- Links -->
 [private-repos]: /guide/private_repos
