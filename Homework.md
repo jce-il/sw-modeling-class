@@ -42,7 +42,7 @@ Modeling an online store (Amazon like), through:
 - Open a repo for your project and link from the [project](Projects.md) list on the course wiki (by PR of course)
 - (the lecturer will discuss the suggestion with you)
 
-**Submission date**: 14/4
+**Submission date**: 14/5
 
 ### Stage 2
 - Describe the main requirements/features of the product
@@ -50,6 +50,8 @@ Modeling an online store (Amazon like), through:
 - Describe the major or important designs with UML diagrams and or other modeling means
 - Describe a few challenges for this project (e.g., a missing feature, known bugs)
 - Register to talk about it at class (again by setting a date on the project list)
+
+**Submission date**: 28/5
 
 ### Stage 3
 - Summarise the project, in particular a section about how modeling contributed to your work (or how it got in the way..)
