@@ -31,7 +31,7 @@ Modeling an online store (Amazon like), through:
   - ~~hw/hw2-HDInsightLab/docs /azure/mapreduce-lab/running a map reduce job.pdf~~
   - http://azure.microsoft.com/en-us/documentation/articles/hdinsight-get-started/
   - http://azure.microsoft.com/en-us/documentation/articles/hdinsight-sample-wordcount/
-1. Submit a PR with lab results in hw/hw2-HDInsightLab/results folder (TBD)
+1. Submit a PR with lab results in hw/hw2-HDInsightLab/resultsfolder including outputs (excel, run data) and a short description of content.
 
 **Submission date**: 14/4
 
