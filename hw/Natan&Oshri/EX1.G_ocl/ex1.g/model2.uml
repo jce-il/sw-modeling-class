@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_vWm6EPJsEeSrF4qGYIyvbQ" name="Model">
+  <packageImport xmi:type="uml:PackageImport" xmi:id="_vWm6EfJsEeSrF4qGYIyvbQ">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Class" xmi:id="_x818gPJsEeSrF4qGYIyvbQ" name="Driver">
+    <ownedRule xmi:type="uml:Constraint" xmi:id="_0ndIoPJsEeSrF4qGYIyvbQ" name="Constraint1">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_JZi3gPJtEeSrF4qGYIyvbQ">
+        <language>OCL</language>
+        <body>self.age >=18</body>
+      </specification>
+    </ownedRule>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_ExhjgPJtEeSrF4qGYIyvbQ" name="age">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_jtmaIPJtEeSrF4qGYIyvbQ" name="car" type="_Uw1f4PJtEeSrF4qGYIyvbQ" association="_jtmaI_JtEeSrF4qGYIyvbQ">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_jtmaIfJtEeSrF4qGYIyvbQ" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_jtmaIvJtEeSrF4qGYIyvbQ" value="*"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_Uw1f4PJtEeSrF4qGYIyvbQ" name="Car">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_9FkSgPJuEeSrF4qGYIyvbQ" name="steering " type="_JTDYgPJuEeSrF4qGYIyvbQ" aggregation="composite" association="_9FkSg_JuEeSrF4qGYIyvbQ">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_9FkSgfJuEeSrF4qGYIyvbQ" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_9FkSgvJuEeSrF4qGYIyvbQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_F-Kq4PJvEeSrF4qGYIyvbQ" name="engine" type="_kXyxMPJuEeSrF4qGYIyvbQ" aggregation="composite" association="_F-QxgPJvEeSrF4qGYIyvbQ">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_F-Kq4fJvEeSrF4qGYIyvbQ" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_F-Kq4vJvEeSrF4qGYIyvbQ" value="2"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_G5rQ4PJvEeSrF4qGYIyvbQ" name="gear" type="_iaGVcPJuEeSrF4qGYIyvbQ" aggregation="composite" association="_G5xXgPJvEeSrF4qGYIyvbQ">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_G5rQ4fJvEeSrF4qGYIyvbQ" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_G5rQ4vJvEeSrF4qGYIyvbQ" value="1"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_jtmaI_JtEeSrF4qGYIyvbQ" memberEnd="_jtsgwPJtEeSrF4qGYIyvbQ _jtmaIPJtEeSrF4qGYIyvbQ">
+    <name xsi:nil="true"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_jtsgwPJtEeSrF4qGYIyvbQ" name="driver" type="_x818gPJsEeSrF4qGYIyvbQ" association="_jtmaI_JtEeSrF4qGYIyvbQ">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_jtsgwfJtEeSrF4qGYIyvbQ"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_jtsgwvJtEeSrF4qGYIyvbQ" value="*"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_JTDYgPJuEeSrF4qGYIyvbQ" name="Steering "/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_iaGVcPJuEeSrF4qGYIyvbQ" name="Gear">
+    <ownedRule xmi:type="uml:Constraint" xmi:id="_7ZLzwPJvEeSrF4qGYIyvbQ" name="Constraint1">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_lPlp8PJwEeSrF4qGYIyvbQ">
+        <language>OCL</language>
+        <body>self.Type = 'Auto' or self.Type = 'Robitic' or self.Type = 'Reg'</body>
+      </specification>
+    </ownedRule>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_-x9GYPJvEeSrF4qGYIyvbQ" name="Type">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_kXyxMPJuEeSrF4qGYIyvbQ" name="Engine">
+    <ownedRule xmi:type="uml:Constraint" xmi:id="_CHLD0PJyEeSrF4qGYIyvbQ" name="Constraint1">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_F8RGEPJyEeSrF4qGYIyvbQ">
+        <language>OCL</language>
+        <body>self.Type = 'Gasolin' or self.Type = 'Diesle'</body>
+      </specification>
+    </ownedRule>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_BXM_cPJyEeSrF4qGYIyvbQ" name="Type">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_9FkSg_JuEeSrF4qGYIyvbQ" memberEnd="_9FkShPJuEeSrF4qGYIyvbQ _9FkSgPJuEeSrF4qGYIyvbQ">
+    <name xsi:nil="true"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_9FkShPJuEeSrF4qGYIyvbQ" name="car" type="_Uw1f4PJtEeSrF4qGYIyvbQ" association="_9FkSg_JuEeSrF4qGYIyvbQ">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_9FkShfJuEeSrF4qGYIyvbQ" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_9FkShvJuEeSrF4qGYIyvbQ" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_F-QxgPJvEeSrF4qGYIyvbQ" memberEnd="_F-QxgfJvEeSrF4qGYIyvbQ _F-Kq4PJvEeSrF4qGYIyvbQ">
+    <name xsi:nil="true"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_F-QxgfJvEeSrF4qGYIyvbQ" name="car" type="_Uw1f4PJtEeSrF4qGYIyvbQ" association="_F-QxgPJvEeSrF4qGYIyvbQ">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_F-QxgvJvEeSrF4qGYIyvbQ" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_F-Qxg_JvEeSrF4qGYIyvbQ" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_G5xXgPJvEeSrF4qGYIyvbQ" memberEnd="_G5xXgfJvEeSrF4qGYIyvbQ _G5rQ4PJvEeSrF4qGYIyvbQ">
+    <name xsi:nil="true"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_G5xXgfJvEeSrF4qGYIyvbQ" name="car" type="_Uw1f4PJtEeSrF4qGYIyvbQ" association="_G5xXgPJvEeSrF4qGYIyvbQ">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_G5xXgvJvEeSrF4qGYIyvbQ" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_G5xXg_JvEeSrF4qGYIyvbQ" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+</uml:Model>
