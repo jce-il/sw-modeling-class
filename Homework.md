@@ -33,7 +33,7 @@ Modeling an online store (Amazon like), through:
   - http://azure.microsoft.com/en-us/documentation/articles/hdinsight-sample-wordcount/
 1. Submit a PR with lab results in hw/hw2-HDInsightLab/resultsfolder including outputs (excel, run data) and a short description of content.
 
-**Submission date**: 14/4
+**Submission date**: ~~14~~21/4
 
 ## Final Project (Preliminary)
 ### Stage 1
