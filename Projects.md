@@ -8,11 +8,13 @@ Comments
 
 ---
 
-1. @tamar-b & @maor??? 21/5
+1. @tamar-b & @maortaieb 21/5
 
-[virtual router](http://virtualrouter.codeplex.com/) [Repo] 
+   - [virtual router](http://virtualrouter.codeplex.com/) 
+   - [PPT](https://github.com/tamar-b/sw-modeling-class/blob/master/project/Virtual%20Router.pptx) 
 
 2. @natanbr & @oshribm88 
 
-[AndEngine](sw-modeling-class/hw/Final Proj Natan & Oshri/Part 1 - Draft) [Repo](https://github.com/natanbr/AndEngine.git)
+    - [AndEngine](sw-modeling-class/hw/Final Proj Natan & Oshri/Part 1 - Draft) 
+    - [Repo](https://github.com/natanbr/AndEngine.git)
 
