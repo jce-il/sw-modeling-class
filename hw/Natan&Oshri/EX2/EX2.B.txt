@@ -1,0 +1,366 @@
+Windows PowerShell
+Copyright (C) 2012 Microsoft Corporation. All rights reserved.
+
+For a list of all Azure cmdlets type 'help azure'.
+For a list of Windows Azure Pack cmdlets type 'Get-Command *wapack*'.
+For Node.js cmdlets type 'help node-dev'.
+For PHP cmdlets type 'help php-dev'.
+PS C:\> Add-AzureAccount
+VERBOSE: Account "oshribe@post.jce.ac.il" has been added.
+VERBOSE: Subscription "Free Trial" is selected as the default subscription.
+VERBOSE: To view all the subscriptions, please use Get-AzureSubscription.
+VERBOSE: To switch to a different subscription, please use Select-AzureSubscription.
+
+Id                             Type       Subscriptions                          Tenants
+--                             ----       -------------                          -------
+oshribe@post.jce.ac.il         User       4492060a-a757-4494-9557-4ce5b705b088   e5f2f1fb-2ef6-449c-a8b2-437b6093b594
+
+
+PS C:\> $cred = Get-Credential
+
+cmdlet Get-Credential at command pipeline position 1
+Supply values for the following parameters:
+Credential
+PS C:\> Add-AzureAccount -Credential $cred
+VERBOSE: Account "oshribe@post.jce.ac.il" has been added.
+VERBOSE: Subscription "Free Trial" is selected as the default subscription.
+VERBOSE: To view all the subscriptions, please use Get-AzureSubscription.
+VERBOSE: To switch to a different subscription, please use Select-AzureSubscription.
+
+Id                             Type       Subscriptions                          Tenants
+--                             ----       -------------                          -------
+oshribe@post.jce.ac.il         User       4492060a-a757-4494-9557-4ce5b705b088   e5f2f1fb-2ef6-449c-a8b2-437b6093b594
+
+
+PS C:\> Import-AzurePublishSettingsFile C:\Users\obenmosh\Desktop\STD\se10\מידול מערכות תוכנה\Free Trial-5-7-2015-creden
+tials.publishsettings
+Import-AzurePublishSettingsFile : A positional parameter cannot be found that accepts argument 'מערכות'.
+At line:1 char:1
++ Import-AzurePublishSettingsFile C:\Users\obenmosh\Desktop\STD\se10\מידול מערכות  ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Import-AzurePublishSettingsFile], ParameterBindingException
+    + FullyQualifiedErrorId : PositionalParameterNotFound,Microsoft.WindowsAzure.Commands.Profile.ImportAzurePublishSe
+   ttingsCommand
+
+PS C:\> Import-AzurePublishSettingsFile
+
+cmdlet Import-AzurePublishSettingsFile at command pipeline position 1
+Supply values for the following parameters:
+(Type !? for Help.)
+PublishSettingsFile: C:\Users\obenmosh\Desktop\STD\se10\מידול מערכות תוכנה\Free Trial-5-7-2015-credentials.publishsettin
+gs
+VERBOSE: Setting: Microsoft.Azure.Common.Authentication.Models.AzureSubscription as the default and current
+subscription. To view other subscriptions use Get-AzureSubscription
+
+
+Id          : 4492060a-a757-4494-9557-4ce5b705b088
+Name        : Free Trial
+Environment : AzureCloud
+Account     : 3CF7170D366E23C86A2710531E241274C08F1D28
+Properties  : {[SupportedModes, AzureServiceManagement]}
+
+
+
+PS C:\> Get-AzureAccount
+
+Id                             Type       Subscriptions                          Tenants
+--                             ----       -------------                          -------
+oshribe@post.jce.ac.il         User       4492060a-a757-4494-9557-4ce5b705b088   e5f2f1fb-2ef6-449c-a8b2-437b6093b594
+3CF7170D366E23C86A2710531E2412 Certificat 4492060a-a757-4494-9557-4ce5b705b088
+74C08F1D28                     e
+
+
+PS C:\> Get-AzureSubscription
+
+
+SubscriptionId            : 4492060a-a757-4494-9557-4ce5b705b088
+SubscriptionName          : Free Trial
+Environment               : AzureCloud
+SupportedModes            : AzureServiceManagement,AzureResourceManager
+DefaultAccount            : oshribe@post.jce.ac.il
+Accounts                  : {oshribe@post.jce.ac.il, 3CF7170D366E23C86A2710531E241274C08F1D28}
+IsDefault                 : True
+IsCurrent                 : True
+CurrentStorageAccountName :
+TenantId                  : e5f2f1fb-2ef6-449c-a8b2-437b6093b594
+
+
+
+PS C:\> $subscriptionName = "Free Trial"
+PS C:\> $clusterName = "ex2project"
+PS C:\> $wordCountJobDefinition = New-AzureHDInsightMapReduceJobDefinition -JarFile "wasb:///example/jars/hadoop-mapredu
+ce-examples.jar" -ClassName "wordcount" -Arguments "wasb:///example/data/gutenberg/davinci.txt", "wasb:///example/data/W
+ordCountOutput"
+PS C:\> Select-AzureSubscription $subscriptionName
+PS C:\>
+PS C:\> $wordCountJob = Start-AzureHDInsightJob -Cluster $clusterName -JobDefinition $wordCountJobDefinition | Wait-Azur
+eHDInsightJob -WaitTimeoutInSeconds 3600
+PS C:\> Get-AzureHDInsightJobOutput -Cluster $clusterName -JobId $wordCountJob.JobId -StandardError
+15/05/07 16:36:11 INFO impl.TimelineClientImpl: Timeline service address: http://headnodehost:8188/ws/v1/timeline/
+15/05/07 16:36:11 INFO client.RMProxy: Connecting to ResourceManager at headnodehost/10.59.238.121:9010
+15/05/07 16:36:11 INFO client.AHSProxy: Connecting to Application History server at headnodehost/10.59.238.121:10200
+15/05/07 16:36:13 INFO input.FileInputFormat: Total input paths to process : 1
+15/05/07 16:36:14 INFO mapreduce.JobSubmitter: number of splits:1
+15/05/07 16:36:14 INFO mapreduce.JobSubmitter: Submitting tokens for job: job_1431011615263_0016
+15/05/07 16:36:14 INFO mapreduce.JobSubmitter: Kind: mapreduce.job, Service: job_1431011615263_0015, Ident: (org.apache
+.hadoop.mapreduce.security.token.JobTokenIdentifier@283e2c54)
+15/05/07 16:36:14 INFO mapreduce.JobSubmitter: Kind: RM_DELEGATION_TOKEN, Service: 10.59.238.121:9010, Ident: (owner=ad
+min, renewer=mr token, realUser=hdp, issueDate=1431016545130, maxDate=1431621345130, sequenceNumber=9, masterKeyId=2)
+15/05/07 16:36:15 INFO impl.YarnClientImpl: Submitted application application_1431011615263_0016
+15/05/07 16:36:15 INFO mapreduce.Job: The url to track the job: http://headnodehost:9014/proxy/application_143101161526
+3_0016/
+15/05/07 16:36:15 INFO mapreduce.Job: Running job: job_1431011615263_0016
+15/05/07 16:36:25 INFO mapreduce.Job: Job job_1431011615263_0016 running in uber mode : false
+15/05/07 16:36:25 INFO mapreduce.Job:  map 0% reduce 0%
+15/05/07 16:36:35 INFO mapreduce.Job:  map 100% reduce 0%
+15/05/07 16:36:45 INFO mapreduce.Job:  map 100% reduce 100%
+15/05/07 16:36:48 INFO mapreduce.Job: Job job_1431011615263_0016 completed successfully
+15/05/07 16:36:48 INFO mapreduce.Job: Counters: 49
+        File System Counters
+                FILE: Number of bytes read=239421
+                FILE: Number of bytes written=678677
+                FILE: Number of read operations=0
+                FILE: Number of large read operations=0
+                FILE: Number of write operations=0
+                WASB: Number of bytes read=1395818
+                WASB: Number of bytes written=337623
+                WASB: Number of read operations=0
+                WASB: Number of large read operations=0
+                WASB: Number of write operations=0
+        Job Counters
+                Launched map tasks=1
+                Launched reduce tasks=1
+                Other local map tasks=1
+                Total time spent by all maps in occupied slots (ms)=7414
+                Total time spent by all reduces in occupied slots (ms)=13354
+                Total time spent by all map tasks (ms)=7414
+                Total time spent by all reduce tasks (ms)=6677
+                Total vcore-seconds taken by all map tasks=7414
+                Total vcore-seconds taken by all reduce tasks=6677
+                Total megabyte-seconds taken by all map tasks=5693952
+                Total megabyte-seconds taken by all reduce tasks=10255872
+        Map-Reduce Framework
+                Map input records=32118
+                Map output records=251357
+                Map output bytes=2387798
+                Map output materialized bytes=239395
+                Input split bytes=152
+                Combine input records=251357
+                Combine output records=32956
+                Reduce input groups=32956
+                Reduce shuffle bytes=239395
+                Reduce input records=32956
+                Reduce output records=32956
+                Spilled Records=65912
+                Shuffled Maps =1
+                Failed Shuffles=0
+                Merged Map outputs=1
+                GC time elapsed (ms)=154
+                CPU time spent (ms)=6953
+                Physical memory (bytes) snapshot=519413760
+                Virtual memory (bytes) snapshot=837672960
+                Total committed heap usage (bytes)=554172416
+        Shuffle Errors
+                BAD_ID=0
+                CONNECTION=0
+                IO_ERROR=0
+                WRONG_LENGTH=0
+                WRONG_MAP=0
+                WRONG_REDUCE=0
+        File Input Format Counters
+                Bytes Read=1395666
+        File Output Format Counters
+                Bytes Written=337623
+
+PS C:\> $storageAccountName = "ex2project"
+PS C:\> Get-StorageSetting
+Get-StorageSetting : The 'Get-StorageSetting' command was found in the module 'Storage', but the module could not be
+loaded. For more information, run 'Import-Module Storage'.
+At line:1 char:1
++ Get-StorageSetting
++ ~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (Get-StorageSetting:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CouldNotAutoloadMatchingModule
+
+PS C:\> Get-AzureAccount
+
+Id                             Type       Subscriptions                          Tenants
+--                             ----       -------------                          -------
+oshribe@post.jce.ac.il         User       4492060a-a757-4494-9557-4ce5b705b088   e5f2f1fb-2ef6-449c-a8b2-437b6093b594
+3CF7170D366E23C86A2710531E2412 Certificat 4492060a-a757-4494-9557-4ce5b705b088
+74C08F1D28                     e
+
+
+PS C:\> Get-AzureSubscription
+
+
+SubscriptionId            : 4492060a-a757-4494-9557-4ce5b705b088
+SubscriptionName          : Free Trial
+Environment               : AzureCloud
+SupportedModes            : AzureServiceManagement,AzureResourceManager
+DefaultAccount            : oshribe@post.jce.ac.il
+Accounts                  : {oshribe@post.jce.ac.il, 3CF7170D366E23C86A2710531E241274C08F1D28}
+IsDefault                 : True
+IsCurrent                 : True
+CurrentStorageAccountName :
+TenantId                  : e5f2f1fb-2ef6-449c-a8b2-437b6093b594
+
+
+
+PS C:\> $containerName = "https://ex2project.blob.core.windows.net/ex2project"
+PS C:\> Select-AzureSubscription $subscriptionName
+PS C:\> $storageAccountKey = Get-AzureStorageKey $storageAccountName | %{ $_.Primary }
+VERBOSE: 7:50:29 PM - Begin Operation: Get-AzureStorageKey
+VERBOSE: 7:50:35 PM - Completed Operation: Get-AzureStorageKey
+PS C:\> $storageContext = New-AzureStorageContext -StorageAccountName $storageAccountName -StorageAccountKey $storageAcc
+ountKey
+PS C:\> Get-AzureStorageBlobContent -Container $ContainerName -Blob example/data/WordCountOutput/part-r-00000 -Context $
+storageContext -Force
+Get-AzureStorageBlobContent : Container name 'https://ex2project.blob.core.windows.net/ex2project' is invalid. Valid
+names start and end with a lower case letter or a number and has in between a lower case letter, number or dash with
+no consecutive dashes and is 3 through 63 characters long.
+At line:1 char:1
++ Get-AzureStorageBlobContent -Container $ContainerName -Blob example/data/WordCou ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Get-AzureStorageBlobContent], ArgumentException
+    + FullyQualifiedErrorId : ArgumentException,Microsoft.WindowsAzure.Commands.Storage.Blob.Cmdlet.GetAzureStorageBlo
+   bContentCommand
+
+VERBOSE: Transfer Summary
+--------------------------------
+Total:  0.
+Successful: 0.
+Failed: 0.
+PS C:\> $containerName = "ex2project.blob.core.windows.net/ex2project"
+PS C:\> Get-AzureStorageBlobContent -Container $ContainerName -Blob example/data/WordCountOutput/part-r-00000 -Context $
+storageContext -Force
+Get-AzureStorageBlobContent : Container name 'ex2project.blob.core.windows.net/ex2project' is invalid. Valid names
+start and end with a lower case letter or a number and has in between a lower case letter, number or dash with no
+consecutive dashes and is 3 through 63 characters long.
+At line:1 char:1
++ Get-AzureStorageBlobContent -Container $ContainerName -Blob example/data/WordCou ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Get-AzureStorageBlobContent], ArgumentException
+    + FullyQualifiedErrorId : ArgumentException,Microsoft.WindowsAzure.Commands.Storage.Blob.Cmdlet.GetAzureStorageBlo
+   bContentCommand
+
+VERBOSE: Transfer Summary
+--------------------------------
+Total:  0.
+Successful: 0.
+Failed: 0.
+PS C:\> $containerName = "ex2project"
+PS C:\> Get-AzureStorageBlobContent -Container $ContainerName -Blob example/data/WordCountOutput/part-r-00000 -Context $
+storageContext -Force
+Get-AzureStorageBlobContent : Can not find blob 'example/data/WordCountOutput/part-r-00000' in container 'ex2project'.
+At line:1 char:1
++ Get-AzureStorageBlobContent -Container $ContainerName -Blob example/data/WordCou ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (:) [Get-AzureStorageBlobContent], ResourceNotFoundException
+    + FullyQualifiedErrorId : ResourceNotFoundException,Microsoft.WindowsAzure.Commands.Storage.Blob.Cmdlet.GetAzureSt
+   orageBlobContentCommand
+
+VERBOSE: Transfer Summary
+--------------------------------
+Total:  0.
+Successful: 0.
+Failed: 0.
+PS C:\> $storageAccountKey = Get-AzureStorageKey $storageAccountName | %{ $_.Primary }
+VERBOSE: 7:52:53 PM - Begin Operation: Get-AzureStorageKey
+VERBOSE: 7:52:58 PM - Completed Operation: Get-AzureStorageKey
+PS C:\> Select-AzureSubscription $subscriptionName
+PS C:\> $storageAccountKey = Get-AzureStorageKey $storageAccountName | %{ $_.Primary }
+VERBOSE: 7:54:12 PM - Begin Operation: Get-AzureStorageKey
+VERBOSE: 7:54:16 PM - Completed Operation: Get-AzureStorageKey
+PS C:\> $storageContext = New-AzureStorageContext -StorageAccountName $storageAccountName -StorageAccountKey $storageAcc
+ountKey
+PS C:\> $storageAccountKey
+/ad4icZW8ZGLPW49xGKgqFWb+dj2GZKSapaDVQ9CY7kLEFcjbqQ8Na8TqTSM07ruPHDqXapnqH9eh2qoSatnUw==
+PS C:\> Get-AzureStorageBlobContent -Container $ContainerName -Blob example/data/WordCountOutput/part-r-00000 -Context $
+storageContext -Force
+Get-AzureStorageBlobContent : Can not find blob 'example/data/WordCountOutput/part-r-00000' in container 'ex2project'.
+At line:1 char:1
++ Get-AzureStorageBlobContent -Container $ContainerName -Blob example/data/WordCou ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (:) [Get-AzureStorageBlobContent], ResourceNotFoundException
+    + FullyQualifiedErrorId : ResourceNotFoundException,Microsoft.WindowsAzure.Commands.Storage.Blob.Cmdlet.GetAzureSt
+   orageBlobContentCommand
+
+VERBOSE: Transfer Summary
+--------------------------------
+Total:  0.
+Successful: 0.
+Failed: 0.
+PS C:\> $containerName = "ex2project-1"
+PS C:\> Get-AzureStorageBlobContent -Container $ContainerName -Blob example/data/WordCountOutput/part-r-00000 -Context $
+storageContext -Force
+Get-AzureStorageBlobContent : Can not find blob 'example/data/WordCountOutput/part-r-00000' in container
+'ex2project-1'.
+At line:1 char:1
++ Get-AzureStorageBlobContent -Container $ContainerName -Blob example/data/WordCou ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (:) [Get-AzureStorageBlobContent], ResourceNotFoundException
+    + FullyQualifiedErrorId : ResourceNotFoundException,Microsoft.WindowsAzure.Commands.Storage.Blob.Cmdlet.GetAzureSt
+   orageBlobContentCommand
+
+VERBOSE: Transfer Summary
+--------------------------------
+Total:  0.
+Successful: 0.
+Failed: 0.
+PS C:\> $containerName = "ex2project-2"
+PS C:\> Get-AzureStorageBlobContent -Container $ContainerName -Blob example/data/WordCountOutput/part-r-00000 -Context $
+storageContext -Force
+
+
+   Container Uri: https://ex2project.blob.core.windows.net/ex2project-2
+
+Name                  BlobType   Length                ContentType           LastModified          SnapshotTime
+----                  --------   ------                -----------           ------------          ------------
+example/data/WordC... BlockBlob  337623                application/octet-... 5/7/2015 4:36:43 P...
+VERBOSE: Transfer Summary
+--------------------------------
+Total:  1.
+Successful: 1.
+Failed: 0.
+
+
+PS C:\> cat ./example/data/WordCountOutput/part-r-00000 | findstr "there"cat ./example/data/WordCountOutput/part-r-00000
+ | findstr "there"
+FINDSTR: Cannot open cat
+FINDSTR: Cannot open part-r-00000
+PS C:\> $findstr
+PS C:\> Get-AzureStorageBlobContent -Container $ContainerName -Blob example/data/WordCountOutput/part-r-00000 -Context $
+storageContext -Force
+
+
+   Container Uri: https://ex2project.blob.core.windows.net/ex2project-2
+
+Name                  BlobType   Length                ContentType           LastModified          SnapshotTime
+----                  --------   ------                -----------           ------------          ------------
+example/data/WordC... BlockBlob  337623                application/octet-... 5/7/2015 4:36:43 P...
+VERBOSE: Transfer Summary
+--------------------------------
+Total:  1.
+Successful: 1.
+Failed: 0.
+
+
+PS C:\> cat ./example/data/WordCountOutput/part-r-00000 | findstr "there"
+Maffeo;--there  1
+feathered       1
+gathered        3
+lathered        1
+smothered       1
+there   361
+there,  24
+there.  16
+there;  5
+thereabout,     1
+thereabouts;    1
+thereby 2
+therefore       83
+therefore,      8
+therein 2
+therein.        2
+withered        1
