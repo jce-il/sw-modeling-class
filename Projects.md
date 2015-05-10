@@ -18,8 +18,8 @@ Comments
     - [AndEngine](sw-modeling-class/hw/Final Proj Natan & Oshri/Part 1 - Draft) 
     - [Repo](https://github.com/natanbr/AndEngine.git)
 
-2. @razco & @ilayze 
+3. @razco & @ilayze 28/5
 
     - [Swagger-UI](https://github.com/swagger-api/swagger-ui) 
-    - [Repo](https://github.com/ilayze/swagger-ui)
+    - [Repo](https://github.com/ilayze/Swagger-ui-sw-modeling)
 
