@@ -5,7 +5,7 @@ If you prefer that your solution will not be publicly visible [request private r
 
 
 ##Submissions Instructions
-1. To start, [**fork** the course repository][forking] (or [pull][ref-pull] for later updates: ```git pull upstream master```).
+1. To start, [**fork** the course repository][forking] (For later updates: first add a [remote][config-remote] to the upstream repo and [sync][sync-remote] with a [pull][ref-pull]:  ```git pull upstream master```).
 1. [**Clone**][ref-clone] the repository to your computer.
 1. Modify/add files (in the hw directory) and [**commit**][ref-commit] changes to complete your solution.
 1. [**Push**][ref-push]/sync the changes up to GitHub.
@@ -35,7 +35,10 @@ Modeling an online store (Amazon like), through:
 
 **Submission date**: ~~14~~21/4
 
-## Final Project (Preliminary)
+## Final Project
+
+Grades are according to how much your work is: deep, relevant (to the course), presented well (written and oral), on time
+
 ### Stage 1
 - Select a known open source project (git is already captured for class demo)
   - Here are some sources for ideas: [leading github projects](https://github.com/showcases), Book: [The Architecture of Open Source Applications](http://www.aosabook.org/en/index.html), [Hasadna](http://www.hasadna.org.il/projects/) (The Public Knowledge Workshop),...
@@ -56,7 +59,13 @@ Modeling an online store (Amazon like), through:
 **Submission date**: 28/5
 
 ### Stage 3
+- Add your presentation to the projects page 
+- Present!
+
+### Stage 4
+
 - Summarise the project, in particular a section about how modeling contributed to your work (or how it got in the way..)
+**Submission date**: Last day of semester
 
 
 <!-- Links -->
@@ -68,3 +77,5 @@ Modeling an online store (Amazon like), through:
 [ref-push]: http://gitref.org/remotes/#push
 [ref-pull]: http://gitref.org/remotes/#pull
 [pull-request]: https://help.github.com/articles/creating-a-pull-request
+[config-remote]: https://help.github.com/articles/configuring-a-remote-for-a-fork/
+[sync-remote]: https://help.github.com/articles/syncing-a-fork/
