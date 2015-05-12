@@ -5,8 +5,8 @@ If you prefer that your solution will not be publicly visible [request private r
 
 
 ##Submissions Instructions
-1. To start, [**fork** the course repository][forking] (For later updates: first add a [remote][config-remote] to the upstream repo and [sync][sync-remote] with a [pull][ref-pull]:  ```git pull upstream master```).
-1. [**Clone**][ref-clone] the repository to your computer.
+1. To start, [**fork** the course repository][forking].
+1. [**Clone**][ref-clone] the repository to your computer (for later updates: first add a [remote][config-remote] to the upstream repo and [sync][sync-remote] with a [pull][ref-pull]:  ```git pull upstream master```).
 1. Modify/add files (in the hw directory) and [**commit**][ref-commit] changes to complete your solution.
 1. [**Push**][ref-push]/sync the changes up to GitHub.
 1. [Create a **pull request**][pull-request] on the original repository to turn in the assignment.

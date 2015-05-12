@@ -5,21 +5,19 @@ Under Presentation Date:
 ```
 @(nick)Names
 - [Target Project Name](link)
-- [Our Porject Repo.](link)
+- [Our Porject Repo.](link) (and/or presentation)
 ```
 
 ---
 21/5:
 1. @tamar-b & @maortaieb 
-
-   - [virtual router](http://virtualrouter.codeplex.com/) 
-   - [PPT](https://github.com/tamar-b/sw-modeling-class/blob/master/project/Virtual%20Router.pptx) 
+ - [virtual router](http://virtualrouter.codeplex.com/) 
+ - [PPT](https://github.com/tamar-b/sw-modeling-class/blob/master/project/Virtual%20Router.pptx) 
 
 28/5:
 2. @razco & @ilayze 
-
-    - [Swagger-UI](https://github.com/swagger-api/swagger-ui) 
-    - [Repo](https://github.com/ilayze/Swagger-ui-sw-modeling)
+ - [Swagger-UI](https://github.com/swagger-api/swagger-ui) 
+ - [Repo](https://github.com/ilayze/Swagger-ui-sw-modeling)
 
 4/6:
 
