@@ -1,0 +1,74 @@
+15/05/08 17:18:29 INFO impl.TimelineClientImpl: Timeline service address: http://headnodehost:8188/ws/v1/timeline/
+15/05/08 17:18:29 INFO client.RMProxy: Connecting to ResourceManager at headnodehost/10.53.230.87:9010
+15/05/08 17:18:30 INFO client.AHSProxy: Connecting to Application History server at headnodehost/10.53.230.87:10200
+15/05/08 17:18:31 INFO input.FileInputFormat: Total input paths to process : 3
+15/05/08 17:18:31 INFO mapreduce.JobSubmitter: number of splits:3
+15/05/08 17:18:32 INFO mapreduce.JobSubmitter: Submitting tokens for job: job_1431098131816_0004
+15/05/08 17:18:32 INFO mapreduce.JobSubmitter: Kind: mapreduce.job, Service: job_1431098131816_0003, Ident: (org.apache.hadoop.mapreduce.security.token.JobTokenIdentifier@9c89957)
+15/05/08 17:18:32 INFO mapreduce.JobSubmitter: Kind: RM_DELEGATION_TOKEN, Service: 10.53.230.87:9010, Ident: (owner=admin, renewer=mr token, realUser=hdp, issueDate=1431105486990, maxDate=1431710286990, sequenceNumber=2, masterKeyId=2)
+15/05/08 17:18:32 INFO impl.YarnClientImpl: Submitted application application_1431098131816_0004
+15/05/08 17:18:32 INFO mapreduce.Job: The url to track the job: http://headnodehost:9014/proxy/application_1431098131816_0004/
+15/05/08 17:18:32 INFO mapreduce.Job: Running job: job_1431098131816_0004
+15/05/08 17:18:41 INFO mapreduce.Job: Job job_1431098131816_0004 running in uber mode : false
+15/05/08 17:18:41 INFO mapreduce.Job:  map 0% reduce 0%
+15/05/08 17:18:52 INFO mapreduce.Job:  map 67% reduce 0%
+15/05/08 17:18:53 INFO mapreduce.Job:  map 100% reduce 0%
+15/05/08 17:19:01 INFO mapreduce.Job:  map 100% reduce 100%
+15/05/08 17:19:03 INFO mapreduce.Job: Job job_1431098131816_0004 completed successfully
+15/05/08 17:19:04 INFO mapreduce.Job: Counters: 50
+	File System Counters
+		FILE: Number of bytes read=671328
+		FILE: Number of bytes written=1813581
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+		WASB: Number of bytes read=3644481
+		WASB: Number of bytes written=880513
+		WASB: Number of read operations=0
+		WASB: Number of large read operations=0
+		WASB: Number of write operations=0
+	Job Counters 
+		Launched map tasks=3
+		Launched reduce tasks=1
+		Other local map tasks=1
+		Rack-local map tasks=2
+		Total time spent by all maps in occupied slots (ms)=22518
+		Total time spent by all reduces in occupied slots (ms)=12724
+		Total time spent by all map tasks (ms)=22518
+		Total time spent by all reduce tasks (ms)=6362
+		Total vcore-seconds taken by all map tasks=22518
+		Total vcore-seconds taken by all reduce tasks=6362
+		Total megabyte-seconds taken by all map tasks=17293824
+		Total megabyte-seconds taken by all reduce tasks=9772032
+	Map-Reduce Framework
+		Map input records=77934
+		Map output records=629187
+		Map output bytes=6076355
+		Map output materialized bytes=742300
+		Input split bytes=501
+		Combine input records=629187
+		Combine output records=101089
+		Reduce input groups=82304
+		Reduce shuffle bytes=742300
+		Reduce input records=101089
+		Reduce output records=82304
+		Spilled Records=202178
+		Shuffled Maps =3
+		Failed Shuffles=0
+		Merged Map outputs=3
+		GC time elapsed (ms)=262
+		CPU time spent (ms)=16031
+		Physical memory (bytes) snapshot=1326649344
+		Virtual memory (bytes) snapshot=1914400768
+		Total committed heap usage (bytes)=1496842240
+	Shuffle Errors
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	File Input Format Counters 
+		Bytes Read=3643470
+	File Output Format Counters 
+		Bytes Written=880513
