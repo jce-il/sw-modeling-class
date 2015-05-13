@@ -21,7 +21,10 @@ Under Presentation Date:
 
 4/6:
 
-11/6:
+11/6:@assafwe
+ - [VuFind](http://vufind-org.github.io/vufind/) 
+ - [VuFind on Git-Hub](https://github.com/vufind-org/vufind)
+ - [Repo] (https://github.com/assafwe/VuFind-Design-Architecture)
 
 18/6:
 
