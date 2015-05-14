@@ -1,0 +1,17 @@
+1 context Vehicle
+	inv: self.owner.age >= 18
+2 context Car
+	inv: self.owner.age >=18
+3 context Person
+	inv self.fleet -> size <= 3
+4 context Person
+	inv: self.fleet -> forAll ( v | v.colour = #black )
+5 context Person
+	inv: self.fleet -> select ( v | v.colour = #black) -> size <= 3
+6 context Person::setAge(newage:int)
+	pre : newAge >= 0
+	post: self.age = newAge
+7 context Person::birthday()
+	post self.age = self.age@pre + 1
+8 context person::getName()
+	post result = name 
