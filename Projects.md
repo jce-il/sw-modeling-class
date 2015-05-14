@@ -20,7 +20,10 @@ Under Presentation Date:
  - [Repo](https://github.com/ilayze/Swagger-ui-sw-modeling)
 
 4/6:
-
+3. @havivha & @einatsc 
+ - [TextSecure](https://github.com/WhisperSystems/TextSecure) 
+ - [Repo](https://github.com/havivha/sw-modeling-class/wiki/TextSecure-sw-modeling)
+ 
 11/6:@assafwe
  - [VuFind](http://vufind-org.github.io/vufind/) 
  - [VuFind on Git-Hub](https://github.com/vufind-org/vufind)
