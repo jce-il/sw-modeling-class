@@ -1,0 +1,27 @@
+Usecase Name: <Checkout>
+	Usecase ID: someId :)
+	Date: someDate :)
+
+Description
+	Online store Checkout process
+
+Actors
+	Customer
+	Inventory Manager
+	Payment approver
+
+Success criterion
+	checkout success.
+	order passed to shipment
+
+Flow
+	1. Proceed to checkout
+	2. Check inventory for requested items. On failure show message
+	3. Pick payment option.
+	4. Pass to payment approver, wait till complete
+	5. On success generate order details and send to the customer.
+	6. Pass order to shipment
+
+Exceptions
+	payment approver isn't healthy.
+	inventory manager isn't healthy.
