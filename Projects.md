@@ -33,7 +33,9 @@ Under Presentation Date:
 
 26/6:
 
-2/7:
+2/7: @marianera & @AABADELR
+ - [OpenRA](https://github.com/OpenRA/OpenRA) 
+ - [Repo](https://github.com/marianera/OpenRA-sw-modeling-class/wiki)
 
 ---
 
