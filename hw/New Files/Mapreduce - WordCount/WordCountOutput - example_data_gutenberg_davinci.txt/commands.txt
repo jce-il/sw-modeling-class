@@ -1,0 +1,165 @@
+Windows PowerShell
+Copyright (C) 2012 Microsoft Corporation. All rights reserved.
+
+For a list of all Azure cmdlets type 'help azure'.
+For a list of Windows Azure Pack cmdlets type 'Get-Command *wapack*'.
+For Node.js cmdlets type 'help node-dev'.
+For PHP cmdlets type 'help php-dev'.
+PS C:\>
+PS C:\> Add-AzureAccount
+VERBOSE: Account "sup.world@live.com" has been added.
+VERBOSE: Subscription "Azure Pass" is selected as the default subscription.
+VERBOSE: To view all the subscriptions, please use Get-AzureSubscription.
+VERBOSE: To switch to a different subscription, please use Select-AzureSubscription.
+
+Id                             Type       Subscriptions                          Tenants
+--                             ----       -------------                          -------
+xxxx_x@hotmail.com             User       0c727b26-fa52-4448-acdc-7d4f996682d1   4e8dec7c-80fc-4b65-8e72-c9e8599a42f1
+
+
+PS C:\> $subscriptionName = "0c727b26-fa52-4448-acdc-7d4f996682d1"
+PS C:\> $clusterName = "modelingmapreduce"
+PS C:\> $wordCountJobDefinition = New-AzureHDInsightMapReduceJobDefinition -JarFile "wasb:///example/jars/hadoop-mapredu
+ce-examples.jar" -ClassName "wordcount" -Arguments "wasb:///example/data/gutenberg/davinci.txt", "wasb:///example/data/W
+ordCountOutput"
+PS C:\> Select-AzureSubscription $subscriptionName
+Select-AzureSubscription : The subscription name 0c727b26-fa52-4448-acdc-7d4f996682d1 doesn't exist.
+Parameter name: name
+At line:1 char:1
++ Select-AzureSubscription $subscriptionName
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : CloseError: (:) [Select-AzureSubscription], ArgumentException
+    + FullyQualifiedErrorId : Microsoft.WindowsAzure.Commands.Profile.SelectAzureSubscriptionCommand
+
+PS C:\> $wordCountJob = Start-AzureHDInsightJob -Cluster $clusterName -JobDefinition $wordCountJobDefinition | Wait-Azur
+eHDInsightJob -WaitTimeoutInSeconds 3600
+PS C:\>
+PS C:\>
+PS C:\> $subscriptionName = "Azure Pass"
+PS C:\> Select-AzureSubscription $subscriptionName
+PS C:\> $wordCountJob = Start-AzureHDInsightJob -Cluster $clusterName -JobDefinition $wordCountJobDefinition | Wait-Azur
+eHDInsightJob -WaitTimeoutInSeconds 3600
+PS C:\>
+PS C:\>
+PS C:\> Get-AzureHDInsightJobOutput -Cluster $clusterName -JobId $wordCountJob.JobId -StandardError
+15/05/08 16:14:26 INFO impl.TimelineClientImpl: Timeline service address: http://headnodehost:8188/ws/v1/timeline/
+15/05/08 16:14:26 INFO client.RMProxy: Connecting to ResourceManager at headnodehost/10.53.230.87:9010
+15/05/08 16:14:26 INFO client.AHSProxy: Connecting to Application History server at headnodehost/10.53.230.87:10200
+15/05/08 16:14:27 INFO input.FileInputFormat: Total input paths to process : 1
+15/05/08 16:14:27 INFO mapreduce.JobSubmitter: number of splits:1
+15/05/08 16:14:28 INFO mapreduce.JobSubmitter: Submitting tokens for job: job_1431098131816_0002
+15/05/08 16:14:28 INFO mapreduce.JobSubmitter: Kind: mapreduce.job, Service: job_1431098131816_0001, Ident: (org.apache
+.hadoop.mapreduce.security.token.JobTokenIdentifier@31e1783b)
+15/05/08 16:14:28 INFO mapreduce.JobSubmitter: Kind: RM_DELEGATION_TOKEN, Service: 10.53.230.87:9010, Ident: (owner=adm
+in, renewer=mr token, realUser=hdp, issueDate=1431101640421, maxDate=1431706440421, sequenceNumber=1, masterKeyId=2)
+15/05/08 16:14:28 INFO impl.YarnClientImpl: Submitted application application_1431098131816_0002
+15/05/08 16:14:28 INFO mapreduce.Job: The url to track the job: http://headnodehost:9014/proxy/application_143109813181
+6_0002/
+15/05/08 16:14:28 INFO mapreduce.Job: Running job: job_1431098131816_0002
+15/05/08 16:14:38 INFO mapreduce.Job: Job job_1431098131816_0002 running in uber mode : false
+15/05/08 16:14:38 INFO mapreduce.Job:  map 0% reduce 0%
+15/05/08 16:14:50 INFO mapreduce.Job:  map 100% reduce 0%
+15/05/08 16:14:58 INFO mapreduce.Job:  map 100% reduce 100%
+15/05/08 16:15:00 INFO mapreduce.Job: Job job_1431098131816_0002 completed successfully
+15/05/08 16:15:00 INFO mapreduce.Job: Counters: 49
+        File System Counters
+                FILE: Number of bytes read=239421
+                FILE: Number of bytes written=678797
+                FILE: Number of read operations=0
+                FILE: Number of large read operations=0
+                FILE: Number of write operations=0
+                WASB: Number of bytes read=1395830
+                WASB: Number of bytes written=337623
+                WASB: Number of read operations=0
+                WASB: Number of large read operations=0
+                WASB: Number of write operations=0
+        Job Counters
+                Launched map tasks=1
+                Launched reduce tasks=1
+                Other local map tasks=1
+                Total time spent by all maps in occupied slots (ms)=8782
+                Total time spent by all reduces in occupied slots (ms)=12462
+                Total time spent by all map tasks (ms)=8782
+                Total time spent by all reduce tasks (ms)=6231
+                Total vcore-seconds taken by all map tasks=8782
+                Total vcore-seconds taken by all reduce tasks=6231
+                Total megabyte-seconds taken by all map tasks=6744576
+                Total megabyte-seconds taken by all reduce tasks=9570816
+        Map-Reduce Framework
+                Map input records=32118
+                Map output records=251357
+                Map output bytes=2387798
+                Map output materialized bytes=239395
+                Input split bytes=164
+                Combine input records=251357
+                Combine output records=32956
+                Reduce input groups=32956
+                Reduce shuffle bytes=239395
+                Reduce input records=32956
+                Reduce output records=32956
+                Spilled Records=65912
+                Shuffled Maps =1
+                Failed Shuffles=0
+                Merged Map outputs=1
+                GC time elapsed (ms)=105
+                CPU time spent (ms)=7343
+                Physical memory (bytes) snapshot=520417280
+                Virtual memory (bytes) snapshot=836341760
+                Total committed heap usage (bytes)=554172416
+        Shuffle Errors
+                BAD_ID=0
+                CONNECTION=0
+                IO_ERROR=0
+                WRONG_LENGTH=0
+                WRONG_MAP=0
+                WRONG_REDUCE=0
+        File Input Format Counters
+                Bytes Read=1395666
+        File Output Format Counters
+                Bytes Written=337623
+
+PS C:\>
+PS C:\> $storageAccountName = "modelingmapreduce"
+PS C:\> $containerName = "modelingmapreduce"
+PS C:\> Select-AzureSubscription $subscriptionName
+PS C:\> $storageAccountKey = Get-AzureStorageKey $storageAccountName | %{ $_.Primary }
+VERBOSE: 7:32:21 PM - Begin Operation: Get-AzureStorageKey
+VERBOSE: 7:32:25 PM - Completed Operation: Get-AzureStorageKey
+PS C:\> $storageContext = New-AzureStorageContext -StorageAccountName $storageAccountName -StorageAccountKey $storageAcc
+ountKey
+PS C:\> Get-AzureStorageBlobContent -Container $ContainerName -Blob example/data/WordCountOutput/part-r-00000 -Context $
+storageContext -Force
+
+
+   Container Uri: https://modelingmapreduce.blob.core.windows.net/modelingmapreduce
+
+Name                  BlobType   Length                ContentType           LastModified          SnapshotTime
+----                  --------   ------                -----------           ------------          ------------
+example/data/WordC... BlockBlob  337623                application/octet-... 5/8/2015 4:14:57 P...
+VERBOSE: Transfer Summary
+--------------------------------
+Total:  1.
+Successful: 1.
+Failed: 0.
+
+
+PS C:\> cat ./example/data/WordCountOutput/part-r-00000 | findstr "there"
+Maffeo;--there  1
+feathered       1
+gathered        3
+lathered        1
+smothered       1
+there   361
+there,  24
+there.  16
+there;  5
+thereabout,     1
+thereabouts;    1
+thereby 2
+therefore       83
+therefore,      8
+therein 2
+therein.        2
+withered        1
+PS C:\>
+PS C:\>

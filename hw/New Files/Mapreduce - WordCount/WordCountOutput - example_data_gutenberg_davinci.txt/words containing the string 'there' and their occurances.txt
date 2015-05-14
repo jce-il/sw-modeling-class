@@ -1,0 +1,17 @@
+Maffeo;--there  1
+feathered       1
+gathered        3
+lathered        1
+smothered       1
+there   361
+there,  24
+there.  16
+there;  5
+thereabout,     1
+thereabouts;    1
+thereby 2
+therefore       83
+therefore,      8
+therein 2
+therein.        2
+withered        1
