@@ -29,7 +29,11 @@ Under Presentation Date:
  - [VuFind on Git-Hub](https://github.com/vufind-org/vufind)
  - [Repo] (https://github.com/assafwe/VuFind-Design-Architecture)
 
-18/6:
+18/6: @natanbr & @oshribm88 
+ - [AndEngine](sw-modeling-class/hw/Final Proj Natan & Oshri/Part 1 - Draft)
+ - [AndEngin Nicloas branch](https://github.com/nicolasgramlich?tab=repositories)
+ - [AndEngin Mayo branch](https://github.com/realmayo)
+ - [Repo](https://github.com/natanbr/sw-modeling-class/tree/master/hw/Final%20Proj%20Natan%20%26%20Oshri/AndEngine) 
 
 26/6:
 
@@ -37,9 +41,6 @@ Under Presentation Date:
 
 ---
 
-3. @natanbr & @oshribm88 
-
-    - [AndEngine](sw-modeling-class/hw/Final Proj Natan & Oshri/Part 1 - Draft) 
-    - [Repo](https://github.com/natanbr/AndEngine.git)
+3. 
 
 
