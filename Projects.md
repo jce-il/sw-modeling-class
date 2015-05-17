@@ -29,8 +29,8 @@ Under Presentation Date:
  - [VuFind on Git-Hub](https://github.com/vufind-org/vufind)
  - [Repo] (https://github.com/assafwe/VuFind-Design-Architecture)
 
-18/6:
-
+18/6:@avitaler & @stash2020 & @no-choice
+ -[threejs ](https://github.com/avitaler/jce-sw-modeling-project/wiki/Project-Proposal)
 26/6:
 
 2/7:
