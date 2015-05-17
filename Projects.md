@@ -35,17 +35,18 @@ Under Presentation Date:
  -[threejs site](http://threejs.org/)
  -[Repo](https://github.com/avitaler/jce-sw-modeling-project/wiki/Project-Proposal)
 
-26/6:
-
-2/7: @marianera & @AABADELR
- - [OpenRA](https://github.com/OpenRA/OpenRA) 
- - [Repo](https://github.com/marianera/OpenRA-sw-modeling-class/wiki)
-
 ---
 
-3. @natanbr & @oshribm88 
+6. @natanbr & @oshribm88 
+ - [AndEngine](sw-modeling-class/hw/Final Proj Natan & Oshri/Part 1 - Draft)
+ - [AndEngin Nicloas branch](https://github.com/nicolasgramlich?tab=repositories)
+ - [AndEngin Mayo branch](https://github.com/realmayo)
+ - [Repo](https://github.com/natanbr/sw-modeling-class/tree/master/hw/Final%20Proj%20Natan%20%26%20Oshri/AndEngine) 
 
-    - [AndEngine](sw-modeling-class/hw/Final Proj Natan & Oshri/Part 1 - Draft) 
-    - [Repo](https://github.com/natanbr/AndEngine.git)
+26/6:
 
+2/7: 
+7. @marianera & @AABADELR
+ - [OpenRA](https://github.com/OpenRA/OpenRA) 
+ - [Repo](https://github.com/marianera/OpenRA-sw-modeling-class/wiki)
 
