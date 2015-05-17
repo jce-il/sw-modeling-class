@@ -24,13 +24,17 @@ Under Presentation Date:
  - [TextSecure](https://github.com/WhisperSystems/TextSecure) 
  - [Repo](https://github.com/havivha/sw-modeling-class/wiki/TextSecure-sw-modeling)
  
-11/6:@assafwe
+11/6:
+4. @assafwe
  - [VuFind](http://vufind-org.github.io/vufind/) 
  - [VuFind on Git-Hub](https://github.com/vufind-org/vufind)
  - [Repo] (https://github.com/assafwe/VuFind-Design-Architecture)
 
-18/6:@avitaler & @stash2020 & @no-choice
- -[threejs ](https://github.com/avitaler/jce-sw-modeling-project/wiki/Project-Proposal)
+18/6:
+5. @avitaler & @stash2020 & @no-choice
+ -[threejs site](http://threejs.org/)
+ -[Repo](https://github.com/avitaler/jce-sw-modeling-project/wiki/Project-Proposal)
+
 26/6:
 
 2/7:
