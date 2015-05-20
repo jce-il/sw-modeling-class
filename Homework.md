@@ -56,6 +56,8 @@ Grades are according to how much your work is: deep, relevant (to the course), p
 - Describe a few challenges for this project (e.g., a missing feature, known bugs)
 - Register to talk about it at class (again by setting a date on the project list)
 
+You can submit this stage as a presentation or draft paper
+
 **Submission date**: 28/5
 
 ### Stage 3
