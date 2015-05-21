@@ -1,0 +1,169 @@
+
+Environment               : AzureCloud
+SupportedModes            : AzureServiceManagement,AzureResourceManager
+DefaultAccount            : zaslavchik.eli@gmail.com
+Accounts                  : {zaslavchik.eli@gmail.com, 941D096AB53238ADF8591D40EA5A095BE6CF2C2A}
+IsDefault                 : True
+IsCurrent                 : True
+CurrentStorageAccountName :
+TenantId                  : ec948624-414c-431c-8ec3-87ef109c8b10
+
+
+
+PS C:\> $subscriptionName= "Azure Pass"
+PS C:\> $clusterName= "jcehw2cluster"
+PS C:\> $wordCountJobDefinition = New-AzureHDInsightMapReduceJobDefinition -JarFile "wasb:///example/jars/hadoop-mapredu
+ce-examples.jar" -ClassName "wordcount" -Arguments "wasb:///example/data/gutenberg/davinci.txt", "wasb:///example/data/W
+ordCountOutput"
+PS C:\> Select-AzureSubscription $subscriptionName
+PS C:\> $wordCountJob = Start-AzureHDInsightJob -Cluster $clusterName -JobDefinition $wordCountJobDefinition | Wait-Azur
+eHDInsightJob -WaitTimeoutInSeconds 3600
+Start-AzureHDInsightJob : Object reference not set to an instance of an object.
+At line:1 char:17
++ $wordCountJob = Start-AzureHDInsightJob -Cluster $clusterName -JobDefinition $wo ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [Start-AzureHDInsightJob], NullReferenceException
+    + FullyQualifiedErrorId : System.NullReferenceException,Microsoft.WindowsAzure.Management.HDInsight.Cmdlet.PSCmdle
+   ts.StartAzureHDInsightJobCmdlet
+
+
+PS C:\> $clusterName= "jcehw2custer"
+PS C:\> $wordCountJob = Start-AzureHDInsightJob -Cluster $clusterName -JobDefinition $wordCountJobDefinition | Wait-Azur
+eHDInsightJob -WaitTimeoutInSeconds 3600
+
+
+PS C:\> Get-AzureHDInsightJobOutput -Cluster $clusterName -JobId $wordCountJob.JobId -StandartError
+Get-AzureHDInsightJobOutput : A parameter cannot be found that matches parameter name 'StandartError'.
+At line:1 char:78
++ Get-AzureHDInsightJobOutput -Cluster $clusterName -JobId $wordCountJob.JobId -St ...
++                                                                              ~~~
+    + CategoryInfo          : InvalidArgument: (:) [Get-AzureHDInsightJobOutput], ParameterBindingException
+    + FullyQualifiedErrorId : NamedParameterNotFound,Microsoft.WindowsAzure.Management.HDInsight.Cmdlet.PSCmdlets.GetA
+   zureHDInsightJobOutputCmdlet
+
+PS C:\> Get-AzureHDInsightJobOutput -Cluster $clusterName -JobId $wordCountJob.JobId -StandardError
+15/05/21 12:51:36 INFO impl.TimelineClientImpl: Timeline service address: http://headnodehost:8188/ws/v1/timeline/
+15/05/21 12:51:36 INFO client.RMProxy: Connecting to ResourceManager at headnodehost/100.91.186.134:9010
+15/05/21 12:51:37 INFO client.AHSProxy: Connecting to Application History server at headnodehost/100.91.186.134:10200
+15/05/21 12:51:38 INFO input.FileInputFormat: Total input paths to process : 1
+15/05/21 12:51:38 INFO mapreduce.JobSubmitter: number of splits:1
+15/05/21 12:51:39 INFO mapreduce.JobSubmitter: Submitting tokens for job: job_1432206110011_0011
+15/05/21 12:51:39 INFO mapreduce.JobSubmitter: Kind: mapreduce.job, Service: job_1432206110011_0010, Ident: (org.apache
+.hadoop.mapreduce.security.token.JobTokenIdentifier@281d9e15)
+15/05/21 12:51:39 INFO mapreduce.JobSubmitter: Kind: RM_DELEGATION_TOKEN, Service: 100.91.186.134:9010, Ident: (owner=a
+dmin, renewer=mr token, realUser=hdp, issueDate=1432212673116, maxDate=1432817473116, sequenceNumber=3, masterKeyId=2)
+15/05/21 12:51:39 INFO impl.YarnClientImpl: Submitted application application_1432206110011_0011
+15/05/21 12:51:39 INFO mapreduce.Job: The url to track the job: http://headnodehost:9014/proxy/application_143220611001
+1_0011/
+15/05/21 12:51:39 INFO mapreduce.Job: Running job: job_1432206110011_0011
+15/05/21 12:51:49 INFO mapreduce.Job: Job job_1432206110011_0011 running in uber mode : false
+15/05/21 12:51:49 INFO mapreduce.Job:  map 0% reduce 0%
+15/05/21 12:51:59 INFO mapreduce.Job:  map 100% reduce 0%
+15/05/21 12:52:09 INFO mapreduce.Job:  map 100% reduce 100%
+15/05/21 12:52:11 INFO mapreduce.Job: Job job_1432206110011_0011 completed successfully
+15/05/21 12:52:11 INFO mapreduce.Job: Counters: 49
+        File System Counters
+                FILE: Number of bytes read=239421
+                FILE: Number of bytes written=678627
+                FILE: Number of read operations=0
+                FILE: Number of large read operations=0
+                FILE: Number of write operations=0
+                WASB: Number of bytes read=1395814
+                WASB: Number of bytes written=337623
+                WASB: Number of read operations=0
+                WASB: Number of large read operations=0
+                WASB: Number of write operations=0
+        Job Counters
+                Launched map tasks=1
+                Launched reduce tasks=1
+                Other local map tasks=1
+                Total time spent by all maps in occupied slots (ms)=7858
+                Total time spent by all reduces in occupied slots (ms)=13140
+                Total time spent by all map tasks (ms)=7858
+                Total time spent by all reduce tasks (ms)=6570
+                Total vcore-seconds taken by all map tasks=7858
+                Total vcore-seconds taken by all reduce tasks=6570
+                Total megabyte-seconds taken by all map tasks=6034944
+                Total megabyte-seconds taken by all reduce tasks=10091520
+        Map-Reduce Framework
+                Map input records=32118
+                Map output records=251357
+                Map output bytes=2387798
+                Map output materialized bytes=239395
+                Input split bytes=148
+                Combine input records=251357
+                Combine output records=32956
+                Reduce input groups=32956
+                Reduce shuffle bytes=239395
+                Reduce input records=32956
+                Reduce output records=32956
+                Spilled Records=65912
+                Shuffled Maps =1
+                Failed Shuffles=0
+                Merged Map outputs=1
+                GC time elapsed (ms)=112
+                CPU time spent (ms)=6889
+                Physical memory (bytes) snapshot=522948608
+                Virtual memory (bytes) snapshot=839548928
+                Total committed heap usage (bytes)=554172416
+        Shuffle Errors
+                BAD_ID=0
+                CONNECTION=0
+                IO_ERROR=0
+                WRONG_LENGTH=0
+                WRONG_MAP=0
+                WRONG_REDUCE=0
+        File Input Format Counters
+                Bytes Read=1395666
+        File Output Format Counters
+                Bytes Written=337623
+
+PS C:\>
+
+PS C:\> $storageAccountName= "jcehw2"
+PS C:\> $containerName= "jcehw2custer"
+PS C:\> Select-AzureSubscription $subscriptionName
+PS C:\> $storageAccountKey = Get-AzureStorageKey $storageAccountName | %{ $_.Primary }
+VERBOSE: 12:58:57 PM - Begin Operation: Get-AzureStorageKey
+VERBOSE: 12:59:00 PM - Completed Operation: Get-AzureStorageKey
+PS C:\>
+PS C:\> $storageContext = New-AzureStorageContext -StorageAccountName $storageAccountName -StorageAccountKey $storageAccountKey
+PS C:\> Get-AzureStorageBlobContent -Container $ContainerName -Blob example/data/WordCountOutput/part-r-00000 -Context $
+storageContext -Force
+
+
+   Container Uri: https://jcehw2.blob.core.windows.net/jcehw2custer
+
+Name                  BlobType   Length                ContentType           LastModified          SnapshotTime
+----                  --------   ------                -----------           ------------          ------------
+example/data/WordC... BlockBlob  337623                application/octet-... 5/21/2015 12:52:08...
+VERBOSE: Transfer Summary
+--------------------------------
+Total:  1.
+Successful: 1.
+Failed: 0.
+
+
+PS C:\>
+
+PS C:\> cat .\example\data\WordCountOutput\part-r-00000 | findstr "there"
+Maffeo;--there  1
+feathered       1
+gathered        3
+lathered        1
+smothered       1
+there   361
+there,  24
+there.  16
+there;  5
+thereabout,     1
+thereabouts;    1
+thereby 2
+therefore       83
+therefore,      8
+therein 2
+therein.        2
+withered        1
+PS C:\>
+
+
