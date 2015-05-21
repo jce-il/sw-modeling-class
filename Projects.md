@@ -43,7 +43,8 @@ Under Presentation Date:
  - [AndEngin Mayo branch](https://github.com/realmayo)
  - [Repo](https://github.com/natanbr/sw-modeling-class/tree/master/hw/Final%20Proj%20Natan%20%26%20Oshri/AndEngine) 
 
-26/6:
+26/6: @mayal @liorlevy
+ - [SQL & NoSQL](https://github.com/liorlevy/SQL-NoSQL/wiki)
 
 2/7: 
 7. @marianera & @AABADELR
