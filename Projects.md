@@ -12,7 +12,7 @@ Under Presentation Date:
 21/5:
 1. @tamar-b & @maortaieb 
  - [virtual router](http://virtualrouter.codeplex.com/) 
- - [PPT](https://github.com/tamar-b/sw-modeling-class/blob/master/project/Virtual%20Router.pptx) 
+ - [Project/PPT](https://github.com/tamar-b/sw-modeling-class/tree/master/project) 
 
 28/5:
 2. @razco & @ilayze 
