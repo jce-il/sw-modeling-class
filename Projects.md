@@ -18,6 +18,8 @@ Under Presentation Date:
 2. @razco & @ilayze 
  - [Swagger-UI](https://github.com/swagger-api/swagger-ui) 
  - [Repo](https://github.com/ilayze/Swagger-ui-sw-modeling)
+ - [Repo wiki](https://github.com/ilayze/Swagger-ui-sw-modeling/wiki)
+ - [PPT link](https://github.com/ilayze/Swagger-ui-sw-modeling/blob/master/SwaggerUI_Presentation.pptx)
 
 4/6:
 3. @havivha & @einatsc 
