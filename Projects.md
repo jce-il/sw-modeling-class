@@ -35,8 +35,10 @@ Under Presentation Date:
 
 18/6:
 5. @avitaler & @stash2020 & @no-choice
- -[threejs site](http://threejs.org/)
- -[Repo](https://github.com/avitaler/jce-sw-modeling-project/wiki/Project-Proposal)
+   Site URL: [Rhino](https://developer.mozilla.org/en-US/docs/Mozilla/Projects/Rhino)
+   GitHub link: [Rhino on github](https://github.com/mozilla/rhino)
+   Wikipedia: [Rhino Wiki] (http://en.wikipedia.org/wiki/Rhino_%28JavaScript_engine%29)
+   [Repo](https://github.com/avitaler/jce-sw-modeling-project/wiki/Project-Proposal)
 
 6. @natanbr & @oshribm88 
  - [AndEngine](sw-modeling-class/hw/Final Proj Natan & Oshri/Part 1 - Draft)
