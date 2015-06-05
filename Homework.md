@@ -43,7 +43,7 @@ Grades are according to how much your work is: deep, relevant (to the course), p
 - Select a known open source project (git is already captured for class demo)
   - Here are some sources for ideas: [leading github projects](https://github.com/showcases), Book: [The Architecture of Open Source Applications](http://www.aosabook.org/en/index.html), [Hasadna](http://www.hasadna.org.il/projects/) (The Public Knowledge Workshop),...
   - Cloud related ideas and papers from the source course we use: https://courses.engr.illinois.edu/cs525/sp2015/sched.htm 
-- Review resources (repos, papers, posts)
+- Review resources (repos, papers, posts, issues/bugs)
 - Open a repo for your project and link from the [project](Projects.md) list on the course wiki (by PR of course)
 - (the lecturer will discuss the suggestion with you)
 
