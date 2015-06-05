@@ -1,0 +1,46 @@
+Project name: [AndEngine](http://www.andengine.org/)
+
+AndEngine is a popular and "easy" to use game framework for Android.
+
+AndEngine is currently available in two versions: GLES1 and GLES2. 
+The GLES1 version supports OpenGL ES 1.x. (99% of Android devices can run a game built using this version)
+And GLES2 supports OpenGL ES 2.0. This branch is actively being worked on, and nearly 93% of current Android devices can run a game that’s been made with this branch.
+
+AndEngine Pros:
+It has a complete 2-D scene graph, with a "easy-to-use" API.
+It works really well with the Android activity lifecycle.
+It has a number of extensions that can be added as plugins.
+It’s free
+It's open
+
+AndEngine Cons:
+The biggest problem I’ve faced while using AndEngine is that the API is undocumented. 
+This can increase the development time, as you sometimes need to go through the engine source code to figure things out. 
+The reason why there is not documentation is that the developers doesn't believe that their code need documentation.
+We (Natan and Oshri) tried to understand and use the code, it is really very readable code but still some documentation would
+make it easier.
+The bright side of the story is that there are a lot of online tutorial and a book that helps to undersend the code, 
+and the most helpful are the examples project.
+
+***Given documentation and/or source code:***
+There are two main branches to this project, the original project created by 
+Nicolas and a new branch with bugfixes and new libraries created by Mayo: 
+[Nicloas branch](https://github.com/nicolasgramlich?tab=repositories)
+[Mayo branch](https://github.com/realmayo) 
+
+Few of the available tutorials:
+- [Andengine for android game development cookbook](http://www.andengine.org/blog/2013/01/andengine-for-android-game-development-cookbook/)
+- [Andengine-the-basics-of-sprites] (http://stuartmct.co.uk/2012/07/18/andengine-the-basics-of-sprites/)
+- [Tiled mapEditor + tutorial] (http://paulsonapps.wordpress.com/2010/06/09/tutorial-tiled-mapeditor-part-1-create-a-tmxtiledmap-game) 
+- [Full game from scratch] (http://andenginefromscratch.blogspot.co.il/2011/03/andengine-from-scratch-v.html)
+- [Puzzle theÂ Tower of Hanoi] (http://www.raywenderlich.com/12065/how-to-create-a-simple-android-game)
+- [Full game tutorial](http://www.matim-dev.com/full-game-tutorial---part-3.html)
+- [Mimminito's Tutorial List](http://www.andengine.org/forums/tutorials/mimminito-s-tutorial-list-t417.html)
+
+***Main requirements/features of the product:***
+- Allows to create Android games with ease using AndEngine’s framework and its extensions.
+- Make your games playable across a vast range of devices (multi-touch, performance-optimizations, and accurate, screen-resolution scaling)
+- Allows to construct a customizable, front-end framework that simplifies menu and level creation.
+- Physics-based gameplay and simulations
+- Vector-based graphics (SVG extension)
+- Excellent performance 
