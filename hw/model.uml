@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_jImP4AVWEeWjC8H7IfOPnw" name="model">
+  <packagedElement xmi:type="uml:Class" xmi:id="_l_oHYAVWEeWjC8H7IfOPnw" name="Person">
+    <ownedRule xmi:type="uml:Constraint" xmi:id="_BqTVEAiAEeW94f0--1rbPA" name="Constraint1">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_HxtYMAiAEeW94f0--1rbPA">
+        <language>OCL</language>
+        <body>context Person::setAge(newage)&#xD;
+pre: newage>0&#xD;
+post: self.age=newage</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:type="uml:Constraint" xmi:id="_iiFqcAiAEeW94f0--1rbPA" name="Constraint1">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_GSIw8AiCEeW94f0--1rbPA">
+        <language>OCL</language>
+        <body>context Person::setId(newid)&#xD;
+pre: newid&lt;>null&#xD;
+post: self.id=newid</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:type="uml:Constraint" xmi:id="_ICZ0sAiCEeW94f0--1rbPA" name="Constraint1">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_R5SaQAiCEeW94f0--1rbPA">
+        <language>OCL</language>
+        <body>context Person::setname(newname)&#xD;
+pre: newname&lt;>null&#xD;
+post: self.name=name&#xD;
+</body>
+      </specification>
+    </ownedRule>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_En4DEAVXEeWjC8H7IfOPnw" name="id"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_a76F0AVXEeWjC8H7IfOPnw" name="name"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_bg8FgAVXEeWjC8H7IfOPnw" name="age"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_z4FPgAVXEeWjC8H7IfOPnw" name="gender" type="_TzHYkAhUEeW94f0--1rbPA"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_i4T2EAhUEeW94f0--1rbPA" name="vehicle" type="_5mQqIAhTEeW94f0--1rbPA" association="_i4T2EwhUEeW94f0--1rbPA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_i4T2EQhUEeW94f0--1rbPA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_i4T2EghUEeW94f0--1rbPA" value="*"/>
+    </ownedAttribute>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_BhaBYAVXEeWjC8H7IfOPnw" name="getId"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_QqVIUAVXEeWjC8H7IfOPnw" name="getNameString"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_Q-GY4AVXEeWjC8H7IfOPnw" name="getGender"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_RnbCsAVXEeWjC8H7IfOPnw" name="getAge"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_BREwAAhwEeW94f0--1rbPA" name="setId"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_GgxvEAhwEeW94f0--1rbPA" name="setName"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_IXjqgAhwEeW94f0--1rbPA" name="setAge"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_LqxuwAhwEeW94f0--1rbPA" name="setGender"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_5mQqIAhTEeW94f0--1rbPA" name="Vehicle" isAbstract="true">
+    <ownedRule xmi:type="uml:Constraint" xmi:id="_-ZVssAhVEeW94f0--1rbPA" name="Constraint1">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_ZqHpYAhuEeW94f0--1rbPA">
+        <language>OCL</language>
+        <body>context Vehicle&#xD;
+inv: self.Owner.age >=18&#xD;
+</body>
+      </specification>
+    </ownedRule>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_DVz4oAhUEeW94f0--1rbPA" name="color" type="_IvKi8AhUEeW94f0--1rbPA"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_P3kJAAhUEeW94f0--1rbPA" name="plateNumber"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_78mPYAhTEeW94f0--1rbPA" name="Car">
+    <generalization xmi:type="uml:Generalization" xmi:id="__NlfAAhTEeW94f0--1rbPA" general="_5mQqIAhTEeW94f0--1rbPA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_80YzAAhTEeW94f0--1rbPA" name="Truck">
+    <ownedRule xmi:type="uml:Constraint" xmi:id="_cfZNYAhuEeW94f0--1rbPA" name="Constraint1">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_lEwgsAhuEeW94f0--1rbPA">
+        <language>OCL</language>
+        <body>context Truck&#xD;
+inv: self.Owner.age >= 21</body>
+      </specification>
+    </ownedRule>
+    <generalization xmi:type="uml:Generalization" xmi:id="___EmUAhTEeW94f0--1rbPA" general="_5mQqIAhTEeW94f0--1rbPA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Enumeration" xmi:id="_IvKi8AhUEeW94f0--1rbPA" name="Color">
+    <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_Ko5rwAhUEeW94f0--1rbPA" name="black"/>
+    <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_MGtGgAhUEeW94f0--1rbPA" name="blue"/>
+    <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_MgDaoAhUEeW94f0--1rbPA" name="red"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Enumeration" xmi:id="_TzHYkAhUEeW94f0--1rbPA" name="Gender">
+    <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_Wsy7cAhUEeW94f0--1rbPA" name="male"/>
+    <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_XCKHcAhUEeW94f0--1rbPA" name="female"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_i4T2EwhUEeW94f0--1rbPA" memberEnd="_i4T2FAhUEeW94f0--1rbPA _i4T2EAhUEeW94f0--1rbPA">
+    <name xsi:nil="true"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_i4T2FAhUEeW94f0--1rbPA" name="Owner" type="_l_oHYAVWEeWjC8H7IfOPnw" subsettedProperty="_bg8FgAVXEeWjC8H7IfOPnw" association="_i4T2EwhUEeW94f0--1rbPA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_i4T2FQhUEeW94f0--1rbPA" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_i4T2FghUEeW94f0--1rbPA" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+</uml:Model>
