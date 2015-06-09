@@ -45,16 +45,12 @@ Modeling an online store (Amazon like), through:
 
 **Submission date**: Last lecture
 
-## Homework4 Git immersion - Personal - WIP
-To complete building our git mental **model** in the course, we will complete the git-immerssion workshop by Jim Weirick. This time it is a personal submission.
-1. Fork the repo https://github.com/jce-il/git-immersion
-1. Follow the steps from the html folder or [online](http://jce-il.github.io/git-immersion/html/)
-1. Pay attention to the red **skip** banners for specialized instructions
-1. push all your commits and tags
-1. Open a pull request
+## Homework4 Git immersion - Personal
+To complete building our git mental **model** in the course, we will complete the git-immerssion workshop by [Jim Weirich](https://github.com/jimweirich). This time it is a personal submission.
+
+1. Follow the steps at https://github.com/jce-il/git-immersion
 
 **Submission date**: Last lecture
-
 
 ## Final Project
 
