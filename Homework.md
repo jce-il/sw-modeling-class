@@ -35,6 +35,27 @@ Modeling an online store (Amazon like), through:
 
 **Submission date**: ~~14~~21/4
 
+## Homework3 DDD/CQRS/EventSourcing Workshop - WIP
+1. Fork the workshop repo. https://github.com/jce-il/mixter
+1. Clone
+1. Follow the workshop instuctions at the Readme and slides
+1. Don't forget to commit and tag each step (and sub-step) in a similiar manner to the existing tagging system
+1. Push your results, incl. tags ```git push --tags```
+1. Submit by opening a pull request
+
+**Submission date**: Last lecture
+
+## Homework4 Git immersion - Personal - WIP
+To complete building our git mental **model** in the course, we will complete the git-immerssion workshop by Jim Weirick. This time it is a personal submission.
+1. Fork the repo https://github.com/jce-il/git-immersion
+1. Follow the steps from the html folder or [online](http://jce-il.github.io/git-immersion/html/)
+1. Pay attention to the red **skip** banners for specialized instructions
+1. push all your commits and tags
+1. Open a pull request
+
+**Submission date**: Last lecture
+
+
 ## Final Project
 
 Grades are according to how much your work is: deep, relevant (to the course), presented well (written and oral), on time
