@@ -38,7 +38,7 @@ Modeling an online store (Amazon like), through:
 ## Homework3 DDD/CQRS/EventSourcing Workshop - WIP
 1. Fork the workshop repo. https://github.com/jce-il/mixter
 1. Clone
-1. Follow the workshop instuctions at the Readme and slides
+1. Follow the workshop instuctions at the Readme and slides, at least the 3 first steps
 1. Don't forget to commit and tag each step (and sub-step) in a similiar manner to the existing tagging system
 1. Push your results, incl. tags ```git push --tags```
 1. Submit by opening a pull request
