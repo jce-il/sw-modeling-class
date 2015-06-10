@@ -35,13 +35,13 @@ Modeling an online store (Amazon like), through:
 
 **Submission date**: ~~14~~21/4
 
-## Homework3 DDD/CQRS/EventSourcing Workshop - WIP
-1. Fork the workshop repo. https://github.com/jce-il/mixter
-1. Clone
-1. Follow the workshop instuctions at the Readme and slides, at least the 3 first steps
-1. Don't forget to commit and tag each step (and sub-step) in a similiar manner to the existing tagging system
-1. Push your results, incl. tags ```git push --tags```
-1. Submit by opening a pull request
+## Homework3 DDD/CQRS/EventSourcing Workshop
+1. Fork the workshop repository https://github.com/jce-il/mixter
+1. Clone to your machine
+1. Follow the workshop instuctions according to the Readme and included [slides](https://github.com/jce-il/mixter/blob/Slide/slide.pdf), at least the 3 first steps
+1. Don't forget to commit and tag each sub-step in a similiar manner to the existing tagging system, e.g., ```git tag csharp-my-solution-1.1```
+1. Push your results, incl. tags, e.g., ```git push origin csharp-solution; git push origin --tags```
+1. Submit by opening a pull request for the working branch (& mention your peer)
 
 **Submission date**: Last lecture
 
