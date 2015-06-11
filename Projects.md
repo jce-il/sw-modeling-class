@@ -40,7 +40,7 @@ Under Presentation Date:
 6. @assafwe
  - [VuFind](http://vufind-org.github.io/vufind/) 
  - [VuFind on Git-Hub](https://github.com/vufind-org/vufind)
- - [Repo] (https://github.com/assafwe/VuFind-Design-Architecture)
+ - [Repo] (https://github.com/assafwe/VuFind-Design-Architecture/blob/master/Modelling_Presentation_Final_Version.pptx)
 
 18/6:
 
