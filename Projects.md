@@ -49,6 +49,7 @@ Under Presentation Date:
  - GitHub link: [Rhino on github](https://github.com/mozilla/rhino)
  - Wikipedia: [Rhino Wiki] (http://en.wikipedia.org/wiki/Rhino_%28JavaScript_engine%29)
  - [Repo](https://github.com/avitaler/jce-sw-modeling-project/wiki/Project-Proposal)
+ - [ppt] (https://github.com/avitaler/jce-sw-modeling-project/blob/master/Rhino.pptx)
 
 26/6: 
 
