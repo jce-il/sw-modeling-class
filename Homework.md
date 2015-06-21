@@ -39,7 +39,9 @@ Modeling an online store (Amazon like), through:
 1. Fork the workshop repository https://github.com/jce-il/mixter
 1. Clone to your machine
 1. Follow the workshop instuctions according to the Readme and included [slides](https://github.com/jce-il/mixter/blob/Slide/slide.pdf), at least the 3 first steps
-1. Don't forget to commit and tag each sub-step in a similiar manner to the existing tagging system, e.g., ```git tag csharp-my-solution-1.1```
+1. Don't forget to commit (with a meaningful message) and tag each sub-step in a similiar manner to the existing tagging system, e.g., 
+    - ```git commit -a -m "messageDeleted event published"```
+    - ```git tag csharp-my-solution-1.1```
 1. Push your results, incl. tags, e.g., ```git push origin csharp-solution; git push origin --tags```
 1. Submit by opening a pull request for the working branch (& mention your peer)
 
