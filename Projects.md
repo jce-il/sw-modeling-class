@@ -54,7 +54,7 @@ Under Presentation Date:
 26/6: 
 
 8. @mayal @liorlevy
- - [SQL & NoSQL](https://github.com/liorlevy/SQL-NoSQL/wiki)
+ - [Moodle](https://github.com/liorlevy/Moodle-jce)
 
 2/7: 
 
