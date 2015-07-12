@@ -50,7 +50,7 @@ Under Presentation Date:
  - Wikipedia: [Rhino Wiki] (http://en.wikipedia.org/wiki/Rhino_%28JavaScript_engine%29)
  - [Repo](https://github.com/avitaler/jce-sw-modeling-project/wiki/Project-Proposal)
  - [ppt] (https://github.com/avitaler/jce-sw-modeling-project/blob/master/Rhino.pptx)
-
+ - [PDF Report] (https://github.com/avitaler/jce-sw-modeling-project/blob/master/Mozilla%20Rhino.pdf)
 26/6: 
 
 8. @mayal @liorlevy
