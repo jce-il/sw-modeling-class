@@ -56,6 +56,7 @@ Under Presentation Date:
 
 8. @mayal @liorlevy
  - [Moodle](https://github.com/liorlevy/Moodle-jce)
+ - [resources](https://github.com/liorlevy/Moodle-jce/wiki)
 
 2/7: 
 
