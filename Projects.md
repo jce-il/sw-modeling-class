@@ -28,6 +28,7 @@ Under Presentation Date:
  - [PPT](https://github.com/havivha/sw-modeling-class/blob/master/project/Open_Whisper_Systems-TextSecure-v1.pptx)
   
  3.2 @natanbr & @oshribm88 
+ - [Final Document](https://github.com/natanbr/sw-modeling-class/tree/master/hw/Final%20Proj%20Natan%20%26%20Oshri/Project.docx)
  - [AndEngine](sw-modeling-class/hw/Final Proj Natan & Oshri/Part 1 - Draft)
  - [AndEngin Nicloas branch](https://github.com/nicolasgramlich?tab=repositories)
  - [AndEngin Mayo branch](https://github.com/realmayo)
